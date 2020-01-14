@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0095B7"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/backImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/motiveView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/orbitron"
+        android:text="motive."
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/backImageView"
+        app:layout_constraintEnd_toStartOf="@+id/settingsImageView"
+        app:layout_constraintStart_toEndOf="@+id/backImageView"
+        app:layout_constraintTop_toTopOf="@+id/backImageView" />
+
+    <ImageView
+        android:id="@+id/settingsImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/tabLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/backImageView"
+        app:tabTextColor="#FFFFFF" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tabIndicatorColor="#F3EEEE"
+        app:tabTextColor="#FFFFFF">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabEvents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Events" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabMental"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mental" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabMessages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Messages" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">motive</string>
+    <string name="messages" />
+    <string name="mental" />
+    <string name="home" />
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAuV8QeCWaZ6L8dOEF8eQg871PRLtPRM6M</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
