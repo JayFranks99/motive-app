@@ -1,20 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F00">
+    android:background="#FFFFFF"
+    android:orientation="vertical">
 
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello World"
-        android:layout_marginTop="100dp"
-        android:layout_marginStart="100dp"
-        android:textSize="16dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        />
+        android:layout_height="wrap_content"
+        >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/eventsTextView"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:text="Events"
+            android:textAlignment="center"
+            android:textColor="#0095B7"
+            android:textSize="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/golfImageView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/golfnew"
+            app:layout_constraintDimensionRatio="w,1:2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/eventsTextView" />
+
+        <TextView
+            android:id="@+id/golfTextView"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/my_border"
+            android:text="18 Holes @ Leeds Golf Centre\n23rd March"
+            android:textSize="18sp"
+            android:paddingTop="2dp"
+            android:paddingLeft="5dp"
+            app:layout_constraintEnd_toEndOf="@id/golfImageView"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/golfImageView"
+            app:layout_constraintTop_toBottomOf="@+id/golfImageView" />
+
+        <TextView
+            android:id="@+id/golfTextView2"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/my_border"
+            android:text="Digital Media Social @ RPP\n25th March"
+            android:textSize="18sp"
+            android:paddingLeft="5dp"
+            android:paddingTop="2dp"
+            app:layout_constraintEnd_toEndOf="@+id/beerimageView"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/beerimageView"
+            app:layout_constraintTop_toBottomOf="@+id/beerimageView" />
+
+        <Switch
+            android:id="@+id/golfSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Going"
+            app:layout_constraintBottom_toBottomOf="@+id/golfTextView"
+            app:layout_constraintEnd_toEndOf="@+id/golfTextView"
+            app:layout_constraintTop_toBottomOf="@+id/golfImageView"
+            android:switchPadding="5dp" />
+
+        <Switch
+            android:id="@+id/beerSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Going"
+            app:layout_constraintBottom_toBottomOf="@+id/golfTextView2"
+            app:layout_constraintEnd_toEndOf="@+id/golfTextView2"
+            app:layout_constraintTop_toTopOf="@+id/golfTextView2"
+            android:switchPadding="5dp"/>
+
+        <ImageView
+            android:id="@+id/beerimageView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/beer"
+            app:layout_constraintDimensionRatio="w,1:2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/golfTextView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

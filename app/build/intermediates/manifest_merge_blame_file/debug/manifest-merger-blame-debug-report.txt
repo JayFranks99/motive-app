@@ -26,11 +26,11 @@
 17-->[com.google.android.gms:play-services-maps:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\de22ffb5d8c648c075572e152d208a0b\jetified-play-services-maps-11.6.0\AndroidManifest.xml:21:52-75
 18
 19    <application
-19-->C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:5:5-27:19
+19-->C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:5:5-31:19
 20        android:allowBackup="true"
 20-->C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:6:9-35
 21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-21-->[androidx.core:core:1.0.1] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\8f8ab13dc8f4e84e14a8bb3d9ac92bc4\core-1.0.1\AndroidManifest.xml:22:18-86
+21-->[androidx.core:core:1.1.0-beta01] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\a160b9ec252d8c01d41c1b94b8ec0464\core-1.1.0-beta01\AndroidManifest.xml:22:18-86
 22        android:debuggable="true"
 23        android:icon="@mipmap/ic_launcher"
 23-->C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:7:9-43
@@ -43,49 +43,61 @@
 27        android:testOnly="true"
 28        android:theme="@style/AppTheme" >
 28-->C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:11:9-40
-29        <activity android:name="com.example.motive.MainActivity" >
-29-->C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:12:9-18:20
-29-->C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:12:19-47
-30            <intent-filter>
-30-->C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:13:13-17:29
-31                <action android:name="android.intent.action.MAIN" />
-31-->C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:14:17-69
-31-->C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:14:25-66
-32
-33                <category android:name="android.intent.category.LAUNCHER" />
-33-->C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:16:17-77
-33-->C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:16:27-74
-34            </intent-filter>
-35        </activity>
-36
-37        <meta-data
-37-->C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:20:9-22:55
-38            android:name="com.google.android.geo.API_KEY"
-38-->C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:21:13-58
-39            android:value="@string/google_maps_key" />
-39-->C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:22:13-52
-40        <meta-data
-40-->C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:24:9-26:57
-41            android:name="preloaded_fonts"
-41-->C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:25:13-43
-42            android:resource="@array/preloaded_fonts" />
-42-->C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:26:13-54
-43
-44        <activity
-44-->[com.google.android.gms:play-services-base:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\185881e9dcfc75ffa64d5465d548a91c\jetified-play-services-base-11.6.0\AndroidManifest.xml:19:9-172
-45            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-45-->[com.google.android.gms:play-services-base:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\185881e9dcfc75ffa64d5465d548a91c\jetified-play-services-base-11.6.0\AndroidManifest.xml:19:19-85
-46            android:exported="false"
-46-->[com.google.android.gms:play-services-base:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\185881e9dcfc75ffa64d5465d548a91c\jetified-play-services-base-11.6.0\AndroidManifest.xml:19:146-170
-47            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-47-->[com.google.android.gms:play-services-base:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\185881e9dcfc75ffa64d5465d548a91c\jetified-play-services-base-11.6.0\AndroidManifest.xml:19:86-145
+29        <activity android:name="com.example.motive.MotiveHome" />
+29-->C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:12:9-57
+29-->C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:12:19-45
+30        <activity
+30-->C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:13:9-21:20
+31            android:name="com.example.motive.MainActivity"
+31-->C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:14:13-41
+32            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden" >
+32-->C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:15:13-87
+33            <intent-filter>
+33-->C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:16:13-20:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:17:17-69
+34-->C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:17:25-66
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:19:17-77
+36-->C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:19:27-74
+37            </intent-filter>
+38        </activity>
+39        <activity android:name="com.example.motive.ProfileActivity" />
+39-->C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:22:9-53
+39-->C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:22:19-50
+40        <activity android:name="com.example.motive.SettingsActivity" />
+40-->C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:23:9-54
+40-->C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:23:19-51
+41
+42        <meta-data
+42-->C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:25:9-27:55
+43            android:name="com.google.android.geo.API_KEY"
+43-->C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:26:13-58
+44            android:value="@string/google_maps_key" />
+44-->C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:27:13-52
+45        <meta-data
+45-->C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:28:9-30:57
+46            android:name="preloaded_fonts"
+46-->C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:29:13-43
+47            android:resource="@array/preloaded_fonts" />
+47-->C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:30:13-54
 48
-49        <meta-data
-49-->[com.google.android.gms:play-services-basement:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\43179f10336cc60d3109d5653a4bbd40\jetified-play-services-basement-11.6.0\AndroidManifest.xml:20:9-121
-50            android:name="com.google.android.gms.version"
-50-->[com.google.android.gms:play-services-basement:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\43179f10336cc60d3109d5653a4bbd40\jetified-play-services-basement-11.6.0\AndroidManifest.xml:20:20-65
-51            android:value="@integer/google_play_services_version" />
-51-->[com.google.android.gms:play-services-basement:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\43179f10336cc60d3109d5653a4bbd40\jetified-play-services-basement-11.6.0\AndroidManifest.xml:20:66-119
-52    </application>
+49        <activity
+49-->[com.google.android.gms:play-services-base:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\185881e9dcfc75ffa64d5465d548a91c\jetified-play-services-base-11.6.0\AndroidManifest.xml:19:9-172
+50            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+50-->[com.google.android.gms:play-services-base:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\185881e9dcfc75ffa64d5465d548a91c\jetified-play-services-base-11.6.0\AndroidManifest.xml:19:19-85
+51            android:exported="false"
+51-->[com.google.android.gms:play-services-base:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\185881e9dcfc75ffa64d5465d548a91c\jetified-play-services-base-11.6.0\AndroidManifest.xml:19:146-170
+52            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+52-->[com.google.android.gms:play-services-base:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\185881e9dcfc75ffa64d5465d548a91c\jetified-play-services-base-11.6.0\AndroidManifest.xml:19:86-145
 53
-54</manifest>
+54        <meta-data
+54-->[com.google.android.gms:play-services-basement:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\43179f10336cc60d3109d5653a4bbd40\jetified-play-services-basement-11.6.0\AndroidManifest.xml:20:9-121
+55            android:name="com.google.android.gms.version"
+55-->[com.google.android.gms:play-services-basement:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\43179f10336cc60d3109d5653a4bbd40\jetified-play-services-basement-11.6.0\AndroidManifest.xml:20:20-65
+56            android:value="@integer/google_play_services_version" />
+56-->[com.google.android.gms:play-services-basement:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\43179f10336cc60d3109d5653a4bbd40\jetified-play-services-basement-11.6.0\AndroidManifest.xml:20:66-119
+57    </application>
+58
+59</manifest>
