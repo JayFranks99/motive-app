@@ -9,13 +9,13 @@
 
     <ImageView
         android:id="@+id/profileButton"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
-        android:src="@drawable/edit_profile"
-        app:layout_constraintBottom_toTopOf="@+id/viewPager"
+        android:src="@drawable/profile_icon"
+        app:layout_constraintBottom_toTopOf="@id/viewPager"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -36,12 +36,12 @@
 
     <ImageView
         android:id="@+id/settingsImageView"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:src="@drawable/settings"
+        android:src="@drawable/settings_icon"
         app:layout_constraintBottom_toTopOf="@+id/viewPager"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -63,6 +63,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewPager"
         app:tabIndicatorColor="#F3EEEE"
         app:tabTextColor="#FFFFFF">
 
@@ -70,26 +71,25 @@
             android:id="@+id/tabHome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Home"
-            />
+            android:icon="@drawable/hh_icon" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tabEvents"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Events" />
+            android:icon="@drawable/events_icon" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tabMental"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Mental" />
+            android:icon="@drawable/mmental_icon" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tabMessages"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Messages" />
+            android:icon="@drawable/mmessages_icon" />
 
     </com.google.android.material.tabs.TabLayout>
 

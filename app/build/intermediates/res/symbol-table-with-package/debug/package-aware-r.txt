@@ -1138,7 +1138,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
-drawable applogo
+drawable appicon
 drawable avd_hide_password
 drawable avd_show_password
 drawable back_icon
@@ -1177,7 +1177,6 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
-drawable edit_profile
 drawable events_icon
 drawable f_icon
 drawable football_profilepic
@@ -1186,6 +1185,8 @@ drawable golf
 drawable golfnew
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable hh_icon
+drawable hhome_icon
 drawable home_icon
 drawable ic_arrow_down_24dp
 drawable ic_launcher_background
@@ -1196,6 +1197,8 @@ drawable ic_mtrl_chip_close_circle
 drawable mental_icon
 drawable messages
 drawable messages_icon
+drawable mmental_icon
+drawable mmessages_icon
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable my_border
@@ -1214,7 +1217,8 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable preference_list_divider_material
-drawable settings
+drawable profile_icon
+drawable settings_icon
 drawable sync
 drawable tennis_icon
 drawable tooltip_frame_dark
@@ -1667,7 +1671,9 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+mipmap applogo
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 string abc_action_bar_home_description
 string abc_action_bar_up_description
