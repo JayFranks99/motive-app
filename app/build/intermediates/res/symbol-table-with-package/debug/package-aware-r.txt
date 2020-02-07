@@ -1388,7 +1388,6 @@ id masked
 id media_actions
 id mentalTextView
 id message
-id messsagesTextView
 id middle
 id mini
 id motiveView
@@ -1546,6 +1545,8 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id view
+id view2
 id viewPager
 id view_offset_helper
 id visible
@@ -1614,6 +1615,7 @@ layout activity_main
 layout activity_profile
 layout activity_settings
 layout custom_dialog
+layout custom_dialogue_layout
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar

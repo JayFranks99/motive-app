@@ -820,6 +820,10 @@
         "source": "C:\\Users\\Jay\\.gradle\\caches\\transforms-2\\files-2.1\\d54c25bda511012af26183b778932b1f\\appcompat-1.1.0-alpha05\\res\\layout\\abc_list_menu_item_icon.xml"
     },
     {
+        "merged": "C:\\Users\\Jay\\AndroidStudioProjects\\motive\\app\\build\\intermediates\\res\\merged\\debug\\layout_custom_dialogue_layout.xml.flat",
+        "source": "C:\\Users\\Jay\\AndroidStudioProjects\\motive\\app\\src\\main\\res\\layout\\custom_dialogue_layout.xml"
+    },
+    {
         "merged": "C:\\Users\\Jay\\AndroidStudioProjects\\motive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-hdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "C:\\Users\\Jay\\.gradle\\caches\\transforms-2\\files-2.1\\d54c25bda511012af26183b778932b1f\\appcompat-1.1.0-alpha05\\res\\drawable-ldrtl-hdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
     },

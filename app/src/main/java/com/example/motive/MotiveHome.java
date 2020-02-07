@@ -119,6 +119,7 @@ public class MotiveHome extends AppCompatActivity implements OnMapReadyCallback 
         super.onDestroy();
     }
 
+    //Rotation of device
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
@@ -130,38 +131,40 @@ public class MotiveHome extends AppCompatActivity implements OnMapReadyCallback 
 
         final Context context = this;
 
+        Toast.makeText(context, "Map Ready Called", Toast.LENGTH_SHORT).show();
 
-        Toast.makeText(context, "Map Ready Called", Toast.LENGTH_LONG).show();
 
         googleMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
             @Override
             public boolean onMarkerClick(Marker marker) {
 
-
-
                 final String[] items = {"View Profile", "Message", "Close"};
-                new AlertDialog.Builder(context).setTitle(marker.getTitle()).setItems(items, new DialogInterface.OnClickListener() {
+
+                new AlertDialog.Builder(context)
+                        .setTitle(marker.getTitle())
+                        .setItems(items, new DialogInterface.OnClickListener() {
+
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        Toast.makeText(context, items[i], Toast.LENGTH_LONG).show();
+                        Toast.makeText(context, items[i], Toast.LENGTH_SHORT).show();
                         switch (i)
                         {
                             case 0:
-                                //Start profile
+                                //View profile
                                 break;
                             case 1:
                                 viewPager.setCurrentItem(3);
+                                //Message
                                 break;
                         }
                     }
                 }).show();
 
-
                 return false;
             }
         });
 
-        // Add a marker in Leeds and move the camera
+        // Markers and camera zoom
         LatLng Jay = new LatLng(53.8179462, -1.5687024);
         googleMap.addMarker(new MarkerOptions().position(Jay).title("Jay").snippet("Football").icon(BitmapDescriptorFactory.fromResource(R.drawable.f_icon)));
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Jay,15));

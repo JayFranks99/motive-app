@@ -4,7 +4,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="358dp"
+        android:background="#0095B7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/profilelTextView"
@@ -24,7 +33,6 @@
         android:id="@+id/imageView2"
         android:layout_width="0dp"
         android:layout_height="140dp"
-        android:layout_marginTop="24dp"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.482"
@@ -48,7 +56,8 @@
         android:layout_height="wrap_content"
         android:text="Jack"
         android:textAlignment="center"
-        android:textSize="40dp"
+        android:textColor="#FFFFFF"
+        android:textSize="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
@@ -58,6 +67,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Devonshire Hall"
+        android:textColor="#FFFFFF"
         android:textAlignment="center"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -85,7 +95,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:text="About Jack"
         android:textColor="#0095B7"

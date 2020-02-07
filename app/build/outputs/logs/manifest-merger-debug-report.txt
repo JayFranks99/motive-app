@@ -97,7 +97,7 @@ MERGED from [com.google.android.gms:play-services-tasks-license:11.6.0] C:\Users
 	android:supportsRtl
 		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:10:9-35
 	android:label
-		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:8:9-41
+		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:8:9-32
 	android:roundIcon
 		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:9:9-54
 	android:icon
