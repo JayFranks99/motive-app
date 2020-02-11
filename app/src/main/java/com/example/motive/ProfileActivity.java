@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class ProfileActivity extends AppCompatActivity {
 
-    ImageView backImageView10;
+    ImageView backImageView;
 
     private static final String TAG = "ProfileActivity";
 
@@ -21,10 +21,10 @@ public class ProfileActivity extends AppCompatActivity {
         setContentView(R.layout.activity_profile);
         Log.d(TAG, "onCreate: started.");
 
-        backImageView10 = findViewById(R.id.backImageView10);
+        backImageView = findViewById(R.id.backImageView);
 
 
-        backImageView10.setOnClickListener(new View.OnClickListener() {
+        backImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 finish();

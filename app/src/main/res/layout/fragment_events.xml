@@ -57,7 +57,7 @@
             app:layout_constraintTop_toBottomOf="@+id/golfImageView" />
 
         <TextView
-            android:id="@+id/golfTextView2"
+            android:id="@+id/pubTextView"
             android:layout_width="0dp"
             android:layout_height="52dp"
             android:layout_marginTop="1dp"
@@ -66,10 +66,10 @@
             android:textSize="18sp"
             android:paddingLeft="5dp"
             android:paddingTop="2dp"
-            app:layout_constraintEnd_toEndOf="@+id/beerimageView"
+            app:layout_constraintEnd_toEndOf="@+id/beerImageView"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/beerimageView"
-            app:layout_constraintTop_toBottomOf="@+id/beerimageView" />
+            app:layout_constraintStart_toStartOf="@+id/beerImageView"
+            app:layout_constraintTop_toBottomOf="@+id/beerImageView" />
 
         <Switch
             android:id="@+id/golfSwitch"
@@ -88,13 +88,13 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:text="Going"
-            app:layout_constraintBottom_toBottomOf="@+id/golfTextView2"
-            app:layout_constraintEnd_toEndOf="@+id/golfTextView2"
-            app:layout_constraintTop_toTopOf="@+id/golfTextView2"
+            app:layout_constraintBottom_toBottomOf="@+id/pubTextView"
+            app:layout_constraintEnd_toEndOf="@+id/pubTextView"
+            app:layout_constraintTop_toTopOf="@+id/pubTextView"
             android:switchPadding="5dp"/>
 
         <ImageView
-            android:id="@+id/beerimageView"
+            android:id="@+id/beerImageView"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginStart="16dp"

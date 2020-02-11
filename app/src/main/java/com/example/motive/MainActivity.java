@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button button2;
+    Button logInButton;
 
     private static final String TAG = "LogInActivity";
 
@@ -20,10 +20,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         Log.d(TAG, "onCreate: started.");
 
-        button2 = findViewById(R.id.button2);
+        logInButton = findViewById(R.id.logInButton);
 
 
-        button2.setOnClickListener(new View.OnClickListener() {
+        logInButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent myIntent = new Intent(getBaseContext(),

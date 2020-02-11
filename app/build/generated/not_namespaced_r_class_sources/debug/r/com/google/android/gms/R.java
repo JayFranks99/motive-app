@@ -85,24 +85,24 @@ public final class R {
     public static final class id {
         private id() {}
 
-        public static final int adjust_height = 0x7f0a003c;
-        public static final int adjust_width = 0x7f0a003d;
-        public static final int auto = 0x7f0a0042;
-        public static final int center = 0x7f0a004d;
-        public static final int dark = 0x7f0a005d;
-        public static final int hybrid = 0x7f0a0087;
-        public static final int icon_only = 0x7f0a008b;
-        public static final int light = 0x7f0a009a;
-        public static final int none = 0x7f0a00ac;
-        public static final int normal = 0x7f0a00ad;
-        public static final int radio = 0x7f0a00bf;
-        public static final int satellite = 0x7f0a00c4;
-        public static final int standard = 0x7f0a00ee;
-        public static final int terrain = 0x7f0a0103;
-        public static final int text = 0x7f0a0104;
-        public static final int text2 = 0x7f0a0105;
-        public static final int wide = 0x7f0a0146;
-        public static final int wrap_content = 0x7f0a0149;
+        public static final int adjust_height = 0x7f0a003d;
+        public static final int adjust_width = 0x7f0a003e;
+        public static final int auto = 0x7f0a0043;
+        public static final int center = 0x7f0a004f;
+        public static final int dark = 0x7f0a0061;
+        public static final int hybrid = 0x7f0a008f;
+        public static final int icon_only = 0x7f0a0093;
+        public static final int light = 0x7f0a00a0;
+        public static final int none = 0x7f0a00b8;
+        public static final int normal = 0x7f0a00b9;
+        public static final int radio = 0x7f0a00d0;
+        public static final int satellite = 0x7f0a00d5;
+        public static final int standard = 0x7f0a0100;
+        public static final int terrain = 0x7f0a0115;
+        public static final int text = 0x7f0a0116;
+        public static final int text2 = 0x7f0a0117;
+        public static final int wide = 0x7f0a014a;
+        public static final int wrap_content = 0x7f0a014d;
     }
     public static final class integer {
         private integer() {}

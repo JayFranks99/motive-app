@@ -14,7 +14,7 @@
         >
 
         <TextView
-            android:id="@+id/mentalTextView"
+            android:id="@+id/messagesTextView"
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:gravity="center"

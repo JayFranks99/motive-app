@@ -7,7 +7,7 @@
     android:background="#0095B7">
 
     <View
-        android:id="@+id/view"
+        android:id="@+id/whiteBackgroundView"
         android:layout_width="0dp"
         android:layout_height="229dp"
         android:background="#FFFFFF"
@@ -16,19 +16,19 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/logInButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/my_button"
         android:text="Log in"
         android:textColor="#0095B7"
-        app:layout_constraintBottom_toBottomOf="@+id/view"
-        app:layout_constraintEnd_toEndOf="@+id/textView19"
-        app:layout_constraintStart_toStartOf="@+id/textView19"
-        app:layout_constraintTop_toTopOf="@+id/view" />
+        app:layout_constraintBottom_toBottomOf="@+id/whiteBackgroundView"
+        app:layout_constraintEnd_toEndOf="@+id/motiveTextView"
+        app:layout_constraintStart_toStartOf="@+id/motiveTextView"
+        app:layout_constraintTop_toTopOf="@+id/whiteBackgroundView" />
 
     <TextView
-        android:id="@+id/textView19"
+        android:id="@+id/motiveTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
@@ -38,7 +38,7 @@
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="70dp"
-        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintBottom_toTopOf="@+id/whiteBackgroundView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
