@@ -1203,6 +1203,7 @@ drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable my_border
 drawable my_button
+drawable my_button2
 drawable navigation_empty_icon
 drawable notification_action_background
 drawable notification_bg
@@ -1467,6 +1468,7 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
+id signUpButton
 id smallLabel
 id snackbar_action
 id snackbar_text
