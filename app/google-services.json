@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "279544113941",
+    "firebase_url": "https://motive-2020.firebaseio.com",
+    "project_id": "motive-2020",
+    "storage_bucket": "motive-2020.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:279544113941:android:fffce61a87b13c9a3c171c",
+        "android_client_info": {
+          "package_name": "com.example.motive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "279544113941-he3eo9v4eg8oa1kqpqll3g1r8s99imhh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDb_5bj0HfgdTrhfptFMNKytQeyVHyGkpw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "279544113941-he3eo9v4eg8oa1kqpqll3g1r8s99imhh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
