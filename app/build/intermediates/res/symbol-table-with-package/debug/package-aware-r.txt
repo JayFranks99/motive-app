@@ -1400,6 +1400,7 @@ id listMode
 id list_item
 id logInButton
 id logInDetailsTextView
+id logOutButton
 id loginEditText
 id mainMotiveEditText
 id map
@@ -1436,7 +1437,7 @@ id parallax
 id parent
 id parentPanel
 id parent_matrix
-id passswordEditText
+id passwordEditText
 id passwordLogEditText
 id percent
 id pin
@@ -1444,6 +1445,7 @@ id postcodeEditText
 id profileButton
 id profilePicture
 id profileTextView
+id progressBar
 id progress_circular
 id progress_horizontal
 id pubTextView

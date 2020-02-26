@@ -1,11 +1,14 @@
 package com.example.motive;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 public class SettingsActivity extends AppCompatActivity {
 
@@ -21,7 +24,6 @@ public class SettingsActivity extends AppCompatActivity {
 
         backImageView10 = findViewById(R.id.backImageView10);
 
-
         backImageView10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -30,4 +32,11 @@ public class SettingsActivity extends AppCompatActivity {
         });
 
     }
+
+    public void logout (View view) {
+        FirebaseAuth.getInstance().signOut();
+        startActivity(new Intent(getApplicationContext(),LogInActivity.class));
+        finish();
+        }
 }
+

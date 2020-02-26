@@ -41,6 +41,9 @@ public class LogInActivity extends AppCompatActivity {
 
 
     }
+
+    public void logout(View view) {
+    }
 }
 
 
