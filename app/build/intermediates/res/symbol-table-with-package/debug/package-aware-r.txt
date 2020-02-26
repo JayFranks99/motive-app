@@ -1231,6 +1231,7 @@ id FUNCTION
 id META
 id SHIFT
 id SYM
+id aboutTextView
 id aboutUser
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -1286,6 +1287,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id addressTextView
 id adjust_height
 id adjust_width
 id alertTitle
@@ -1299,6 +1301,7 @@ id barrier
 id beerImageView
 id beerSwitch
 id beginning
+id blockEditText
 id blocking
 id blueBackground
 id bottom
@@ -1325,7 +1328,9 @@ id customPanel
 id dark
 id decor_content_parent
 id default_activity_button
+id degreeEditText
 id degreeHeading
+id descriptionEditText
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -1339,6 +1344,8 @@ id editProfile
 id editProfileButton
 id editProfileImageView
 id edit_query
+id emailEditText
+id emailLogEditText
 id end
 id end_padder
 id enterAlways
@@ -1366,6 +1373,7 @@ id gone
 id group_divider
 id groups
 id halls
+id hallsEditText
 id home
 id homeAsUp
 id hybrid
@@ -1391,6 +1399,9 @@ id line3
 id listMode
 id list_item
 id logInButton
+id logInDetailsTextView
+id loginEditText
+id mainMotiveEditText
 id map
 id mapData
 id masked
@@ -1403,6 +1414,7 @@ id mini
 id motiveHeading
 id motiveTextView
 id motiveView
+id motivesEditText
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
@@ -1424,8 +1436,11 @@ id parallax
 id parent
 id parentPanel
 id parent_matrix
+id passswordEditText
+id passwordLogEditText
 id percent
 id pin
+id postcodeEditText
 id profileButton
 id profilePicture
 id profileTextView
@@ -1435,6 +1450,8 @@ id pubTextView
 id quoteHeading
 id radio
 id recycler_view
+id registerButton2
+id registerEditText
 id right
 id right_icon
 id right_side
@@ -1468,7 +1485,6 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
-id signUpButton
 id smallLabel
 id snackbar_action
 id snackbar_text
@@ -1485,6 +1501,7 @@ id src_over
 id standard
 id start
 id status_bar_latest_event_content
+id streetEditText
 id stretch
 id submenuarrow
 id submit_area
@@ -1550,6 +1567,8 @@ id userBio
 id userDegree
 id userMotives
 id username
+id usernameEditText
+id usernameLogEditText
 id viewPager
 id view_offset_helper
 id visible
@@ -1615,10 +1634,12 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_first
 layout activity_fresherprofile
 layout activity_login
-layout activity_main
+layout activity_motivehome
 layout activity_profile
+layout activity_register
 layout activity_settings
 layout custom_dialog
 layout custom_dialogue_layout

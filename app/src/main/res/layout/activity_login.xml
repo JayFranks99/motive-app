@@ -4,61 +4,91 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0095B7">
+    tools:context=".LogInActivity"
+    android:background="#0095b7"
+    >
 
-    <View
-        android:id="@+id/whiteBackgroundView"
-        android:layout_width="0dp"
-        android:layout_height="197dp"
-        android:background="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <TextView
+        android:id="@+id/loginEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="Log In"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
 
-    <Button
-        android:id="@+id/signUpButton"
+        />
+
+
+    <EditText
+        android:id="@+id/usernameLogEditText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/my_button2"
-        android:text="Sign Up"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/logInButton"
-        app:layout_constraintEnd_toEndOf="@+id/motiveTextView"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/motiveTextView"
-        app:layout_constraintTop_toTopOf="@+id/whiteBackgroundView"
-        app:layout_constraintVertical_bias="0.639" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginEditText" />
+
+    <EditText
+        android:id="@+id/emailLogEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:hint="Email (University of Leeds)"
+        android:inputType="textEmailAddress"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernameLogEditText" />
+
+    <EditText
+        android:id="@+id/passwordLogEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailLogEditText" />
+
 
     <Button
         android:id="@+id/logInButton"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/my_button"
-        android:text="Log in"
-        android:textColor="#0095B7"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/motiveTextView"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/motiveTextView"
-        app:layout_constraintTop_toTopOf="@+id/whiteBackgroundView"
-        app:layout_constraintVertical_bias="0.731" />
-
-    <TextView
-        android:id="@+id/motiveTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:fontFamily="@font/orbitron"
-        android:text="motive."
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="70dp"
-        app:layout_constraintBottom_toTopOf="@+id/whiteBackgroundView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.58000004" />
+        android:layout_marginTop="60dp"
+        android:background="#FFF"
+        android:onClick="LogInButtonClick"
+        android:text="Log In"
+        android:textColor="#0095b7"
+        app:layout_constraintEnd_toEndOf="@+id/passwordLogEditText"
+        app:layout_constraintStart_toStartOf="@+id/passwordLogEditText"
+        app:layout_constraintTop_toBottomOf="@+id/passwordLogEditText">
+
+    </Button>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

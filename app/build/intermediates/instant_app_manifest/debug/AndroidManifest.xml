@@ -36,9 +36,13 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.motive.MotiveHome" />
+        <activity android:name="com.example.motive.MotiveHomeActivity" />
+        <activity android:name="com.example.motive.LogInActivity" />
+        <activity android:name="com.example.motive.RegisterActivity" />
+        <activity android:name="com.example.motive.ProfileActivity" />
+        <activity android:name="com.example.motive.SettingsActivity" />
         <activity
-            android:name="com.example.motive.MainActivity"
+            android:name="com.example.motive.FirstActivity"
             android:configChanges="orientation|screenSize|screenLayout|keyboardHidden" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -46,8 +50,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.motive.ProfileActivity" />
-        <activity android:name="com.example.motive.SettingsActivity" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"

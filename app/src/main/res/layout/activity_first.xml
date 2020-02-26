@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0095B7">
+
+    <View
+        android:id="@+id/whiteBackgroundView"
+        android:layout_width="0dp"
+        android:layout_height="197dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/registerButton2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_button2"
+        android:text="Register"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/logInButton"
+        app:layout_constraintEnd_toEndOf="@+id/motiveTextView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/motiveTextView"
+        app:layout_constraintTop_toTopOf="@+id/whiteBackgroundView"
+        app:layout_constraintVertical_bias="0.639" />
+
+    <Button
+        android:id="@+id/logInButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_button"
+        android:text="Log in"
+        android:textColor="#0095B7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/motiveTextView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/motiveTextView"
+        app:layout_constraintTop_toTopOf="@+id/whiteBackgroundView"
+        app:layout_constraintVertical_bias="0.731" />
+
+    <TextView
+        android:id="@+id/motiveTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/orbitron"
+        android:text="motive."
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/whiteBackgroundView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.58000004" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
