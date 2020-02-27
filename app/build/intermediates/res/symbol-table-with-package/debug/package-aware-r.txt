@@ -1453,6 +1453,7 @@ id radio
 id recycler_view
 id registerButton2
 id registerEditText
+id resendCodeButton
 id right
 id right_icon
 id right_side
@@ -1569,6 +1570,7 @@ id userDegree
 id userMotives
 id username
 id usernameEditText
+id verifyMsg
 id viewPager
 id view_offset_helper
 id visible

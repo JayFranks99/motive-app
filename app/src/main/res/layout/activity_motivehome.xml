@@ -54,7 +54,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/profileButton"
-        app:tabTextColor="#FFFFFF" />
+        app:tabTextColor="#FFFFFF" >
+
+    </androidx.viewpager.widget.ViewPager>
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"

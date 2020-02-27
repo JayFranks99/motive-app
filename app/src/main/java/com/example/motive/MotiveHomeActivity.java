@@ -131,7 +131,7 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
 
         final Context context = this;
 
-        Toast.makeText(context, "Map Ready Called", Toast.LENGTH_SHORT).show();
+      //  Toast.makeText(context, "Map Ready Called", Toast.LENGTH_SHORT).show();
 
 
         googleMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
