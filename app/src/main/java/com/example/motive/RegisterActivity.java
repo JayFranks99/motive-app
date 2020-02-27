@@ -21,15 +21,23 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class RegisterActivity extends AppCompatActivity {
 
+    public static final String TAG1 = "TAG";
+    public static final String TAG2 = "TAG";
     EditText mUsername;
     EditText mEmail;
     EditText mPassword;
     EditText mHalls;
     EditText mStreetName;
     EditText mBlock;
+    EditText mPostcode;
     EditText mUserBio;
     EditText mMainMotive;
     EditText mOtherMotives;
@@ -37,6 +45,8 @@ public class RegisterActivity extends AppCompatActivity {
     Button mRegisterButton;
     ProgressBar progressBar;
     FirebaseAuth fAuth;
+    FirebaseFirestore fStore;
+    String userID;
 
     //On Create Method
 
@@ -53,14 +63,16 @@ public class RegisterActivity extends AppCompatActivity {
         mHalls = findViewById(R.id.hallsEditText);
         mStreetName = findViewById(R.id.streetEditText);
         mBlock = findViewById(R.id.blockEditText);
+        mPostcode = findViewById(R.id.postcodeEditText);
         mUserBio = findViewById(R.id.descriptionEditText);
         mMainMotive = findViewById(R.id.mainMotiveEditText);
         mOtherMotives = findViewById(R.id.motivesEditText);
         mDegree = findViewById(R.id.degreeEditText);
         mRegisterButton = findViewById(R.id.registerButton2);
-
         progressBar = findViewById(R.id.progressBar);
+
         fAuth = FirebaseAuth.getInstance();
+        fStore = FirebaseFirestore.getInstance();
 
         if (fAuth.getCurrentUser() != null) {
             startActivity(new Intent(getApplicationContext(),MotiveHomeActivity.class));
@@ -71,16 +83,18 @@ public class RegisterActivity extends AppCompatActivity {
         mRegisterButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String username = mUsername.getText().toString().trim();
-                String email = mEmail.getText().toString().trim();
-                String password = mPassword.getText().toString().trim();
-                String halls = mHalls.getText().toString().trim();
-                String streetName = mStreetName.getText().toString().trim();
-                String block = mBlock.getText().toString().trim();
-                String userBio = mUserBio.getText().toString().trim();
-                String mainMotive = mMainMotive.getText().toString().trim();
-                String otherMotives = mOtherMotives.getText().toString().trim();
-                String degree = mDegree.getText().toString().trim();
+                final String username = mUsername.getText().toString();
+                final String email = mEmail.getText().toString().trim();
+                final String password = mPassword.getText().toString().trim();
+                final String halls = mHalls.getText().toString();
+                final String streetName = mStreetName.getText().toString();
+                final String block = mBlock.getText().toString();
+                final String postcode = mPostcode.getText().toString();
+
+                final String userBio = mUserBio.getText().toString();
+                final String mainMotive = mMainMotive.getText().toString();
+                final String otherMotives = mOtherMotives.getText().toString();
+                final String degree = mDegree.getText().toString();
 
                 if (TextUtils.isEmpty(username)) {
                     mUsername.setError("Username is required.");
@@ -113,6 +127,11 @@ public class RegisterActivity extends AppCompatActivity {
 
                 if(TextUtils.isEmpty(block)) {
                     mBlock.setError("Block name or house number is required.");
+                    return;
+                }
+
+                if(TextUtils.isEmpty(postcode)) {
+                    mPostcode.setError("Postcode is required.");
                     return;
                 }
                 if(TextUtils.isEmpty(userBio)) {
@@ -152,7 +171,7 @@ public class RegisterActivity extends AppCompatActivity {
                             fuser.sendEmailVerification().addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
                                 public void onSuccess(Void aVoid) {
-                                Toast.makeText(RegisterActivity.this, "Verification email had been sent.", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(RegisterActivity.this, "Verification email has been sent.", Toast.LENGTH_SHORT).show();
                                 }
 
                             }).addOnFailureListener(new OnFailureListener() {
@@ -163,7 +182,34 @@ public class RegisterActivity extends AppCompatActivity {
                             });
 
 
-                                    Toast.makeText(RegisterActivity.this, "User Created.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(RegisterActivity.this, "User Created.", Toast.LENGTH_SHORT).show();
+
+                            userID = fAuth.getCurrentUser().getUid();
+                            DocumentReference documentReference = fStore.collection("users").document(userID);
+                            Map<String,Object> user = new HashMap<>();
+                            user.put("username", username);
+                            user.put("email", email);
+                            user.put("halls", halls);
+                            user.put("street name", streetName);
+                            user.put("block", block);
+                            user.put("postcode", postcode);
+                            user.put("user bio", userBio);
+                            user.put("main motive", mainMotive);
+                            user.put("other motives", otherMotives);
+                            user.put("degree", degree);
+                            documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                @Override
+                                public void onSuccess(Void aVoid) {
+                                    Log.d(TAG1, "onSuccess: user profile is created for "+ userID);
+
+                                }
+                            }).addOnFailureListener(new OnFailureListener() {
+                                @Override
+                                public void onFailure(@NonNull Exception e) {
+                                Log.d(TAG1,"onFailure: " + e.toString());
+                                }
+                            });
+
                             startActivity(new Intent(getApplicationContext(),MotiveHomeActivity.class));
 
                         }else {

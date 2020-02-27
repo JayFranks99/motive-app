@@ -56,6 +56,17 @@
             app:layout_constraintStart_toStartOf="@id/golfImageView"
             app:layout_constraintTop_toBottomOf="@+id/golfImageView" />
 
+        <Switch
+            android:id="@+id/golfSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:switchPadding="5dp"
+            android:text="Going"
+            app:layout_constraintBottom_toBottomOf="@+id/golfTextView"
+            app:layout_constraintEnd_toEndOf="@+id/golfTextView"
+            app:layout_constraintTop_toBottomOf="@+id/golfImageView" />
+
         <TextView
             android:id="@+id/pubTextView"
             android:layout_width="0dp"
@@ -70,17 +81,6 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/beerImageView"
             app:layout_constraintTop_toBottomOf="@+id/beerImageView" />
-
-        <Switch
-            android:id="@+id/golfSwitch"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:text="Going"
-            app:layout_constraintBottom_toBottomOf="@+id/golfTextView"
-            app:layout_constraintEnd_toEndOf="@+id/golfTextView"
-            app:layout_constraintTop_toBottomOf="@+id/golfImageView"
-            android:switchPadding="5dp" />
 
         <Switch
             android:id="@+id/beerSwitch"
@@ -106,6 +106,51 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/golfTextView" />
+
+
+        <TextView
+            android:id="@+id/spanishTextView"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/my_border"
+            android:paddingLeft="5dp"
+            android:paddingTop="2dp"
+            android:text="Practice Spanish @ Parkinsons \n29th March"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/spanishImageView"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/spanishImageView"
+            app:layout_constraintTop_toBottomOf="@+id/spanishImageView" />
+
+        <Switch
+            android:id="@+id/spanishSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Going"
+            app:layout_constraintBottom_toBottomOf="@+id/spanishTextView"
+            app:layout_constraintEnd_toEndOf="@+id/spanishTextView"
+            app:layout_constraintTop_toTopOf="@+id/spanishTextView"
+            android:switchPadding="5dp"/>
+
+        <ImageView
+            android:id="@+id/spanishImageView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/spanish_img"
+            app:layout_constraintDimensionRatio="w,1:2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pubTextView" />
+
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

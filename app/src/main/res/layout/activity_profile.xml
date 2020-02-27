@@ -56,7 +56,7 @@
         app:srcCompat="@drawable/back_icon" />
 
     <TextView
-        android:id="@+id/username"
+        android:id="@+id/profileUsername"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Jack"
@@ -68,7 +68,7 @@
         app:layout_constraintTop_toBottomOf="@+id/profilePicture" />
 
     <TextView
-        android:id="@+id/halls"
+        android:id="@+id/profileHalls"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Devonshire Hall"
@@ -77,7 +77,7 @@
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/username" />
+        app:layout_constraintTop_toBottomOf="@+id/profileUsername" />
 
     <Button
         android:id="@+id/editProfileButton"
@@ -91,27 +91,27 @@
         android:textColor="#0095B7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/halls">
+        app:layout_constraintTop_toBottomOf="@+id/profileHalls">
 
     </Button>
 
-    <TextView
-        android:id="@+id/aboutUser"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
-        android:text="About Jack"
-        android:textColor="#0095B7"
-        android:textSize="18dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editProfileButton" />
+        <TextView
+            android:id="@+id/aboutUser"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:text="About "
+            android:textColor="#0095B7"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editProfileButton" />
 
     <TextView
-        android:id="@+id/userBio"
+        android:id="@+id/profileUserBio"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -136,10 +136,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userBio" />
+        app:layout_constraintTop_toBottomOf="@+id/profileUserBio" />
 
     <TextView
-        android:id="@+id/userDegree"
+        android:id="@+id/profileDegree"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -164,10 +164,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userDegree" />
+        app:layout_constraintTop_toBottomOf="@+id/profileDegree" />
 
     <TextView
-        android:id="@+id/userMotives"
+        android:id="@+id/profileMotives"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -179,31 +179,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/motiveHeading" />
 
-        <TextView
-            android:id="@+id/verifyMsg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="EMAIL NOT VERIFIED"
-            android:visibility="invisible"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/userMotives" />
-
         <Button
             android:id="@+id/resendCodeButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
-            android:background="@drawable/my_button2"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/my_button"
             android:text="Verify"
-            android:textColor="#FFF"
+            android:textColor="#0095B7"
             android:visibility="invisible"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/profileTextView"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/verifyMsg" />
+            app:layout_constraintTop_toTopOf="@+id/profileTextView" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

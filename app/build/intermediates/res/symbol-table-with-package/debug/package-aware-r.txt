@@ -1152,6 +1152,7 @@ drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable chess_icon
+drawable chess_img
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -1181,7 +1182,6 @@ drawable events_icon
 drawable f_icon
 drawable football_profilepic
 drawable forward_icon
-drawable golf
 drawable golfnew
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
@@ -1220,6 +1220,7 @@ drawable notify_panel_notification_icon_bg
 drawable preference_list_divider_material
 drawable profile_icon
 drawable settings_icon
+drawable spanish_img
 drawable sync
 drawable tennis_icon
 drawable tooltip_frame_dark
@@ -1372,7 +1373,6 @@ id golfTextView
 id gone
 id group_divider
 id groups
-id halls
 id hallsEditText
 id home
 id homeAsUp
@@ -1442,8 +1442,13 @@ id percent
 id pin
 id postcodeEditText
 id profileButton
+id profileDegree
+id profileHalls
+id profileMotives
 id profilePicture
 id profileTextView
+id profileUserBio
+id profileUsername
 id progressBar
 id progress_circular
 id progress_horizontal
@@ -1493,6 +1498,9 @@ id snackbar_text
 id snap
 id snapMargins
 id spacer
+id spanishImageView
+id spanishSwitch
+id spanishTextView
 id spinner
 id split_action_bar
 id spread
@@ -1565,12 +1573,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
-id userBio
-id userDegree
-id userMotives
-id username
 id usernameEditText
-id verifyMsg
 id viewPager
 id view_offset_helper
 id visible

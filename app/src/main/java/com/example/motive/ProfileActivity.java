@@ -17,16 +17,22 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.EventListener;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreException;
 
 import java.util.Objects;
 
 public class  ProfileActivity extends AppCompatActivity {
 
     ImageView backImageView;
-    FirebaseAuth fAuth;
     Button resendCodeButton;
-    TextView verifyMsg;
     String userId;
+    TextView username, halls, bio, motives, degree;
+    FirebaseAuth fAuth;
+    FirebaseFirestore fStore;
 
     private static final String TAG = "ProfileActivity";
 
@@ -36,19 +42,35 @@ public class  ProfileActivity extends AppCompatActivity {
         setContentView(R.layout.activity_profile);
         Log.d(TAG, "onCreate: started.");
 
-
         backImageView = findViewById(R.id.backImageView);
         fAuth = FirebaseAuth.getInstance();
         resendCodeButton = findViewById(R.id.resendCodeButton);
-        verifyMsg = findViewById(R.id.verifyMsg);
+        username = findViewById(R.id.profileUsername);
+        halls = findViewById(R.id.profileHalls);
+        bio = findViewById(R.id.profileUserBio);
+        motives = findViewById(R.id.profileMotives);
+        degree= findViewById(R.id.profileDegree);
+        fAuth = FirebaseAuth.getInstance();
+        fStore = FirebaseFirestore.getInstance();
+        userId = fAuth.getCurrentUser().getUid();
+
+        DocumentReference documentReference = fStore.collection("users").document(userId);
+        documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
+            @Override
+            public void onEvent(DocumentSnapshot documentSnapshot, FirebaseFirestoreException e) {
+            username.setText(documentSnapshot.getString("username"));
+            halls.setText(documentSnapshot.getString("halls"));
+            bio.setText(documentSnapshot.getString("user bio"));
+            degree.setText(documentSnapshot.getString("degree"));
+            motives.setText(documentSnapshot.getString("other motives"));
+            }
+        });
 
         userId = Objects.requireNonNull(fAuth.getCurrentUser()).getUid();
         final FirebaseUser user = fAuth.getCurrentUser();
 
         if (!user.isEmailVerified()) {
             resendCodeButton.setVisibility(View.VISIBLE);
-            verifyMsg.setVisibility(View.VISIBLE);
-
             resendCodeButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
