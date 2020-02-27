@@ -23,7 +23,7 @@
         android:background="@drawable/my_button2"
         android:text="Register"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/logInButton"
+        app:layout_constraintBottom_toTopOf="@id/logInButton2"
         app:layout_constraintEnd_toEndOf="@+id/motiveTextView"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/motiveTextView"
@@ -31,7 +31,7 @@
         app:layout_constraintVertical_bias="0.639" />
 
     <Button
-        android:id="@+id/logInButton"
+        android:id="@+id/logInButton2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/my_button"

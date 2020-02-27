@@ -10,8 +10,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class FirstActivity extends AppCompatActivity {
 
-    Button logInButton;
-    Button registerButton;
+    Button logInButtonFirst;
+    Button registerButtonFirst;
 
     private static final String TAG = "LogInActivity";
 
@@ -21,11 +21,11 @@ public class FirstActivity extends AppCompatActivity {
         setContentView(R.layout.activity_first);
         Log.d(TAG, "onCreate: started.");
 
-        logInButton = findViewById(R.id.logInButton);
-        registerButton = findViewById(R.id.registerButton2);
+        logInButtonFirst = findViewById(R.id.logInButton2);
+        registerButtonFirst = findViewById(R.id.registerButton2);
 
 
-        logInButton.setOnClickListener(new View.OnClickListener() {
+        logInButtonFirst.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent myIntent;
@@ -35,7 +35,7 @@ public class FirstActivity extends AppCompatActivity {
             }
         });
 
-        registerButton.setOnClickListener(new View.OnClickListener() {
+        registerButtonFirst.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view2) {
                 Intent myIntent2;

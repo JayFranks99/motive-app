@@ -3,7 +3,6 @@ package com.example.motive;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -17,8 +16,6 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-
-import java.util.List;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -92,6 +89,11 @@ public class RegisterActivity extends AppCompatActivity {
                     return;
                 }
 
+                if (password.length() < 6) {
+                    mPassword.setError("Password must be at least 6 characters long");
+                    return;
+                }
+
                 if(TextUtils.isEmpty(halls)) {
                     mHalls.setError("Halls name is required.");
                     return;
@@ -141,6 +143,7 @@ public class RegisterActivity extends AppCompatActivity {
                         }else {
 
                             Toast.makeText(RegisterActivity.this, "Error! " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                            progressBar.setVisibility(View.GONE);
                         }
                     }
                 });

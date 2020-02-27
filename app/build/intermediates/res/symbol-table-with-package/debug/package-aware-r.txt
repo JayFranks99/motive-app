@@ -1345,7 +1345,6 @@ id editProfileButton
 id editProfileImageView
 id edit_query
 id emailEditText
-id emailLogEditText
 id end
 id end_padder
 id enterAlways
@@ -1362,6 +1361,7 @@ id fill_vertical
 id filled
 id fixed
 id forever
+id forgotPassword
 id friendsSwitch
 id ghostMode
 id ghostSwitch
@@ -1398,7 +1398,7 @@ id line1
 id line3
 id listMode
 id list_item
-id logInButton
+id logInButton2
 id logInDetailsTextView
 id logOutButton
 id loginEditText
@@ -1438,7 +1438,6 @@ id parent
 id parentPanel
 id parent_matrix
 id passwordEditText
-id passwordLogEditText
 id percent
 id pin
 id postcodeEditText
@@ -1570,7 +1569,6 @@ id userDegree
 id userMotives
 id username
 id usernameEditText
-id usernameLogEditText
 id viewPager
 id view_offset_helper
 id visible
