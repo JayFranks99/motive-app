@@ -1,18 +1,25 @@
 package com.example.motive;
 
+import android.Manifest;
 import android.content.Intent;
-import android.nfc.Tag;
+import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -31,6 +38,8 @@ public class RegisterActivity extends AppCompatActivity {
 
     public static final String TAG1 = "TAG";
     public static final String TAG2 = "TAG";
+    public static final int CAMERA_PERM_CODE = 101;
+    public static final int CAMERA_REQUEST_CODE = 102;
     EditText mUsername;
     EditText mEmail;
     EditText mPassword;
@@ -47,10 +56,13 @@ public class RegisterActivity extends AppCompatActivity {
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
     String userID;
+    ImageView selectedImage;
+    Button cameraBtn, galleryBtn;
 
-    //On Create Method
 
     private static final String TAG = "Register Activity";
+
+    //On Create Method
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,11 +83,16 @@ public class RegisterActivity extends AppCompatActivity {
         mRegisterButton = findViewById(R.id.registerButton2);
         progressBar = findViewById(R.id.progressBar);
 
+        selectedImage = findViewById(R.id.displayImageView);
+        cameraBtn = findViewById(R.id.cameraBtn);
+        galleryBtn = findViewById(R.id.galleryBtn);
+
+
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
 
         if (fAuth.getCurrentUser() != null) {
-            startActivity(new Intent(getApplicationContext(),MotiveHomeActivity.class));
+            startActivity(new Intent(getApplicationContext(), MotiveHomeActivity.class));
             finish();
         }
 
@@ -105,7 +122,7 @@ public class RegisterActivity extends AppCompatActivity {
                     return;
                 }
 
-                if(TextUtils.isEmpty(password)) {
+                if (TextUtils.isEmpty(password)) {
                     mPassword.setError("Password is required.");
                     return;
                 }
@@ -115,41 +132,41 @@ public class RegisterActivity extends AppCompatActivity {
                     return;
                 }
 
-                if(TextUtils.isEmpty(halls)) {
+                if (TextUtils.isEmpty(halls)) {
                     mHalls.setError("Halls name is required.");
                     return;
                 }
 
-                if(TextUtils.isEmpty(streetName)) {
+                if (TextUtils.isEmpty(streetName)) {
                     mStreetName.setError("Street name is required.");
                     return;
                 }
 
-                if(TextUtils.isEmpty(block)) {
+                if (TextUtils.isEmpty(block)) {
                     mBlock.setError("Block name or house number is required.");
                     return;
                 }
 
-                if(TextUtils.isEmpty(postcode)) {
+                if (TextUtils.isEmpty(postcode)) {
                     mPostcode.setError("Postcode is required.");
                     return;
                 }
-                if(TextUtils.isEmpty(userBio)) {
+                if (TextUtils.isEmpty(userBio)) {
                     mUserBio.setError("A user bio must be entered");
                     return;
                 }
 
-                if(TextUtils.isEmpty(mainMotive)) {
+                if (TextUtils.isEmpty(mainMotive)) {
                     mMainMotive.setError("A main motive is required");
                     return;
                 }
 
-                if(TextUtils.isEmpty(otherMotives)) {
+                if (TextUtils.isEmpty(otherMotives)) {
                     mOtherMotives.setError("Other motives are required");
                     return;
                 }
 
-                if(TextUtils.isEmpty(degree)) {
+                if (TextUtils.isEmpty(degree)) {
                     mDegree.setError("Degree is required");
                     return;
                 }
@@ -162,7 +179,7 @@ public class RegisterActivity extends AppCompatActivity {
                 fAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()){
+                        if (task.isSuccessful()) {
 
                             //send verification link
                             //display pop up making them verify email
@@ -171,13 +188,13 @@ public class RegisterActivity extends AppCompatActivity {
                             fuser.sendEmailVerification().addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
                                 public void onSuccess(Void aVoid) {
-                                Toast.makeText(RegisterActivity.this, "Verification email has been sent.", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(RegisterActivity.this, "Verification email has been sent.", Toast.LENGTH_SHORT).show();
                                 }
 
                             }).addOnFailureListener(new OnFailureListener() {
                                 @Override
                                 public void onFailure(@NonNull Exception e) {
-                                    Log.d(TAG,"Email not send " + e.getMessage());
+                                    Log.d(TAG, "Email not send " + e.getMessage());
                                 }
                             });
 
@@ -186,7 +203,7 @@ public class RegisterActivity extends AppCompatActivity {
 
                             userID = fAuth.getCurrentUser().getUid();
                             DocumentReference documentReference = fStore.collection("users").document(userID);
-                            Map<String,Object> user = new HashMap<>();
+                            Map<String, Object> user = new HashMap<>();
                             user.put("username", username);
                             user.put("email", email);
                             user.put("halls", halls);
@@ -200,19 +217,19 @@ public class RegisterActivity extends AppCompatActivity {
                             documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
                                 public void onSuccess(Void aVoid) {
-                                    Log.d(TAG1, "onSuccess: user profile is created for "+ userID);
+                                    Log.d(TAG1, "onSuccess: user profile is created for " + userID);
 
                                 }
                             }).addOnFailureListener(new OnFailureListener() {
                                 @Override
                                 public void onFailure(@NonNull Exception e) {
-                                Log.d(TAG1,"onFailure: " + e.toString());
+                                    Log.d(TAG1, "onFailure: " + e.toString());
                                 }
                             });
 
-                            startActivity(new Intent(getApplicationContext(),MotiveHomeActivity.class));
+                            startActivity(new Intent(getApplicationContext(), MotiveHomeActivity.class));
 
-                        }else {
+                        } else {
 
                             Toast.makeText(RegisterActivity.this, "Error! " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                             progressBar.setVisibility(View.GONE);
@@ -221,9 +238,61 @@ public class RegisterActivity extends AppCompatActivity {
                 });
 
 
+            }
+        });
+
+        cameraBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                askCameraPermissions();
+            }
+        });
+
+        galleryBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Toast.makeText(RegisterActivity.this, "Gallery button clicked.", Toast.LENGTH_SHORT).show();
 
             }
         });
 
     }
+
+    private void askCameraPermissions() {
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CAMERA}, CAMERA_PERM_CODE);
+        } else {
+            openCamera();
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        if (requestCode == CAMERA_PERM_CODE) {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                openCamera();
+            } else {
+                Toast.makeText(this, "Camera permisision is required to use the camera.", Toast.LENGTH_SHORT).show();
+            }
+        }
+    }
+
+    private void openCamera() {
+        Intent camera = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        startActivityForResult(camera, CAMERA_REQUEST_CODE);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode == CAMERA_REQUEST_CODE) {
+            Bitmap image = (Bitmap) data.getExtras().get("data");
+            selectedImage.setImageBitmap(image);
+        }
+    }
+
 }
+
+
