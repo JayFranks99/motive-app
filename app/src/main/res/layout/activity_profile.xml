@@ -12,88 +12,88 @@
         android:layout_height="wrap_content"
         >
 
-    <View
-        android:id="@+id/blueBackground"
-        android:layout_width="0dp"
-        android:layout_height="364dp"
-        android:background="#0095B7"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <View
+            android:id="@+id/blueBackground"
+            android:layout_width="0dp"
+            android:layout_height="364dp"
+            android:background="#0095B7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/profileTextView"
-        android:layout_width="0dp"
-        android:layout_height="80dp"
-        android:gravity="center"
-        android:text="My Profile"
-        android:background="#0095B7"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/profileTextView"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:background="#0095B7"
+            android:gravity="center"
+            android:text="My Profile"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/profilePicture"
-        android:layout_width="0dp"
-        android:layout_height="140dp"
-        android:scaleType="fitCenter"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.482"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profileTextView"
-        app:srcCompat="@drawable/football_profilepic" />
+        <ImageView
+            android:id="@+id/profilePicture"
+            android:layout_width="0dp"
+            android:layout_height="140dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.482"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profileTextView"
+            app:srcCompat="@drawable/football_profilepic" />
 
-    <ImageView
-        android:id="@+id/backImageView"
-        android:layout_width="40dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/profileTextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/back_icon" />
+        <ImageView
+            android:id="@+id/backImageView"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/profileTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back_icon" />
 
-    <TextView
-        android:id="@+id/profileUsername"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Jack"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profilePicture" />
+        <TextView
+            android:id="@+id/profileUsername"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Jack"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profilePicture" />
 
-    <TextView
-        android:id="@+id/profileHalls"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Devonshire Hall"
-        android:textColor="#FFFFFF"
-        android:textAlignment="center"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profileUsername" />
+        <TextView
+            android:id="@+id/profileHalls"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Devonshire Hall"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profileUsername" />
 
-    <Button
-        android:id="@+id/editProfileButton"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/my_button"
-        android:text="Edit Profile"
-        android:textColor="#0095B7"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profileHalls">
+        <Button
+            android:id="@+id/editProfileButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/my_button"
+            android:text="Edit Profile"
+            android:textColor="#0095B7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profileHalls">
 
-    </Button>
+        </Button>
 
         <TextView
             android:id="@+id/aboutUser"
@@ -102,7 +102,8 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="16dp"
-            android:text="About "
+            android:text="About"
+            android:textAlignment="center"
             android:textColor="#0095B7"
             android:textSize="18dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -110,87 +111,92 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editProfileButton" />
 
-    <TextView
-        android:id="@+id/profileUserBio"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:text="1st year student looking to play football and golf with people. Give me a message if you fancy a game anytime, always happy to play."
-        android:textSize="14dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/aboutUser" />
+        <TextView
+            android:id="@+id/profileUserBio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="1st year student looking to play football and golf with people. Give me a message if you fancy a game anytime, always happy to play."
+            android:textAlignment="center"
+            android:textSize="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aboutUser" />
 
-    <TextView
-        android:id="@+id/degreeHeading"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:text="Degree"
-        android:textColor="#0095B7"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profileUserBio" />
+        <TextView
+            android:id="@+id/degreeHeading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:text="Degree"
+            android:textAlignment="center"
+            android:textColor="#0095B7"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profileUserBio" />
 
-    <TextView
-        android:id="@+id/profileDegree"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:text="Digital Media"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/degreeHeading" />
+        <TextView
+            android:id="@+id/profileDegree"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="Digital Media"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/degreeHeading" />
 
-    <TextView
-        android:id="@+id/motiveHeading"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:text="Motives"
-        android:textColor="#0095B7"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profileDegree" />
+        <TextView
+            android:id="@+id/motiveHeading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:text="Motives"
+            android:textAlignment="center"
+            android:textColor="#0095B7"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profileDegree" />
 
-    <TextView
-        android:id="@+id/profileMotives"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:text="#Sports   #Football   #Golf   #Beer   #Drinking   #Gym    #Clubbing   #Darts  #LCFC"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/motiveHeading" />
+        <TextView
+            android:id="@+id/profileMotives"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="#Sports   #Football   #Golf   #Beer   #Drinking   #Gym    #Clubbing   #Darts  #LCFC"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/motiveHeading" />
 
         <Button
             android:id="@+id/resendCodeButton"
-            android:layout_width="80dp"
+            android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_marginEnd="16dp"
-            android:background="@drawable/my_button"
+            android:background="@drawable/my_button2"
             android:text="Verify"
-            android:textColor="#0095B7"
+            android:textColor="#FFF"
             android:visibility="invisible"
             app:layout_constraintBottom_toBottomOf="@+id/profileTextView"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/profileTextView" />
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
