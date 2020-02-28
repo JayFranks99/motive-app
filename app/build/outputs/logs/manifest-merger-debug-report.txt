@@ -11,6 +11,7 @@ MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Jay\.gra
 MERGED from [com.google.android.gms:play-services-maps:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\13baeca38bf66305913b8ad6c0a010d6\jetified-play-services-maps-11.6.0\AndroidManifest.xml:16:1-25:12
 MERGED from [com.google.firebase:firebase-auth:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\329769eaae7bd3bcc4088c707ba0e3d8\jetified-firebase-auth-11.6.0\AndroidManifest.xml:16:1-21:12
 MERGED from [com.google.firebase:firebase-firestore:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\81737dbd9a4c26cefea97cd8094ad39e\jetified-firebase-firestore-11.6.0\AndroidManifest.xml:2:1-4:12
+MERGED from [com.google.firebase:firebase-storage:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\b1125326c8df28ea7afeb5f42f5bbda6\jetified-firebase-storage-11.6.0\AndroidManifest.xml:2:1-4:12
 MERGED from [com.google.android.gms:play-services-base:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\5fb4c4ad8620973e48361323ce0d2573\jetified-play-services-base-11.6.0\AndroidManifest.xml:16:1-21:12
 MERGED from [com.google.firebase:firebase-core:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\8a1cccfc95f3c7d43a0324c7d9049a39\firebase-core-11.6.0\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.firebase:firebase-analytics:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\d3ae3648dc4edd58f09386868c65783b\jetified-firebase-analytics-11.6.0\AndroidManifest.xml:16:1-35:12
@@ -18,6 +19,7 @@ MERGED from [com.google.firebase:firebase-analytics-impl:11.6.0] C:\Users\Jay\.g
 MERGED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\66fec3f08bd2c47e0d1caf40dbf8a629\jetified-firebase-iid-11.6.0\AndroidManifest.xml:16:1-47:12
 MERGED from [com.google.firebase:firebase-common:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\6503b143a4da9d2ef55e4d5eebf9bcfd\jetified-firebase-common-11.6.0\AndroidManifest.xml:2:1-8:12
 MERGED from [com.google.android.gms:play-services-tasks:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\66816492620f71d0d87a8511da307a86\jetified-play-services-tasks-11.6.0\AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.firebase:firebase-storage-common:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\1a938c30de28cdf8ff7cde08c47a253a\jetified-firebase-storage-common-11.6.0\AndroidManifest.xml:2:1-4:12
 MERGED from [com.google.android.gms:play-services-basement:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\dd256a81c562a32d1f0fb7f7ef1f7794\jetified-play-services-basement-11.6.0\AndroidManifest.xml:16:1-23:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\118ba4b92f1cd2ef3a14a18c70f18fb2\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\0aaffdd7a18379559296d8bfea636888\jetified-circleimageview-2.1.0\AndroidManifest.xml:2:1-11:12
@@ -55,11 +57,13 @@ MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Jay\.gradle\caches\
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0-alpha01] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\4b397e12c99ffded2e66f79d828ea9a1\lifecycle-runtime-2.2.0-alpha01\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.gms:play-services-maps-license:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\f1e5497aac4c4174fe2909d03633416b\play-services-maps-license-11.6.0\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.firebase:firebase-auth-license:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\18b603d4f92b8c6771465502bcdcec6e\firebase-auth-license-11.6.0\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.firebase:firebase-storage-license:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\5bb367902a48427ef3e1b505189b3fa0\firebase-storage-license-11.6.0\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.android.gms:play-services-base-license:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\146de1318d6f4001e8f92ce06dbd5dce\play-services-base-license-11.6.0\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.android.gms:play-services-basement-license:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\9ca614af4f360f909a14b95b3d9fb454\play-services-basement-license-11.6.0\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.firebase:firebase-analytics-license:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\14e6bd541d58dea94432b913e6115201\firebase-analytics-license-11.6.0\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.firebase:firebase-common-license:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\9dd19a639fc00c53eb3076dfb22eec71\firebase-common-license-11.6.0\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.android.gms:play-services-tasks-license:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\7d9f5e24b5c55abf4374bf857f94fcd9\play-services-tasks-license-11.6.0\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.firebase:firebase-storage-common-license:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\63691483bda34f5c48dc632a26847302\firebase-storage-common-license-11.6.0\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.firebase:firebase-analytics-impl-license:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\3ce24ef4cf5e32c944c1152a9ae223e0\firebase-analytics-impl-license-11.6.0\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.firebase:firebase-iid-license:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\38ac6fe89e61d1f95e114e72e8beafb9\firebase-iid-license-11.6.0\AndroidManifest.xml:2:1-6:12
 INJECTED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:2:1-47:12
@@ -139,6 +143,8 @@ MERGED from [com.google.android.gms:play-services-maps-license:11.6.0] C:\Users\
 MERGED from [com.google.android.gms:play-services-maps-license:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\f1e5497aac4c4174fe2909d03633416b\play-services-maps-license-11.6.0\AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-auth-license:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\18b603d4f92b8c6771465502bcdcec6e\firebase-auth-license-11.6.0\AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-auth-license:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\18b603d4f92b8c6771465502bcdcec6e\firebase-auth-license-11.6.0\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-storage-license:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\5bb367902a48427ef3e1b505189b3fa0\firebase-storage-license-11.6.0\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-storage-license:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\5bb367902a48427ef3e1b505189b3fa0\firebase-storage-license-11.6.0\AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-base-license:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\146de1318d6f4001e8f92ce06dbd5dce\play-services-base-license-11.6.0\AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-base-license:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\146de1318d6f4001e8f92ce06dbd5dce\play-services-base-license-11.6.0\AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-basement-license:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\9ca614af4f360f909a14b95b3d9fb454\play-services-basement-license-11.6.0\AndroidManifest.xml:5:5-20
@@ -149,6 +155,8 @@ MERGED from [com.google.firebase:firebase-common-license:11.6.0] C:\Users\Jay\.g
 MERGED from [com.google.firebase:firebase-common-license:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\9dd19a639fc00c53eb3076dfb22eec71\firebase-common-license-11.6.0\AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-tasks-license:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\7d9f5e24b5c55abf4374bf857f94fcd9\play-services-tasks-license-11.6.0\AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-tasks-license:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\7d9f5e24b5c55abf4374bf857f94fcd9\play-services-tasks-license-11.6.0\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-storage-common-license:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\63691483bda34f5c48dc632a26847302\firebase-storage-common-license-11.6.0\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-storage-common-license:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\63691483bda34f5c48dc632a26847302\firebase-storage-common-license-11.6.0\AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-analytics-impl-license:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\3ce24ef4cf5e32c944c1152a9ae223e0\firebase-analytics-impl-license-11.6.0\AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-analytics-impl-license:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\3ce24ef4cf5e32c944c1152a9ae223e0\firebase-analytics-impl-license-11.6.0\AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-iid-license:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\38ac6fe89e61d1f95e114e72e8beafb9\firebase-iid-license-11.6.0\AndroidManifest.xml:5:5-20
@@ -249,6 +257,8 @@ MERGED from [com.google.firebase:firebase-auth:11.6.0] C:\Users\Jay\.gradle\cach
 MERGED from [com.google.firebase:firebase-auth:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\329769eaae7bd3bcc4088c707ba0e3d8\jetified-firebase-auth-11.6.0\AndroidManifest.xml:17:5-43
 MERGED from [com.google.firebase:firebase-firestore:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\81737dbd9a4c26cefea97cd8094ad39e\jetified-firebase-firestore-11.6.0\AndroidManifest.xml:3:5-43
 MERGED from [com.google.firebase:firebase-firestore:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\81737dbd9a4c26cefea97cd8094ad39e\jetified-firebase-firestore-11.6.0\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-storage:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\b1125326c8df28ea7afeb5f42f5bbda6\jetified-firebase-storage-11.6.0\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-storage:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\b1125326c8df28ea7afeb5f42f5bbda6\jetified-firebase-storage-11.6.0\AndroidManifest.xml:3:5-43
 MERGED from [com.google.android.gms:play-services-base:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\5fb4c4ad8620973e48361323ce0d2573\jetified-play-services-base-11.6.0\AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-base:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\5fb4c4ad8620973e48361323ce0d2573\jetified-play-services-base-11.6.0\AndroidManifest.xml:17:5-43
 MERGED from [com.google.firebase:firebase-core:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\8a1cccfc95f3c7d43a0324c7d9049a39\firebase-core-11.6.0\AndroidManifest.xml:4:5-43
@@ -263,6 +273,8 @@ MERGED from [com.google.firebase:firebase-common:11.6.0] C:\Users\Jay\.gradle\ca
 MERGED from [com.google.firebase:firebase-common:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\6503b143a4da9d2ef55e4d5eebf9bcfd\jetified-firebase-common-11.6.0\AndroidManifest.xml:3:5-43
 MERGED from [com.google.android.gms:play-services-tasks:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\66816492620f71d0d87a8511da307a86\jetified-play-services-tasks-11.6.0\AndroidManifest.xml:3:5-43
 MERGED from [com.google.android.gms:play-services-tasks:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\66816492620f71d0d87a8511da307a86\jetified-play-services-tasks-11.6.0\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-storage-common:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\1a938c30de28cdf8ff7cde08c47a253a\jetified-firebase-storage-common-11.6.0\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-storage-common:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\1a938c30de28cdf8ff7cde08c47a253a\jetified-firebase-storage-common-11.6.0\AndroidManifest.xml:3:5-43
 MERGED from [com.google.android.gms:play-services-basement:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\dd256a81c562a32d1f0fb7f7ef1f7794\jetified-play-services-basement-11.6.0\AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-basement:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\dd256a81c562a32d1f0fb7f7ef1f7794\jetified-play-services-basement-11.6.0\AndroidManifest.xml:17:5-43
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\118ba4b92f1cd2ef3a14a18c70f18fb2\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
@@ -337,6 +349,8 @@ MERGED from [com.google.android.gms:play-services-maps-license:11.6.0] C:\Users\
 MERGED from [com.google.android.gms:play-services-maps-license:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\f1e5497aac4c4174fe2909d03633416b\play-services-maps-license-11.6.0\AndroidManifest.xml:4:5-43
 MERGED from [com.google.firebase:firebase-auth-license:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\18b603d4f92b8c6771465502bcdcec6e\firebase-auth-license-11.6.0\AndroidManifest.xml:4:5-43
 MERGED from [com.google.firebase:firebase-auth-license:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\18b603d4f92b8c6771465502bcdcec6e\firebase-auth-license-11.6.0\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-storage-license:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\5bb367902a48427ef3e1b505189b3fa0\firebase-storage-license-11.6.0\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-storage-license:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\5bb367902a48427ef3e1b505189b3fa0\firebase-storage-license-11.6.0\AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-base-license:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\146de1318d6f4001e8f92ce06dbd5dce\play-services-base-license-11.6.0\AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-base-license:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\146de1318d6f4001e8f92ce06dbd5dce\play-services-base-license-11.6.0\AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-basement-license:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\9ca614af4f360f909a14b95b3d9fb454\play-services-basement-license-11.6.0\AndroidManifest.xml:4:5-43
@@ -347,6 +361,8 @@ MERGED from [com.google.firebase:firebase-common-license:11.6.0] C:\Users\Jay\.g
 MERGED from [com.google.firebase:firebase-common-license:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\9dd19a639fc00c53eb3076dfb22eec71\firebase-common-license-11.6.0\AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-tasks-license:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\7d9f5e24b5c55abf4374bf857f94fcd9\play-services-tasks-license-11.6.0\AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-tasks-license:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\7d9f5e24b5c55abf4374bf857f94fcd9\play-services-tasks-license-11.6.0\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-storage-common-license:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\63691483bda34f5c48dc632a26847302\firebase-storage-common-license-11.6.0\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-storage-common-license:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\63691483bda34f5c48dc632a26847302\firebase-storage-common-license-11.6.0\AndroidManifest.xml:4:5-43
 MERGED from [com.google.firebase:firebase-analytics-impl-license:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\3ce24ef4cf5e32c944c1152a9ae223e0\firebase-analytics-impl-license-11.6.0\AndroidManifest.xml:4:5-43
 MERGED from [com.google.firebase:firebase-analytics-impl-license:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\3ce24ef4cf5e32c944c1152a9ae223e0\firebase-analytics-impl-license-11.6.0\AndroidManifest.xml:4:5-43
 MERGED from [com.google.firebase:firebase-iid-license:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\38ac6fe89e61d1f95e114e72e8beafb9\firebase-iid-license-11.6.0\AndroidManifest.xml:4:5-43

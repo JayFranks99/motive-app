@@ -36,6 +36,9 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.UploadTask;
 
 import java.io.File;
 import java.io.IOException;
@@ -70,6 +73,7 @@ public class RegisterActivity extends AppCompatActivity {
     ImageView selectedImage;
     Button cameraBtn, galleryBtn;
     String currentPhotoPath;
+    StorageReference storageReference;
 
 
     private static final String TAG = "Register Activity";
@@ -102,6 +106,7 @@ public class RegisterActivity extends AppCompatActivity {
 
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
+        storageReference = FirebaseStorage.getInstance().getReference();
 
         if (fAuth.getCurrentUser() != null) {
             startActivity(new Intent(getApplicationContext(), MotiveHomeActivity.class));
@@ -119,7 +124,6 @@ public class RegisterActivity extends AppCompatActivity {
                 final String streetName = mStreetName.getText().toString();
                 final String block = mBlock.getText().toString();
                 final String postcode = mPostcode.getText().toString();
-
                 final String userBio = mUserBio.getText().toString();
                 final String mainMotive = mMainMotive.getText().toString();
                 final String otherMotives = mOtherMotives.getText().toString();
@@ -305,6 +309,8 @@ public class RegisterActivity extends AppCompatActivity {
                 Uri contentUri = Uri.fromFile(f);
                 mediaScanIntent.setData(contentUri);
                 this.sendBroadcast(mediaScanIntent);
+
+                uploadImageToFirebase(f.getName(),contentUri);
             }
         }
         if (requestCode == GALLERY_REQUEST_CODE) {
@@ -315,9 +321,35 @@ public class RegisterActivity extends AppCompatActivity {
                 Log.d("tag", "onActivityResult: Gallery Image uri: " + imageFileName);
                 selectedImage.setImageURI(contentURI);
 
+                uploadImageToFirebase(imageFileName, contentURI);
             }
         }
     }
+
+    private void uploadImageToFirebase(String name, Uri contentUri) {
+        final StorageReference image = storageReference.child("images/" + name);
+        image.putFile(contentUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+            @Override
+            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                image.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                    @Override
+                    public void onSuccess(Uri uri) {
+                       Log.d("tag", "onSuccess: Uploaded image URL is " + uri.toString());
+                    }
+                });
+                Toast.makeText(RegisterActivity.this, "Image is uploaded.", Toast.LENGTH_SHORT).show();
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Toast.makeText(RegisterActivity.this, "Upload Failed.", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+    }
+
+    // images/image.jpg
+
     //img extension
     private String getFileExt(Uri contentURI) {
         ContentResolver c = getContentResolver();
