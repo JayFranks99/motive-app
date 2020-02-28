@@ -1154,6 +1154,7 @@ drawable btn_radio_on_to_off_mtrl_animation
 drawable chess_icon
 drawable chess_img
 drawable choose_profileicon
+drawable choose_profileiconnew
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -1540,6 +1541,7 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textView
 id textView10
 id textView11
 id textView12
