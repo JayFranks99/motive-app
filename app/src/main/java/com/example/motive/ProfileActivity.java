@@ -33,6 +33,7 @@ public class  ProfileActivity extends AppCompatActivity {
     TextView username, halls, bio, motives, degree;
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
+    ImageView profilePic;
 
     private static final String TAG = "ProfileActivity";
 
@@ -45,6 +46,7 @@ public class  ProfileActivity extends AppCompatActivity {
         backImageView = findViewById(R.id.backImageView);
         fAuth = FirebaseAuth.getInstance();
         resendCodeButton = findViewById(R.id.resendCodeButton);
+        profilePic = findViewById(R.id.displayImageView);
         username = findViewById(R.id.profileUsername);
         halls = findViewById(R.id.profileHalls);
         bio = findViewById(R.id.profileUserBio);

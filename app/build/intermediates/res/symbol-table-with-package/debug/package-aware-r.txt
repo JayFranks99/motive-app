@@ -1226,6 +1226,7 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable preference_list_divider_material
 drawable profile_icon
+drawable profile_icon_button
 drawable settings_icon
 drawable spanish_img
 drawable sync
@@ -1455,7 +1456,6 @@ id profileButton
 id profileDegree
 id profileHalls
 id profileMotives
-id profilePicture
 id profileTextView
 id profileUserBio
 id profileUsername
