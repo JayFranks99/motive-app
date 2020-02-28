@@ -20,6 +20,7 @@ MERGED from [com.google.firebase:firebase-common:11.6.0] C:\Users\Jay\.gradle\ca
 MERGED from [com.google.android.gms:play-services-tasks:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\66816492620f71d0d87a8511da307a86\jetified-play-services-tasks-11.6.0\AndroidManifest.xml:2:1-5:12
 MERGED from [com.google.android.gms:play-services-basement:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\dd256a81c562a32d1f0fb7f7ef1f7794\jetified-play-services-basement-11.6.0\AndroidManifest.xml:16:1-23:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\118ba4b92f1cd2ef3a14a18c70f18fb2\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\0aaffdd7a18379559296d8bfea636888\jetified-circleimageview-2.1.0\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\b7b55f8b12e19ed4a6ac0e7cfd8df5f3\recyclerview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\1eccb0accb0c14439672d108d41ff78e\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\1d39e4882625d2d307c9ac0e5cc2efff\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -120,6 +121,8 @@ MERGED from [com.google.android.gms:play-services-tasks:11.6.0] C:\Users\Jay\.gr
 MERGED from [com.google.android.gms:play-services-tasks:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\66816492620f71d0d87a8511da307a86\jetified-play-services-tasks-11.6.0\AndroidManifest.xml:4:5-19
 MERGED from [com.google.android.gms:play-services-basement:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\dd256a81c562a32d1f0fb7f7ef1f7794\jetified-play-services-basement-11.6.0\AndroidManifest.xml:19:5-21:19
 MERGED from [com.google.android.gms:play-services-basement:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\dd256a81c562a32d1f0fb7f7ef1f7794\jetified-play-services-basement-11.6.0\AndroidManifest.xml:19:5-21:19
+MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\0aaffdd7a18379559296d8bfea636888\jetified-circleimageview-2.1.0\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\0aaffdd7a18379559296d8bfea636888\jetified-circleimageview-2.1.0\AndroidManifest.xml:9:5-20
 MERGED from [androidx.core:core:1.1.0-beta01] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\a222e8e992e78fd2de3b621066f0d40b\core-1.1.0-beta01\AndroidManifest.xml:22:5-89
 MERGED from [androidx.core:core:1.1.0-beta01] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\a222e8e992e78fd2de3b621066f0d40b\core-1.1.0-beta01\AndroidManifest.xml:22:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0-beta01] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\a074aca0d3f30278495ad1112f6660af\versionedparcelable-1.1.0-beta01\AndroidManifest.xml:22:5-23:19
@@ -240,6 +243,8 @@ MERGED from [com.google.android.gms:play-services-basement:11.6.0] C:\Users\Jay\
 MERGED from [com.google.android.gms:play-services-basement:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\dd256a81c562a32d1f0fb7f7ef1f7794\jetified-play-services-basement-11.6.0\AndroidManifest.xml:17:5-43
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\118ba4b92f1cd2ef3a14a18c70f18fb2\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\118ba4b92f1cd2ef3a14a18c70f18fb2\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\0aaffdd7a18379559296d8bfea636888\jetified-circleimageview-2.1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\0aaffdd7a18379559296d8bfea636888\jetified-circleimageview-2.1.0\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\b7b55f8b12e19ed4a6ac0e7cfd8df5f3\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\b7b55f8b12e19ed4a6ac0e7cfd8df5f3\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\1eccb0accb0c14439672d108d41ff78e\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
