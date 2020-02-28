@@ -1944,6 +1944,10 @@
         "source": "C:\\Users\\Jay\\.gradle\\caches\\transforms-2\\files-2.1\\448e1b13d0d93b9e707b7ff40e761001\\material-1.0.0\\res\\animator-v21\\design_appbar_state_list_animator.xml"
     },
     {
+        "merged": "C:\\Users\\Jay\\AndroidStudioProjects\\motive\\app\\build\\intermediates\\res\\merged\\debug\\xml_file_paths.xml.flat",
+        "source": "C:\\Users\\Jay\\AndroidStudioProjects\\motive\\app\\src\\main\\res\\xml\\file_paths.xml"
+    },
+    {
         "merged": "C:\\Users\\Jay\\AndroidStudioProjects\\motive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
         "source": "C:\\Users\\Jay\\.gradle\\caches\\transforms-2\\files-2.1\\5fb4c4ad8620973e48361323ce0d2573\\jetified-play-services-base-11.6.0\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
     },

@@ -3436,6 +3436,7 @@ int[] styleable ViewStubCompat { 0x010100d0, 0x010100f2, 0x010100f3 }
 int styleable ViewStubCompat_android_id 0
 int styleable ViewStubCompat_android_layout 1
 int styleable ViewStubCompat_android_inflatedId 2
-int xml header_preferences 0x7f120000
-int xml messages_preferences 0x7f120001
-int xml sync_preferences 0x7f120002
+int xml file_paths 0x7f120000
+int xml header_preferences 0x7f120001
+int xml messages_preferences 0x7f120002
+int xml sync_preferences 0x7f120003

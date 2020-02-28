@@ -24013,8 +24013,9 @@ public final class R {
     public static final int ViewStubCompat_android_inflatedId=2;
   }
   public static final class xml {
-    public static final int header_preferences=0x7f120000;
-    public static final int messages_preferences=0x7f120001;
-    public static final int sync_preferences=0x7f120002;
+    public static final int file_paths=0x7f120000;
+    public static final int header_preferences=0x7f120001;
+    public static final int messages_preferences=0x7f120002;
+    public static final int sync_preferences=0x7f120003;
   }
 }
