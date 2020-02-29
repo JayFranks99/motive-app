@@ -1179,6 +1179,7 @@ drawable common_google_signin_btn_text_light
 drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
+drawable cpb_1
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
@@ -1352,7 +1353,6 @@ id direct
 id disableHome
 id displayImageView
 id editProfile
-id editProfileButton
 id editProfileImageView
 id edit_query
 id emailEditText
@@ -1413,6 +1413,7 @@ id logInButton2
 id logInDetailsTextView
 id logOutButton
 id loginEditText
+id logoTitle
 id mainMotiveEditText
 id map
 id mapData
@@ -1656,6 +1657,7 @@ layout activity_motivehome
 layout activity_profile
 layout activity_register
 layout activity_settings
+layout activity_splash
 layout custom_dialog
 layout custom_dialogue_layout
 layout design_bottom_navigation_item

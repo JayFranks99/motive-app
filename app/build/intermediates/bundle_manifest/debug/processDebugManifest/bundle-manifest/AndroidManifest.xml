@@ -8,8 +8,7 @@
         android:minSdkVersion="22"
         android:targetSdkVersion="28" />
 
-    <uses-permission android:name="android.permission.INTERNET" >
-    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -40,6 +39,13 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.motive.SplashActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name="com.example.motive.MotiveHomeActivity" />
         <activity android:name="com.example.motive.LogInActivity" />
         <activity android:name="com.example.motive.RegisterActivity" />
@@ -48,11 +54,6 @@
         <activity
             android:name="com.example.motive.FirstActivity"
             android:configChanges="orientation|screenSize|screenLayout|keyboardHidden" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <provider
@@ -133,6 +134,11 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="com.example.motive.com.squareup.picasso"
+            android:exported="false" />
     </application>
 
 </manifest>

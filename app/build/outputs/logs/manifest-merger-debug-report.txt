@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:2:1-47:12
-INJECTED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:2:1-47:12
-INJECTED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:2:1-47:12
-INJECTED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:2:1-47:12
+ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:2:1-53:12
 MERGED from [androidx.preference:preference:1.1.0-alpha05] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\7be2ab36fa1bfe1cefd17adec497ec69\preference-1.1.0-alpha05\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\448e1b13d0d93b9e707b7ff40e761001\material-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.1.0-alpha05] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\2e4ed34acbb880a0ef9546072100a488\appcompat-1.1.0-alpha05\AndroidManifest.xml:17:1-22:12
@@ -23,6 +23,7 @@ MERGED from [com.google.firebase:firebase-storage-common:11.6.0] C:\Users\Jay\.g
 MERGED from [com.google.android.gms:play-services-basement:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\dd256a81c562a32d1f0fb7f7ef1f7794\jetified-play-services-basement-11.6.0\AndroidManifest.xml:16:1-23:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\118ba4b92f1cd2ef3a14a18c70f18fb2\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\0aaffdd7a18379559296d8bfea636888\jetified-circleimageview-2.1.0\AndroidManifest.xml:2:1-11:12
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\7aa622a47c7a0a43c81a69946314e1ed\jetified-picasso-2.71828\AndroidManifest.xml:2:1-14:12
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\b7b55f8b12e19ed4a6ac0e7cfd8df5f3\recyclerview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\1eccb0accb0c14439672d108d41ff78e\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\1d39e4882625d2d307c9ac0e5cc2efff\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -43,6 +44,7 @@ MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0-beta01] C:\Us
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0-beta01] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\bf0aa2b44ba34685f846e12dc8f1fe6e\vectordrawable-1.1.0-beta01\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core:1.1.0-beta01] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\a222e8e992e78fd2de3b621066f0d40b\core-1.1.0-beta01\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\541fed4cb0da146aa15494bfcb747036\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\ca0d54b4d87cf2981dd9740ecb972635\exifinterface-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\12797a45799cef2be4b10510a9ef0a1a\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\76b061416279c5a43a63be3c34f84685\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\b7fbd638548eb41a169db8aefde08749\print-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -66,25 +68,25 @@ MERGED from [com.google.android.gms:play-services-tasks-license:11.6.0] C:\Users
 MERGED from [com.google.firebase:firebase-storage-common-license:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\63691483bda34f5c48dc632a26847302\firebase-storage-common-license-11.6.0\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.firebase:firebase-analytics-impl-license:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\3ce24ef4cf5e32c944c1152a9ae223e0\firebase-analytics-impl-license-11.6.0\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.firebase:firebase-iid-license:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\38ac6fe89e61d1f95e114e72e8beafb9\firebase-iid-license-11.6.0\AndroidManifest.xml:2:1-6:12
-INJECTED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:2:1-47:12
-INJECTED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:2:1-47:12
-INJECTED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:2:1-53:12
 	package
 		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:3:5-33
 		INJECTED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:2:1-47:12
+		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:2:1-53:12
 		INJECTED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:2:1-47:12
+		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:2:1-53:12
 		INJECTED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:5:5-84
+ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:5:5-83
 MERGED from [com.google.android.gms:play-services-maps:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\13baeca38bf66305913b8ad6c0a010d6\jetified-play-services-maps-11.6.0\AndroidManifest.xml:20:5-66
 MERGED from [com.google.android.gms:play-services-maps:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\13baeca38bf66305913b8ad6c0a010d6\jetified-play-services-maps-11.6.0\AndroidManifest.xml:20:5-66
 MERGED from [com.google.firebase:firebase-analytics:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\d3ae3648dc4edd58f09386868c65783b\jetified-firebase-analytics-11.6.0\AndroidManifest.xml:20:5-66
@@ -96,19 +98,19 @@ MERGED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\Jay\.gradle\cache
 	android:name
 		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:5:22-64
 uses-permission#android.permission.CAMERA
-ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:6:5-81
+ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:6:5-65
 	android:name
 		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:6:22-62
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:7:5-96
+ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:7:5-80
 	android:name
 		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:7:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:8:5-97
+ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:8:5-81
 	android:name
 		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:8:22-78
 application
-ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:10:5-45:19
+ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:10:5-51:19
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\448e1b13d0d93b9e707b7ff40e761001\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\448e1b13d0d93b9e707b7ff40e761001\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\e968843ed06f7707c9720e84a9619169\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
@@ -135,6 +137,8 @@ MERGED from [com.google.android.gms:play-services-basement:11.6.0] C:\Users\Jay\
 MERGED from [com.google.android.gms:play-services-basement:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\dd256a81c562a32d1f0fb7f7ef1f7794\jetified-play-services-basement-11.6.0\AndroidManifest.xml:19:5-21:19
 MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\0aaffdd7a18379559296d8bfea636888\jetified-circleimageview-2.1.0\AndroidManifest.xml:9:5-20
 MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\0aaffdd7a18379559296d8bfea636888\jetified-circleimageview-2.1.0\AndroidManifest.xml:9:5-20
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\7aa622a47c7a0a43c81a69946314e1ed\jetified-picasso-2.71828\AndroidManifest.xml:7:5-12:19
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\7aa622a47c7a0a43c81a69946314e1ed\jetified-picasso-2.71828\AndroidManifest.xml:7:5-12:19
 MERGED from [androidx.core:core:1.1.0-beta01] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\a222e8e992e78fd2de3b621066f0d40b\core-1.1.0-beta01\AndroidManifest.xml:22:5-89
 MERGED from [androidx.core:core:1.1.0-beta01] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\a222e8e992e78fd2de3b621066f0d40b\core-1.1.0-beta01\AndroidManifest.xml:22:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0-beta01] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\a074aca0d3f30278495ad1112f6660af\versionedparcelable-1.1.0-beta01\AndroidManifest.xml:22:5-23:19
@@ -175,70 +179,74 @@ MERGED from [com.google.firebase:firebase-iid-license:11.6.0] C:\Users\Jay\.grad
 		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:11:9-35
 	android:theme
 		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:16:9-40
-activity#com.example.motive.MotiveHomeActivity
-ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:17:9-65
+activity#com.example.motive.SplashActivity
+ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:18:9-24:20
 	android:name
-		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:17:19-53
-activity#com.example.motive.LogInActivity
-ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:18:9-60
-	android:name
-		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:18:19-48
-activity#com.example.motive.RegisterActivity
-ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:19:9-63
-	android:name
-		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:19:19-51
-activity#com.example.motive.ProfileActivity
-ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:20:9-62
-	android:name
-		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:20:19-50
-activity#com.example.motive.SettingsActivity
-ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:21:9-63
-	android:name
-		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:21:19-51
-activity#com.example.motive.FirstActivity
-ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:22:9-29:20
-	android:configChanges
-		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:24:13-87
-	android:name
-		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:23:13-42
+		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:18:19-49
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:25:13-28:29
+ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:19:13-23:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:26:17-69
+ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:20:17-69
 	android:name
-		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:26:25-66
+		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:20:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:27:17-77
+ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:22:17-77
 	android:name
-		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:27:27-74
+		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:22:27-74
+activity#com.example.motive.MotiveHomeActivity
+ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:25:9-56
+	android:name
+		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:25:19-53
+activity#com.example.motive.LogInActivity
+ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:26:9-51
+	android:name
+		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:26:19-48
+activity#com.example.motive.RegisterActivity
+ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:27:9-54
+	android:name
+		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:27:19-51
+activity#com.example.motive.ProfileActivity
+ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:28:9-53
+	android:name
+		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:28:19-50
+activity#com.example.motive.SettingsActivity
+ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:29:9-54
+	android:name
+		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:29:19-51
+activity#com.example.motive.FirstActivity
+ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:30:9-33:20
+	android:configChanges
+		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:32:13-87
+	android:name
+		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:31:13-42
 provider#androidx.core.content.FileProvider
-ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:30:9-38:20
+ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:35:9-43:20
 	android:grantUriPermissions
-		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:34:13-47
+		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:39:13-47
 	android:authorities
-		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:32:13-67
+		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:37:13-67
 	android:exported
-		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:33:13-37
+		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:38:13-37
 	android:name
-		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:31:13-62
+		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:36:13-62
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:35:13-37:64
+ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:40:13-42:54
 	android:resource
-		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:37:17-51
+		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:42:17-51
 	android:name
-		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:36:17-67
+		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:41:17-67
 meta-data#com.google.android.geo.API_KEY
-ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:39:9-41:71
+ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:45:9-47:71
 	android:value
-		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:41:13-68
+		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:47:13-68
 	android:name
-		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:40:13-58
+		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:46:13-58
 meta-data#preloaded_fonts
-ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:42:9-44:57
+ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:48:9-50:57
 	android:resource
-		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:44:13-54
+		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:50:13-54
 	android:name
-		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:43:13-43
+		ADDED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml:49:13-43
 uses-sdk
 INJECTED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\AndroidManifest.xml
@@ -281,6 +289,8 @@ MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Jay\.gradle\cache
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\118ba4b92f1cd2ef3a14a18c70f18fb2\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\0aaffdd7a18379559296d8bfea636888\jetified-circleimageview-2.1.0\AndroidManifest.xml:5:5-7:41
 MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\0aaffdd7a18379559296d8bfea636888\jetified-circleimageview-2.1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\7aa622a47c7a0a43c81a69946314e1ed\jetified-picasso-2.71828\AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\7aa622a47c7a0a43c81a69946314e1ed\jetified-picasso-2.71828\AndroidManifest.xml:5:5-44
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\b7b55f8b12e19ed4a6ac0e7cfd8df5f3\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\b7b55f8b12e19ed4a6ac0e7cfd8df5f3\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\1eccb0accb0c14439672d108d41ff78e\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
@@ -321,6 +331,8 @@ MERGED from [androidx.core:core:1.1.0-beta01] C:\Users\Jay\.gradle\caches\transf
 MERGED from [androidx.core:core:1.1.0-beta01] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\a222e8e992e78fd2de3b621066f0d40b\core-1.1.0-beta01\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\541fed4cb0da146aa15494bfcb747036\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\541fed4cb0da146aa15494bfcb747036\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\ca0d54b4d87cf2981dd9740ecb972635\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\ca0d54b4d87cf2981dd9740ecb972635\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\12797a45799cef2be4b10510a9ef0a1a\documentfile-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\12797a45799cef2be4b10510a9ef0a1a\documentfile-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\76b061416279c5a43a63be3c34f84685\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
@@ -533,3 +545,11 @@ ADDED from [com.google.android.gms:play-services-basement:11.6.0] C:\Users\Jay\.
 		ADDED from [com.google.android.gms:play-services-basement:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\dd256a81c562a32d1f0fb7f7ef1f7794\jetified-play-services-basement-11.6.0\AndroidManifest.xml:20:66-119
 	android:name
 		ADDED from [com.google.android.gms:play-services-basement:11.6.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\dd256a81c562a32d1f0fb7f7ef1f7794\jetified-play-services-basement-11.6.0\AndroidManifest.xml:20:20-65
+provider#com.squareup.picasso.PicassoProvider
+ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\7aa622a47c7a0a43c81a69946314e1ed\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+	android:authorities
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\7aa622a47c7a0a43c81a69946314e1ed\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+	android:exported
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\7aa622a47c7a0a43c81a69946314e1ed\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+	android:name
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\7aa622a47c7a0a43c81a69946314e1ed\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64

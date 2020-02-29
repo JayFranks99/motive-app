@@ -36,6 +36,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-firestore:11.6.0'
     implementation 'com.google.firebase:firebase-storage:11.6.0'
     implementation 'de.hdodenhof:circleimageview:2.1.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
 }
 
 apply plugin: 'com.google.gms.google-services'
