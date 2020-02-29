@@ -8,29 +8,25 @@
     android:background="#0095B7"
     android:fontFamily="@font/orbitron">
 
-    <TextView
-        android:id="@+id/logoTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/orbitron"
-        android:text="motive."
-        android:textAlignment="center"
-        android:textColor="#FFF"
-        android:textSize="70dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ProgressBar
         style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:indeterminateDrawable="@drawable/custom_progress_bar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.6"
-        android:indeterminateDrawable="@drawable/cpb_1"/>
+        app:layout_constraintVertical_bias="0.72" />
+
+    <ImageView
+        android:id="@+id/motiveLogo"
+        android:layout_width="0dp"
+        android:layout_height="350dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/motivelogo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

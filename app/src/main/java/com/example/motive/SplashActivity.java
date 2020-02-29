@@ -16,7 +16,7 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        mContentView = findViewById(R.id.logoTitle);
+        mContentView = findViewById(R.id.motiveLogo);
 
         handler = new Handler();
 
@@ -25,6 +25,6 @@ public class SplashActivity extends AppCompatActivity {
             public void run() {
                 startActivity(new Intent(getApplicationContext(),FirstActivity.class));
             }
-        }, 1500);
+        }, 2000);
     }
 }

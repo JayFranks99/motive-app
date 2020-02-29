@@ -292,10 +292,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
-            android:background="@drawable/my_button2"
+            android:background="@drawable/my_button"
             android:onClick="RegisterButtonClick"
             android:text="Register"
-            android:textColor="#FFF"
+            android:textColor="#0095b7"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/degreeEditText" />

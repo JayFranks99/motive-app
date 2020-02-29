@@ -1179,7 +1179,7 @@ drawable common_google_signin_btn_text_light
 drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
-drawable cpb_1
+drawable custom_progress_bar
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
@@ -1207,6 +1207,8 @@ drawable messages
 drawable messages_icon
 drawable mmental_icon
 drawable mmessages_icon
+drawable motivelogo
+drawable motivelogo2
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable my_border
@@ -1394,6 +1396,7 @@ id icon_group
 id icon_only
 id ifRoom
 id image
+id imageView2
 id info
 id invisible
 id italic
@@ -1413,7 +1416,6 @@ id logInButton2
 id logInDetailsTextView
 id logOutButton
 id loginEditText
-id logoTitle
 id mainMotiveEditText
 id map
 id mapData
@@ -1425,7 +1427,7 @@ id messagesTextView
 id middle
 id mini
 id motiveHeading
-id motiveTextView
+id motiveLogo
 id motiveView
 id motivesEditText
 id mtrl_child_content_container
