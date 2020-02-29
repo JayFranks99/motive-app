@@ -1380,6 +1380,7 @@ id galleryBtn
 id ghostMode
 id ghostSwitch
 id ghost_view
+id glide_custom_view_target_tag
 id golfImageView
 id golfSwitch
 id golfTextView
@@ -1471,6 +1472,7 @@ id radio
 id recycler_view
 id registerButton2
 id registerEditText
+id registerTextView
 id resendCodeButton
 id right
 id right_icon

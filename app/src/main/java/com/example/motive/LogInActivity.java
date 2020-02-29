@@ -32,6 +32,7 @@ public class LogInActivity extends AppCompatActivity {
     ProgressBar progressBar;
     FirebaseAuth fAuth;
     TextView forgotTextLink;
+    TextView registerLink;
 
         @Override
             protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +43,7 @@ public class LogInActivity extends AppCompatActivity {
                 mPassword = findViewById(R.id.passwordEditText);
                 mLoginButton = findViewById(R.id.logInButton2);
                 forgotTextLink = findViewById(R.id.forgotPassword);
+                registerLink = findViewById(R.id.registerTextView);
 
 
                 fAuth = FirebaseAuth.getInstance();
@@ -131,6 +133,16 @@ public class LogInActivity extends AppCompatActivity {
 
                         }
                     });
+
+            registerLink.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent myIntent;
+                    myIntent = new Intent(getBaseContext(),
+                            RegisterActivity.class);
+                    startActivity(myIntent);
+                }
+            });
 
         }
 

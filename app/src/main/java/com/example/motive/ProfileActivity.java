@@ -57,7 +57,7 @@ public class  ProfileActivity extends AppCompatActivity {
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
     String userID;
-    ImageView selectedImage;
+    ImageView profilePicture;
     Button cameraBtn, galleryBtn;
     String currentPhotoPath;
     StorageReference storageReference;
@@ -84,7 +84,7 @@ public class  ProfileActivity extends AppCompatActivity {
         fStore = FirebaseFirestore.getInstance();
         userId = fAuth.getCurrentUser().getUid();
 
-        selectedImage = findViewById(R.id.displayImageView);
+        profilePicture = findViewById(R.id.displayImageView);
         storageReference = FirebaseStorage.getInstance().getReference();
         cameraBtn = findViewById(R.id.cameraBtn);
         galleryBtn = findViewById(R.id.galleryBtn);
@@ -102,7 +102,10 @@ public class  ProfileActivity extends AppCompatActivity {
         });
 
         userId = Objects.requireNonNull(fAuth.getCurrentUser()).getUid();
+
         final FirebaseUser user = fAuth.getCurrentUser();
+
+
 
         if (!user.isEmailVerified()) {
             resendCodeButton.setVisibility(View.VISIBLE);
@@ -202,16 +205,19 @@ public class  ProfileActivity extends AppCompatActivity {
             }
         }
     }
-    //upload image to firebase
-    private void uploadImageToFirebase(String name, Uri contentUri) {
-        final StorageReference image = storageReference.child("images/" + name);
+    //upload image to firebase // "userId" was name, .child variable was also name
+    private void uploadImageToFirebase(String userId, Uri contentUri) {
+        final StorageReference image = storageReference
+                .child("images")
+                .child(userId + ".jpeg");
         image.putFile(contentUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
             @Override
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                 image.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                     @Override
                     public void onSuccess(Uri uri) {
-                        Picasso.get().load(uri).into(selectedImage);
+                        Picasso.get().load(uri).into(profilePicture);
+                        ///save??
                     }
                 });
                 Toast.makeText(ProfileActivity.this, "Image is uploaded.", Toast.LENGTH_SHORT).show();
