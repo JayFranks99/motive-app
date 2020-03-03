@@ -15,7 +15,7 @@
         <View
             android:id="@+id/blueBackground"
             android:layout_width="0dp"
-            android:layout_height="388dp"
+            android:layout_height="364dp"
             android:background="#0095B7"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -48,30 +48,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/profileTextView" />
 
-        <Button
-            android:id="@+id/cameraBtn"
-            android:layout_width="120dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="80dp"
-            android:background="@drawable/my_button"
-            android:text="Take Photo"
-            android:textColor="#0095b7"
-            app:layout_constraintEnd_toEndOf="@+id/displayImageView"
-            app:layout_constraintTop_toBottomOf="@+id/profileHalls" />
-
-        <Button
-            android:id="@+id/galleryBtn"
-            android:layout_width="120dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="84dp"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/my_button2"
-            android:text="Gallery"
-            android:textColor="#FFF"
-            app:layout_constraintStart_toStartOf="@+id/displayImageView"
-            app:layout_constraintTop_toBottomOf="@+id/profileHalls" />
-
         <ImageView
             android:id="@+id/backImageView"
             android:layout_width="40dp"
@@ -86,13 +62,11 @@
             android:id="@+id/profileUsername"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
             android:text="Username"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="40dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/displayImageView" />
 
@@ -108,12 +82,29 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/profileUsername" />
 
+        <Button
+            android:id="@+id/editProfileButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/my_button"
+            android:text="Edit Profile"
+            android:textColor="#0095B7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profileHalls">
+
+        </Button>
+
         <TextView
             android:id="@+id/aboutUser"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="24dp"
             android:layout_marginEnd="16dp"
             android:text="About"
             android:textAlignment="center"
@@ -122,7 +113,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cameraBtn" />
+            app:layout_constraintTop_toBottomOf="@+id/editProfileButton" />
 
         <TextView
             android:id="@+id/profileUserBio"
@@ -191,10 +182,8 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"
             android:text="#Sports   #Football   #Golf   #Beer   #Drinking   #Gym    #Clubbing   #Darts  #LCFC"
             android:textAlignment="center"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
