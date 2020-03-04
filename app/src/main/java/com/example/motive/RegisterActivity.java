@@ -6,6 +6,8 @@ import android.content.ContentResolver;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
+import android.location.Address;
+import android.location.Geocoder;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
@@ -44,8 +46,10 @@ import com.squareup.picasso.Picasso;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class RegisterActivity extends AppCompatActivity {
@@ -130,6 +134,8 @@ public class RegisterActivity extends AppCompatActivity {
                 final String otherMotives = mOtherMotives.getText().toString();
                 final String degree = mDegree.getText().toString();
                 final String imageUrl = storageReference.getDownloadUrl().toString();
+                //image
+
 
                 if (TextUtils.isEmpty(username)) {
                     mUsername.setError("Username is required.");
@@ -139,6 +145,21 @@ public class RegisterActivity extends AppCompatActivity {
                     mEmail.setError("Email is required.");
                     return;
                 }
+
+                if (email.contains("@leeds.ac.uk")) {
+                    Toast.makeText(RegisterActivity.this, "Uniersity of Leeds email", Toast.LENGTH_SHORT);
+                }else {
+                    mEmail.setError("1st Year Univerisity of Leeds Students Only");
+                    return;
+                }
+                if (email.contains("20")) {
+                    Toast.makeText(RegisterActivity.this, "Uniersity of Leeds email", Toast.LENGTH_SHORT);
+                }else {
+                    mEmail.setError(" Univerisity of Leeds Freshers Only");
+                    return;
+                }
+
+
 
                 if (TextUtils.isEmpty(password)) {
                     mPassword.setError("Password is required.");
@@ -247,6 +268,8 @@ public class RegisterActivity extends AppCompatActivity {
                             });
 
                             startActivity(new Intent(getApplicationContext(), MotiveHomeActivity.class));
+                            //execute out method for geolocating
+                            geoLocate();
 
                         } else {
 
@@ -256,9 +279,29 @@ public class RegisterActivity extends AppCompatActivity {
                     }
                 });
 
+            }private void geoLocate() {
+                   Log.d(TAG, "geoLocate:geolocating");
 
-            }
-        });
+                   String postcode = mPostcode.getText().toString();
+
+                   Geocoder geocoder = new Geocoder(RegisterActivity.this);
+                   List <Address> list = new ArrayList<>();
+                   try {
+                       list = geocoder.getFromLocationName(postcode, 1);
+
+                   }catch (IOException e) {
+                       Log.e(TAG, "geoLocate: IOException: " + e.getMessage());
+                   }
+
+                   if (list.size() > 0) {
+
+                       Address address = list.get(0);
+
+                       Log.d(TAG, "geoLocate: found a location:  " + address.toString());
+                       // Toast.makeText(this, address.toString(), Toast.LENGTH_SHORT).show();
+                   }
+               }
+            });
 
         cameraBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -399,6 +442,7 @@ public class RegisterActivity extends AppCompatActivity {
                 startActivityForResult(takePictureIntent, CAMERA_REQUEST_CODE);
             }
         }
+
     }
 
 }
