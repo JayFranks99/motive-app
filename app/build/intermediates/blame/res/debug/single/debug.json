@@ -1004,6 +1004,10 @@
         "source": "C:\\Users\\Jay\\.gradle\\caches\\transforms-2\\files-2.1\\448e1b13d0d93b9e707b7ff40e761001\\material-1.0.0\\res\\drawable-mdpi-v4\\design_ic_visibility.png"
     },
     {
+        "merged": "C:\\Users\\Jay\\AndroidStudioProjects\\motive\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_event1.xml.flat",
+        "source": "C:\\Users\\Jay\\AndroidStudioProjects\\motive\\app\\src\\main\\res\\layout\\activity_event1.xml"
+    },
+    {
         "merged": "C:\\Users\\Jay\\AndroidStudioProjects\\motive\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_search_dropdown_item_icons_2line.xml.flat",
         "source": "C:\\Users\\Jay\\.gradle\\caches\\transforms-2\\files-2.1\\2e4ed34acbb880a0ef9546072100a488\\appcompat-1.1.0-alpha05\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
     },

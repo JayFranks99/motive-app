@@ -52,6 +52,7 @@
         <activity android:name="com.example.motive.RegisterActivity" />
         <activity android:name="com.example.motive.ProfileActivity" />
         <activity android:name="com.example.motive.SettingsActivity" />
+        <activity android:name="com.example.motive.EventOneActivity" />
         <activity
             android:name="com.example.motive.FirstActivity"
             android:configChanges="orientation|screenSize|screenLayout|keyboardHidden" >

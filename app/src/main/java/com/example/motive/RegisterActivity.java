@@ -205,8 +205,19 @@ public class RegisterActivity extends AppCompatActivity {
                     return;
                 }
 
+                if (userBio.length() < 20) {
+                    mUserBio.setError("User bio must be at least 20 characters long");
+                    return;
+                }
+
                 if (TextUtils.isEmpty(mainMotive)) {
                     mMainMotive.setError("A main motive is required");
+                    return;
+                }
+
+
+                if (mainMotive.length() > 30) {
+                    mMainMotive.setError("Only your main motive required");
                     return;
                 }
 
@@ -215,11 +226,21 @@ public class RegisterActivity extends AppCompatActivity {
                     return;
                 }
 
+                if (otherMotives.length() > 150) {
+                    mOtherMotives.setError("Less than 150 characters please");
+                    return;
+                }
+
+
                 if (TextUtils.isEmpty(degree)) {
                     mDegree.setError("Degree is required");
                     return;
                 }
 
+                if (degree.length() > 40) {
+                    mDegree.setError("Less than 40 characters please");
+                    return;
+                }
 
                 progressBar.setVisibility(View.VISIBLE);
 
