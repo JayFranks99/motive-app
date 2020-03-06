@@ -29,6 +29,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.core.content.FileProvider;
 
+import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -62,6 +63,7 @@ public class RegisterActivity extends AppCompatActivity {
     EditText mUsername;
     EditText mEmail;
     EditText mPassword;
+    EditText cPassword;
     EditText mHalls;
     EditText mStreetName;
     EditText mBlock;
@@ -103,6 +105,7 @@ public class RegisterActivity extends AppCompatActivity {
         mDegree = findViewById(R.id.degreeEditText);
         mRegisterButton = findViewById(R.id.registerButton2);
         progressBar = findViewById(R.id.progressBar);
+        cPassword = findViewById(R.id.confirmPasswordEditText);
 
         selectedImage = findViewById(R.id.displayImageView);
         cameraBtn = findViewById(R.id.cameraBtn);
@@ -125,6 +128,7 @@ public class RegisterActivity extends AppCompatActivity {
                 final String username = mUsername.getText().toString();
                 final String email = mEmail.getText().toString().trim();
                 final String password = mPassword.getText().toString().trim();
+                final String confirmPassword = cPassword.getText().toString();
                 final String halls = mHalls.getText().toString();
                 final String streetName = mStreetName.getText().toString();
                 final String block = mBlock.getText().toString();
@@ -148,7 +152,7 @@ public class RegisterActivity extends AppCompatActivity {
 
                 if (email.contains("@leeds.ac.uk")) {
                     Toast.makeText(RegisterActivity.this, "Uniersity of Leeds email", Toast.LENGTH_SHORT);
-                }else {
+                } else {
                     mEmail.setError("1st Year Univerisity of Leeds Students Only");
                     return;
                 }
@@ -159,8 +163,6 @@ public class RegisterActivity extends AppCompatActivity {
                     return;
                 }
 
-
-
                 if (TextUtils.isEmpty(password)) {
                     mPassword.setError("Password is required.");
                     return;
@@ -170,6 +172,14 @@ public class RegisterActivity extends AppCompatActivity {
                     mPassword.setError("Password must be at least 6 characters long");
                     return;
                 }
+
+                if (confirmPassword.equals(password)) {
+                    Toast.makeText(RegisterActivity.this, "Password matches", Toast.LENGTH_SHORT);
+                }else {
+                    cPassword.setError("Passwords do not match");
+                    return;
+                }
+
 
                 if (TextUtils.isEmpty(halls)) {
                     mHalls.setError("Halls name is required.");
@@ -296,9 +306,9 @@ public class RegisterActivity extends AppCompatActivity {
                    if (list.size() > 0) {
 
                        Address address = list.get(0);
-
                        Log.d(TAG, "geoLocate: found a location:  " + address.toString());
                        // Toast.makeText(this, address.toString(), Toast.LENGTH_SHORT).show();
+                      // moveCamera(new LatLng(address.getLatitude(), address.getLongitude()), DEFAULT_ZOOM);
                    }
                }
             });

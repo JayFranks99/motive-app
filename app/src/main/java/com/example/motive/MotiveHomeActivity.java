@@ -166,19 +166,19 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
 
         // Markers and camera zoom
         LatLng Jay = new LatLng(53.8179462, -1.5687024);
-        googleMap.addMarker(new MarkerOptions().position(Jay).title("Jay").snippet("Football").icon(BitmapDescriptorFactory.fromResource(R.drawable.f_icon)));
+        googleMap.addMarker(new MarkerOptions().position(Jay).title("JayFranks99").snippet("Football").icon(BitmapDescriptorFactory.fromResource(R.drawable.f_icon)));
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Jay,15));
 
         LatLng George = new LatLng(53.8198745, -1.5677403);
-        googleMap.addMarker(new MarkerOptions().position(George).title("George").snippet("Football").icon(BitmapDescriptorFactory.fromResource(R.drawable.f_icon)));
+        googleMap.addMarker(new MarkerOptions().position(George).title("George99").snippet("Football").icon(BitmapDescriptorFactory.fromResource(R.drawable.f_icon)));
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(George,15));
 
         LatLng Tom = new LatLng(53.8177046, -1.5633514);
-        googleMap.addMarker(new MarkerOptions().position(Tom).title("Tom").snippet("Tennis").icon(BitmapDescriptorFactory.fromResource(R.drawable.tennis_icon)));
+        googleMap.addMarker(new MarkerOptions().position(Tom).title("Tom99").snippet("Tennis").icon(BitmapDescriptorFactory.fromResource(R.drawable.tennis_icon)));
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Tom,15));
 
         LatLng Mick = new LatLng(53.8205374, -1.5660997);
-        googleMap.addMarker(new MarkerOptions().position(Mick).title("Millie").snippet("Chess").icon(BitmapDescriptorFactory.fromResource(R.drawable.chess_icon)));
+        googleMap.addMarker(new MarkerOptions().position(Mick).title("Millie98").snippet("Chess").icon(BitmapDescriptorFactory.fromResource(R.drawable.chess_icon)));
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Mick,15));
 
 
