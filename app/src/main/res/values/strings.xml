@@ -23,4 +23,27 @@
     <string name="attachment_summary_on">Automatically download attachments for incoming emails
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+    <string-array name="halls">
+        <item>Devonshire Hall</item>
+        <item>James Baillie Park</item>
+        <item>Charles Morris Halll</item>
+        <item>Oxley Residences</item>
+        <item>Lupton Residences</item>
+        <item>North Hill Court</item>
+        <item>Blenheim Point</item>
+        <item>Carr Mills</item>
+        <item>Central Village</item>
+        <item>CitySide</item>
+        <item>Ellerslie Global Residence</item>
+        <item>Henry Price Residences</item>
+        <item>IQ Leeds</item>
+        <item>Leodis Residences</item>
+        <item>Mary Morris House</item>
+        <item>Montague Burton</item>
+        <item>Sentinel Towers</item>
+        <item>The Tannery</item>
+        <item>White Rose View</item>
+    </string-array>
+
 </resources>

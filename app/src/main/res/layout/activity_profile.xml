@@ -15,7 +15,7 @@
         <View
             android:id="@+id/blueBackground"
             android:layout_width="0dp"
-            android:layout_height="364dp"
+            android:layout_height="376dp"
             android:background="#0095B7"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -87,7 +87,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:background="@drawable/my_button"
             android:text="Edit Profile"

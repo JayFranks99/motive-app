@@ -17,6 +17,8 @@ import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.webkit.MimeTypeMap;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -66,7 +68,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     EditText mEmail;
     EditText mPassword;
     EditText cPassword;
-    EditText mHalls;
+    AutoCompleteTextView mHalls;
     EditText mStreetName;
     EditText mBlock;
     EditText mPostcode;
@@ -98,7 +100,6 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         mUsername = findViewById(R.id.usernameEditText);
         mEmail = findViewById(R.id.emailEditText);
         mPassword = findViewById(R.id.passwordEditText);
-        mHalls = findViewById(R.id.hallsEditText);
         mStreetName = findViewById(R.id.streetEditText);
         mBlock = findViewById(R.id.blockEditText);
         mPostcode = findViewById(R.id.postcodeEditText);
@@ -115,7 +116,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         galleryBtn = findViewById(R.id.galleryBtn);
         registerBackground = findViewById(R.id.registerBackground);
         registerBackground.setOnClickListener(this);
-
+        mHalls = findViewById(R.id.hallsAutoCompleteTextView);
 
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
@@ -125,6 +126,12 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
             startActivity(new Intent(getApplicationContext(), MotiveHomeActivity.class));
             finish();
         }
+
+        String[] halls = getResources().getStringArray(R.array.halls);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_1, halls);
+
+        mHalls.setAdapter(adapter);
 
 
         mRegisterButton.setOnClickListener(new View.OnClickListener() {

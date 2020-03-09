@@ -136,24 +136,23 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/confirmPasswordEditText" />
 
-        <EditText
-            android:id="@+id/hallsEditText"
+        <AutoCompleteTextView
+            android:id="@+id/hallsAutoCompleteTextView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
-            android:layout_marginEnd="24dp"
+            android:layout_marginEnd="16dp"
             android:background="@android:color/white"
-            android:ems="10"
             android:hint="Halls"
-            android:inputType="textPostalAddress"
             android:padding="5dp"
+            android:completionThreshold="1"
             android:textColor="#000000"
             android:textColorHint="#CCC9C9"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/addressTextView" />
+
 
         <EditText
             android:id="@+id/streetEditText"
@@ -172,7 +171,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/hallsEditText" />
+            app:layout_constraintTop_toBottomOf="@+id/hallsAutoCompleteTextView" />
 
         <EditText
             android:id="@+id/blockEditText"
@@ -374,6 +373,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/registerButton2" />
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
