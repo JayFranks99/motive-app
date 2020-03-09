@@ -15,6 +15,7 @@ import android.provider.MediaStore;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.webkit.MimeTypeMap;
 import android.widget.Button;
 import android.widget.EditText;
@@ -25,6 +26,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.core.content.FileProvider;
@@ -53,7 +55,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class RegisterActivity extends AppCompatActivity {
+public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
 
     public static final String TAG1 = "TAG";
     public static final String TAG2 = "TAG";
@@ -81,6 +83,7 @@ public class RegisterActivity extends AppCompatActivity {
     Button cameraBtn, galleryBtn;
     String currentPhotoPath;
     StorageReference storageReference;
+    ConstraintLayout registerBackground;
 
 
     private static final String TAG = "Register Activity";
@@ -110,6 +113,8 @@ public class RegisterActivity extends AppCompatActivity {
         selectedImage = findViewById(R.id.displayImageView);
         cameraBtn = findViewById(R.id.cameraBtn);
         galleryBtn = findViewById(R.id.galleryBtn);
+        registerBackground = findViewById(R.id.registerBackground);
+        registerBackground.setOnClickListener(this);
 
 
         fAuth = FirebaseAuth.getInstance();
@@ -476,4 +481,12 @@ public class RegisterActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    public void onClick(View view) {
+        if (view.getId() == R.id.registerBackground) {
+            InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
+            inputMethodManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
+
+        }
+    }
 }

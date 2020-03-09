@@ -1483,6 +1483,7 @@ id pubTextView
 id quoteHeading
 id radio
 id recycler_view
+id registerBackground
 id registerButton2
 id registerEditText
 id registerTextView

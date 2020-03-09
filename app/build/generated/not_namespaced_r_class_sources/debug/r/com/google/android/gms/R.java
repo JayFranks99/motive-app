@@ -97,13 +97,13 @@ public final class R {
         public static final int normal = 0x7f0a00d6;
         public static final int progressBar = 0x7f0a00ef;
         public static final int radio = 0x7f0a00f4;
-        public static final int satellite = 0x7f0a00fd;
-        public static final int standard = 0x7f0a012b;
-        public static final int terrain = 0x7f0a0141;
-        public static final int text = 0x7f0a0142;
-        public static final int text2 = 0x7f0a0143;
-        public static final int wide = 0x7f0a0173;
-        public static final int wrap_content = 0x7f0a0176;
+        public static final int satellite = 0x7f0a00fe;
+        public static final int standard = 0x7f0a012c;
+        public static final int terrain = 0x7f0a0142;
+        public static final int text = 0x7f0a0143;
+        public static final int text2 = 0x7f0a0144;
+        public static final int wide = 0x7f0a0174;
+        public static final int wrap_content = 0x7f0a0177;
     }
     public static final class integer {
         private integer() {}
