@@ -127,17 +127,22 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         }
 
         //auto-complete arrays
+
         String[] halls = getResources().getStringArray(R.array.halls);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, halls);
 
         mHalls.setAdapter(adapter);
+        mHalls.setDropDownBackgroundResource(R.color.autocomplete_background_color);
 
         String[] motive = getResources().getStringArray(R.array.motives);
         ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, motive);
+                android.R.layout.simple_expandable_list_item_1, motive);
 
         mMainMotive.setAdapter(adapter2);
+        mMainMotive.setDropDownBackgroundResource(R.color.autocomplete_background_color);
+
+
 
 
         mRegisterButton.setOnClickListener(new View.OnClickListener() {

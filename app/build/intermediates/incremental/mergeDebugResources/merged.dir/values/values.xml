@@ -102,6 +102,7 @@
         <item>Chess</item>
         <item>Climbing</item>
         <item>Clothes making</item>
+        <item>Cocktail making</item>
         <item>Coffee roasting</item>
         <item>Coin collecting</item>
         <item>Collecting</item>
@@ -123,6 +124,7 @@
         <item>Cryptography</item>
         <item>Cue sports</item>
         <item>Curling</item>
+        <item>Clubbing</item>
         <item>Cycling</item>
         <item>Dancing</item>
         <item>Darts</item>
@@ -139,6 +141,7 @@
         <item>Drama</item>
         <item>Drawing</item>
         <item>Drink mixing</item>
+        <item>Drinking</item>
         <item>Driving</item>
         <item>Eating</item>
         <item>Electronics</item>
@@ -273,6 +276,143 @@
         <item>Painting</item>
         <item>Parkour</item>
         <item>Perfume</item>
+        <item> Pet adoption and fostering</item>
+        <item>Philately</item>
+        <item>Phillumeny</item>
+        <item>Photography</item>
+        <item>Playing musical instruments</item>
+        <item>Podcast hosting</item>
+        <item>Poi</item>
+        <item>Poker</item>
+        <item>Pool</item>
+        <item>Polo</item>
+        <item>Pottery</item>
+        <item>Powerlifting</item>
+        <item>Practical jokes</item>
+        <item>Pressed flower craft</item>
+        <item>Puzzles</item>
+        <item>Quilling</item>
+        <item>Quizzes</item>
+        <item>Racquetball</item>
+        <item>Radio-controlled car racing</item>
+        <item>Rafting</item>
+        <item>Rail transport modeling</item>
+        <item>Rappelling</item>
+        <item>Rapping</item>
+        <item>Reading</item>
+        <item>Record collecting</item>
+        <item>Refinishing</item>
+        <item>Road biking</item>
+        <item>Robot combat</item>
+        <item>Rock balancing</item>
+        <item>Rock climbing</item>
+        <item>Rock tumbling</item>
+        <item>Roller derby</item>
+        <item>Roller skating</item>
+        <item>Rowing</item>
+        <item>Rugby League</item>
+        <item>Rugby</item>
+        <item>Running</item>
+        <item>Rubiks Cube</item>
+        <item>Sailing</item>
+        <item>Sand Art</item>
+        <item>Scouting</item>
+        <item>Scrapbooking</item>
+        <item>Scuba diving</item>
+        <item>Sculpting</item>
+        <item>Scutelliphily</item>
+        <item>Sea glass collecting</item>
+        <item>Seashell collecting</item>
+        <item>Sewing</item>
+        <item>Shoemaking</item>
+        <item>Shoes</item>
+        <item>Snooker</item>
+        <item>Shogi</item>
+        <item>Shooting sport</item>
+        <item>Shooting</item>
+        <item>Shortwave listening</item>
+        <item>Singing</item>
+        <item>Skateboarding</item>
+        <item>Sketching</item>
+        <item>Skiing</item>
+        <item>Skimboarding</item>
+        <item>Skydiving</item>
+        <item>Slacklining</item>
+        <item>Slot car racing</item>
+        <item>Snowboarding</item>
+        <item>Soapmaking</item>
+        <item>Social media</item>
+        <item>Softball</item>
+        <item>Speed skating</item>
+        <item>Speedcubing</item>
+        <item>Sport stacking</item>
+        <item>Sports memorabilia</item>
+        <item>Squash</item>
+        <item>Stamp collecting</item>
+        <item>Stand-up comedy</item>
+        <item>Stone collecting</item>
+        <item>Stone skipping</item>
+        <item>Stuffed toy collecting</item>
+        <item>Sun bathing</item>
+        <item>Surfing</item>
+        <item>Survivalism</item>
+        <item>Swimming</item>
+        <item>Table football</item>
+        <item>Table tennis</item>
+        <item>Taekwondo</item>
+        <item>Tai chi</item>
+        <item>Taxidermy</item>
+        <item>Tea bag collecting</item>
+        <item>Tennis polo</item>
+        <item>Tennis</item>
+        <item>Tether car</item>
+        <item>Thrifting</item>
+        <item>Ticket collecting</item>
+        <item>Topiary</item>
+        <item>Tour skating</item>
+        <item>Toys</item>
+        <item>Trainspotting</item>
+        <item>Trapshooting</item>
+        <item>Travel</item>
+        <item>Technology</item>
+        <item>Traveling</item>
+        <item>Triathlon</item>
+        <item>Ultimate frisbee</item>
+        <item>Urban exploration</item>
+        <item>Vacation</item>
+        <item>Vegetable farming</item>
+        <item>Vehicle restoration</item>
+        <item>Video editing</item>
+        <item>Video game collecting</item>
+        <item>Video game developing</item>
+        <item>Video gaming</item>
+        <item>Videophilia</item>
+        <item>Vintage cars</item>
+        <item>Vintage clothing</item>
+        <item>Vinyl Records</item>
+        <item>Volleyball</item>
+        <item>Walking</item>
+        <item>Watching movies</item>
+        <item>Watching television</item>
+        <item>Water polo</item>
+        <item>Water sports</item>
+        <item>Weaving</item>
+        <item>Weight training</item>
+        <item>Weightlifting</item>
+        <item>Welding</item>
+        <item>Whale watching</item>
+        <item>Whittling</item>
+        <item>Wikipedia editing</item>
+        <item>Winemaking</item>
+        <item>Wood carving</item>
+        <item>Woodworking</item>
+        <item>Word searches</item>
+        <item>Worldbuilding</item>
+        <item>Wrestling</item>
+        <item>Writing</item>
+        <item>Yoga</item>
+        <item>Yo yoing</item>
+        <item>YouTube</item>
 
     </string-array>
     <array name="preloaded_fonts" translatable="false">
@@ -462,6 +602,7 @@
     <color name="abc_search_url_text_selected">@android:color/black</color>
     <color name="accent_material_dark">@color/material_deep_teal_200</color>
     <color name="accent_material_light">@color/material_deep_teal_500</color>
+    <color name="autocomplete_background_color">#FFF</color>
     <color name="background_floating_material_dark">@color/material_grey_800</color>
     <color name="background_floating_material_light">@android:color/white</color>
     <color name="background_material_dark">@color/material_grey_850</color>
