@@ -1431,7 +1431,7 @@ id logInButton2
 id logInDetailsTextView
 id logOutButton
 id loginEditText
-id mainMotiveEditText
+id mainMotiveAutoCompleteTextView
 id map
 id mapData
 id masked

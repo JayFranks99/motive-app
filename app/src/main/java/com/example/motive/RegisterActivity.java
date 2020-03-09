@@ -73,7 +73,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     EditText mBlock;
     EditText mPostcode;
     EditText mUserBio;
-    EditText mMainMotive;
+    AutoCompleteTextView mMainMotive;
     EditText mOtherMotives;
     EditText mDegree;
     Button mRegisterButton;
@@ -104,13 +104,12 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         mBlock = findViewById(R.id.blockEditText);
         mPostcode = findViewById(R.id.postcodeEditText);
         mUserBio = findViewById(R.id.descriptionEditText);
-        mMainMotive = findViewById(R.id.mainMotiveEditText);
+        mMainMotive = findViewById(R.id.mainMotiveAutoCompleteTextView);
         mOtherMotives = findViewById(R.id.motivesEditText);
         mDegree = findViewById(R.id.degreeEditText);
         mRegisterButton = findViewById(R.id.registerButton2);
         progressBar = findViewById(R.id.progressBar);
         cPassword = findViewById(R.id.confirmPasswordEditText);
-
         selectedImage = findViewById(R.id.displayImageView);
         cameraBtn = findViewById(R.id.cameraBtn);
         galleryBtn = findViewById(R.id.galleryBtn);
@@ -127,6 +126,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
             finish();
         }
 
+        //auto-complete arrays
         String[] halls = getResources().getStringArray(R.array.halls);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, halls);
@@ -205,6 +205,11 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
                 if (TextUtils.isEmpty(block)) {
                     mBlock.setError("Block name or house number is required.");
+                    return;
+                }
+
+                if (block.length() > 4) {
+                    mBlock.setError("Please enter a valid block / room number");
                     return;
                 }
 
