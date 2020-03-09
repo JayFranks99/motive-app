@@ -1310,6 +1310,7 @@ id auto
 id backImageView
 id backImageView10
 id backImageView100
+id backgroundLayout
 id barrier
 id beerImageView
 id beerSwitch
