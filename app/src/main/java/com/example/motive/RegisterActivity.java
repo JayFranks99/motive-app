@@ -133,6 +133,12 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
         mHalls.setAdapter(adapter);
 
+        String[] motive = getResources().getStringArray(R.array.motives);
+        ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_1, motive);
+
+        mMainMotive.setAdapter(adapter2);
+
 
         mRegisterButton.setOnClickListener(new View.OnClickListener() {
             @Override

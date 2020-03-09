@@ -4181,6 +4181,245 @@
         <item>
             MIIEQzCCAyugAwIBAgIJAMLgh0ZkSjCNMA0GCSqGSIb3DQEBBAUAMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDAeFw0wODA4MjEyMzEzMzRaFw0zNjAxMDcyMzEzMzRaMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBAKtWLgDYO6IIrgqWbxJOKdoR8qtW0I9Y4sypEwPpt1TTcvZApxsdyxMJZ2JORland2qSGT2y5b+3JKkedxiLDmpHpDsz2WCbdxgxRczfey5YZnTJ4VZbH0xqWVW/8lGmPav5xVwnIiJS6HXk+BVKZF+JcWjAsb/GEuq/eFdpuzSqeYTcfi6idkyugwfYwXFU1+5fZKUaRKYCwkkFQVfcAs1fXA5V+++FGfvjJ/CxURaSxaBvGdGDhfXE28LWuT9ozCl5xw4Yq5OGazvV24mZVSoOO0yZ31j7kYvtwYK6NeADwbSxDdJEqO4k//0zOHKrUiGYXtqw/A0LFFtqoZKFjnkCAQOjgdkwgdYwHQYDVR0OBBYEFMd9jMIhF1Ylmn/Tgt9r45jk14alMIGmBgNVHSMEgZ4wgZuAFMd9jMIhF1Ylmn/Tgt9r45jk14aloXikdjB0MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLR29vZ2xlIEluYy4xEDAOBgNVBAsTB0FuZHJvaWQxEDAOBgNVBAMTB0FuZHJvaWSCCQDC4IdGZEowjTAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBAUAA4IBAQBt0lLO74UwLDYKqs6Tm8/yzKkEu116FmH4rkaymUIE0P9KaMftGlMexFlaYjzmB2OxZyl6euNXEsQH8gjwyxCUKRJNexBiGcCEyj6z+a1fuHHvkiaai+KL8W1EyNmgjmyy8AW7P+LLlkR+ho5zEHatRbM/YAnqGcFh5iZBqpknHf1SKMXFh4dd239FJ1jWYfbMDMy3NS5CTMQ2XFI1MvcyUTdZPErjQfTbQe3aDQsQcafEQPD+nqActifKZ0Np0IS9L9kR/wbNvyz6ENwPiTrjV2KRkEjH78ZMcUQXg0L3BYHJ3lc69Vs5Ddf9uUGGMYldX3WfMBEmh/9iFBDAaTCK
         </item>
+    </string-array></file><file path="C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\res\values\motiveslist.xml" qualifiers=""><string-array name="motives">
+        <item>Action figure</item>
+        <item>Air sports</item>
+        <item>Aircraft spotting</item>
+        <item>Airsoft</item>
+        <item>Amateur astronomy</item>
+        <item>Amateur radio</item>
+        <item>American football</item>
+        <item>Animal fancy</item>
+        <item>Animation</item>
+        <item>Antiquing</item>
+        <item>Antiquities</item>
+        <item>Aquascaping</item>
+        <item>Archery</item>
+        <item>Archery</item>
+        <item>Art collecting</item>
+        <item>Astronomy</item>
+        <item>Audiophile</item>
+        <item>Auto audiophilia</item>
+        <item>Auto racing</item>
+        <item>Axe throwing</item>
+        <item>Backpacking </item>
+        <item>Badminton</item>
+        <item>Baking</item>
+        <item>BASE jumping</item>
+        <item>Baseball</item>
+        <item>Basketball</item>
+        <item>Baton twirling</item>
+        <item>Beach volleyball </item>
+        <item>Beauty pageants</item>
+        <item>Beekeeping</item>
+        <item>Billiards</item>
+        <item>Birdwatching</item>
+        <item>Blacksmithing</item>
+        <item>Blogging</item>
+        <item>BMX</item>
+        <item>Board sports</item>
+        <item>Board and tabletop games</item>
+        <item>Bodybuilding</item>
+        <item>Bonsai</item>
+        <item>Book collecting</item>
+        <item>Book discussion clubs</item>
+        <item>Book restoration</item>
+        <item>Bowling</item>
+        <item>Boxing</item>
+        <item>Brazilian jiu-jitsu</item>
+        <item>Breadmaking</item>
+        <item>Breakdancing</item>
+        <item>Bridge</item>
+        <item>Building</item>
+        <item>Bus spotting</item>
+        <item>Butterfly watching</item>
+        <item>Cabaret</item>
+        <item>Calligraphy</item>
+        <item>Camping</item>
+        <item>Candle making</item>
+        <item>Canoeing</item>
+        <item>Canyoning</item>
+        <item>Car fixing and building</item>
+        <item>Card games</item>
+        <item>Cartophily </item>
+        <item>Caving</item>
+        <item>Cheerleading</item>
+        <item>Cheesemaking</item>
+        <item>Chess</item>
+        <item>Climbing</item>
+        <item>Clothes making</item>
+        <item>Coffee roasting</item>
+        <item>Coin collecting</item>
+        <item>Collecting</item>
+        <item>Color guard</item>
+        <item>Coloring</item>
+        <item>Comic book collecting</item>
+        <item>Composting</item>
+        <item>Computer programming</item>
+        <item>Confectionery</item>
+        <item>Cooking</item>
+        <item>Cosplaying</item>
+        <item>Couponing</item>
+        <item>Craft</item>
+        <item>Creative writing</item>
+        <item>Cricket</item>
+        <item>Crocheting</item>
+        <item>Cross-stitch</item>
+        <item>Crossword puzzles</item>
+        <item>Cryptography</item>
+        <item>Cue sports</item>
+        <item>Curling</item>
+        <item>Cycling</item>
+        <item>Dancing</item>
+        <item>Darts</item>
+        <item>Debate</item>
+        <item>Deltiology </item>
+        <item>Die-cast toy</item>
+        <item>Digital arts</item>
+        <item>Disc golf</item>
+        <item>Distro Hopping</item>
+        <item>Djing</item>
+        <item>Dog sport</item>
+        <item>Dolls</item>
+        <item>Dowsing</item>
+        <item>Drama</item>
+        <item>Drawing</item>
+        <item>Drink mixing</item>
+        <item>Driving</item>
+        <item>Eating</item>
+        <item>Electronics</item>
+        <item>Element collecting</item>
+        <item>Embroidery</item>
+        <item>Ephemera collecting</item>
+        <item>Equestrianism</item>
+        <item>Esports</item>
+        <item>Exhibition drill</item>
+        <item>Experimenting</item>
+        <item>Fantasy sports</item>
+        <item>Fashion design</item>
+        <item>Fashion</item>
+        <item>Fencing</item>
+        <item>Field hockey</item>
+        <item>Figure skating</item>
+        <item>Fishing</item>
+        <item>Fishkeeping</item>
+        <item>Flag football</item>
+        <item>Flower arranging</item>
+        <item>Flower collecting and pressing</item>
+        <item>Flower growing</item>
+        <item>Flying disc</item>
+        <item>Flying</item>
+        <item>Football</item>
+        <item>Foraging</item>
+        <item>Foreign language learning</item>
+        <item>Fossil hunting</item>
+        <item>Freestyle football</item>
+        <item>Furniture building</item>
+        <item>Fusilately </item>
+        <item>Gaming</item>
+        <item>Gardening</item>
+        <item>Genealogy</item>
+        <item>Geocaching</item>
+        <item>Ghost hunting</item>
+        <item>Gingerbread house making</item>
+        <item>Glassblowing</item>
+        <item>Gold prospecting</item>
+        <item>Golf</item>
+        <item>Gongoozling</item>
+        <item>Graffiti</item>
+        <item>Graphic design</item>
+        <item>Gunsmithing</item>
+        <item>Gymnastics</item>
+        <item>Hacking</item>
+        <item>Handball</item>
+        <item>Herbalism</item>
+        <item>Herp keeping</item>
+        <item>Herping</item>
+        <item>High-power rocketry</item>
+        <item>Hiking</item>
+        <item>Hobby horsing</item>
+        <item>Home improvement</item>
+        <item>Homebrewing</item>
+        <item>Hooping</item>
+        <item>Horseback riding</item>
+        <item>Hula hooping</item>
+        <item>Hunting</item>
+        <item>Hydroponics</item>
+        <item>Ice hockey</item>
+        <item>Ice skating</item>
+        <item>Inline skating</item>
+        <item>Insect collecting</item>
+        <item>Jewelry making</item>
+        <item>Jigsaw puzzles</item>
+        <item>Jogging</item>
+        <item>Journaling</item>
+        <item>Judo</item>
+        <item>Juggling</item>
+        <item>Jujitsu</item>
+        <item>Jukskei</item>
+        <item>Kabaddi</item>
+        <item>Karaoke</item>
+        <item>Karate</item>
+        <item>Kart racing</item>
+        <item>Kayaking</item>
+        <item>Kendama</item>
+        <item>Kite flying</item>
+        <item>Kitesurfing</item>
+        <item>Knife collecting</item>
+        <item>Knife making</item>
+        <item>Knife throwing</item>
+        <item>Knitting</item>
+        <item>Knot tying</item>
+        <item>Kombucha brewing</item>
+        <item>Lace making</item>
+        <item>Lacrosse</item>
+        <item>Lapidary</item>
+        <item>LARPing</item>
+        <item>Laser tag</item>
+        <item>Learning</item>
+        <item>Leather crafting</item>
+        <item>Lego building</item>
+        <item>Letterboxing</item>
+        <item>Listening to music</item>
+        <item>Listening to podcasts</item>
+        <item>Lock picking</item>
+        <item>Longboarding</item>
+        <item>Lotology </item>
+        <item>Machining</item>
+        <item>Macrame</item>
+        <item>Magic</item>
+        <item>Magnet fishing</item>
+        <item>Mahjong</item>
+        <item>Makeup</item>
+        <item>Marbles</item>
+        <item>Marching band</item>
+        <item>Martial arts</item>
+        <item>Meditation</item>
+        <item>Metal detecting</item>
+        <item>Metalworking</item>
+        <item>Meteorology</item>
+        <item>Microscopy</item>
+        <item>Mineral collecting</item>
+        <item>Model aircraft</item>
+        <item>Model building</item>
+        <item>Model engineering</item>
+        <item>Motor sports</item>
+        <item>Mountain biking</item>
+        <item>Mountaineering</item>
+        <item>Movie memorabilia</item>
+        <item>Movies</item>
+        <item>Mushroom hunting/mycology</item>
+        <item>Nail art</item>
+        <item>Needlepoint</item>
+        <item>Netball</item>
+        <item>Nordic skating</item>
+        <item>Orienteering</item>
+        <item>Origami</item>
+        <item>Paintball</item>
+        <item>Painting</item>
+        <item>Parkour</item>
+        <item>Perfume</item>
+
     </string-array></file><file path="C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\res\values\preloaded_fonts.xml" qualifiers=""><array name="preloaded_fonts" translatable="false">
 
         <item>@font/orbitron</item>
