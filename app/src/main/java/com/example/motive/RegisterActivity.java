@@ -22,6 +22,7 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.MultiAutoCompleteTextView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -74,7 +75,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     EditText mPostcode;
     EditText mUserBio;
     AutoCompleteTextView mMainMotive;
-    EditText mOtherMotives;
+    MultiAutoCompleteTextView mOtherMotives;
     EditText mDegree;
     Button mRegisterButton;
     ProgressBar progressBar;
@@ -105,7 +106,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         mPostcode = findViewById(R.id.postcodeEditText);
         mUserBio = findViewById(R.id.descriptionEditText);
         mMainMotive = findViewById(R.id.mainMotiveAutoCompleteTextView);
-        mOtherMotives = findViewById(R.id.motivesEditText);
+        mOtherMotives = findViewById(R.id.motivesMultiAutoCompleteTextView);
         mDegree = findViewById(R.id.degreeEditText);
         mRegisterButton = findViewById(R.id.registerButton2);
         progressBar = findViewById(R.id.progressBar);
@@ -142,8 +143,15 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         mMainMotive.setAdapter(adapter2);
         mMainMotive.setDropDownBackgroundResource(R.color.autocomplete_background_color);
 
+        String[] motives = getResources().getStringArray(R.array.motives);
+        ArrayAdapter<String> adapter3 = new ArrayAdapter<String>(this,
+                android.R.layout.simple_expandable_list_item_1, motives);
 
+        mOtherMotives.setAdapter(adapter3);
+        mOtherMotives.setTokenizer(new MultiAutoCompleteTextView.CommaTokenizer());
+        mOtherMotives.setDropDownBackgroundResource(R.color.autocomplete_background_color);
 
+        //Register button click
 
         mRegisterButton.setOnClickListener(new View.OnClickListener() {
             @Override

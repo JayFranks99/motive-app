@@ -81,17 +81,17 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml">
           <provider editor-type-id="android-designer2" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="303" column="43" selection-start-line="303" selection-start-column="43" selection-end-line="303" selection-end-column="43" />
+            <state relative-caret-position="422">
+              <caret line="322" column="39" lean-forward="true" selection-start-line="322" selection-start-column="39" selection-end-line="322" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/values/motiveslist.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4143">
-              <caret line="94" column="26" lean-forward="true" selection-start-line="94" selection-start-column="26" selection-end-line="94" selection-end-column="26" />
+            <state relative-caret-position="838">
+              <caret line="327" column="29" selection-start-line="327" selection-start-column="29" selection-end-line="327" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -119,14 +119,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/motive/RegisterActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="141" column="8" selection-start-line="141" selection-start-column="8" selection-end-line="141" selection-end-column="8" />
+            <state relative-caret-position="306">
+              <caret line="133" column="60" lean-forward="true" selection-start-line="133" selection-start-column="60" selection-end-line="133" selection-end-column="60" />
               <folding>
                 <element signature="e#4860#4868#0" expanded="true" />
                 <element signature="e#5085#5093#0" expanded="true" />
+                <element signature="e#5610#5618#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -202,11 +203,11 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/motive/LogInActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/motive/SettingsActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_profile.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/motive/RegisterActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/motiveslist.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/motive/RegisterActivity.java" />
       </list>
     </option>
   </component>
@@ -912,14 +913,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="303" column="43" selection-start-line="303" selection-start-column="43" selection-end-line="303" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/motive/LogInActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -945,21 +938,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/motive/RegisterActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/motiveslist.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="141" column="8" selection-start-line="141" selection-start-column="8" selection-end-line="141" selection-end-column="8" />
-          <folding>
-            <element signature="e#4860#4868#0" expanded="true" />
-            <element signature="e#5085#5093#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="838">
+          <caret line="327" column="29" selection-start-line="327" selection-start-column="29" selection-end-line="327" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/motiveslist.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4143">
-          <caret line="94" column="26" lean-forward="true" selection-start-line="94" selection-start-column="26" selection-end-line="94" selection-end-column="26" />
+        <state relative-caret-position="422">
+          <caret line="322" column="39" lean-forward="true" selection-start-line="322" selection-start-column="39" selection-end-line="322" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/motive/RegisterActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="133" column="60" lean-forward="true" selection-start-line="133" selection-start-column="60" selection-end-line="133" selection-end-column="60" />
+          <folding>
+            <element signature="e#4860#4868#0" expanded="true" />
+            <element signature="e#5085#5093#0" expanded="true" />
+            <element signature="e#5610#5618#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

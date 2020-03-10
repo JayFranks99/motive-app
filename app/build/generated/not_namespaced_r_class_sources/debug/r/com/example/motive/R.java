@@ -5638,7 +5638,7 @@ public final class R {
     public static final int motiveHeading=0x7f0a00cb;
     public static final int motiveLogo=0x7f0a00cc;
     public static final int motiveView=0x7f0a00cd;
-    public static final int motivesEditText=0x7f0a00ce;
+    public static final int motivesMultiAutoCompleteTextView=0x7f0a00ce;
     public static final int mtrl_child_content_container=0x7f0a00cf;
     public static final int mtrl_internal_children_alpha_tag=0x7f0a00d0;
     public static final int multiply=0x7f0a00d1;

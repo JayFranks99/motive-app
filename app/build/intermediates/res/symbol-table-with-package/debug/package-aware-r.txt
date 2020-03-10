@@ -1446,7 +1446,7 @@ id mini
 id motiveHeading
 id motiveLogo
 id motiveView
-id motivesEditText
+id motivesMultiAutoCompleteTextView
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply

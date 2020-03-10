@@ -308,8 +308,9 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/descriptionEditText" />
 
-        <EditText
-            android:id="@+id/motivesEditText"
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/motivesMultiAutoCompleteTextView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -318,7 +319,6 @@
             android:background="@android:color/white"
             android:ems="10"
             android:hint="Other motives (e.g Golf, Reading, Cocktail making)"
-            android:inputType="textMultiLine"
             android:padding="5dp"
             android:textColor="#000000"
             android:textColorHint="#CCC9C9"
@@ -340,11 +340,10 @@
             android:inputType="text"
             android:padding="5dp"
             android:textColor="#000000"
-
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/motivesEditText" />
+            app:layout_constraintTop_toBottomOf="@+id/motivesMultiAutoCompleteTextView" />
 
         <Button
             android:id="@+id/registerButton2"
