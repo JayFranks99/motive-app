@@ -327,23 +327,24 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/mainMotiveAutoCompleteTextView" />
 
-        <EditText
-            android:id="@+id/degreeEditText"
+
+        <AutoCompleteTextView
+            android:id="@+id/degreeAutoCompleteTextView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="16dp"
             android:background="@android:color/white"
-            android:ems="10"
             android:hint="Degree"
-            android:inputType="text"
             android:padding="5dp"
+            android:completionThreshold="3"
             android:textColor="#000000"
+            android:textColorHint="#CCC9C9"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/motivesMultiAutoCompleteTextView" />
+
 
         <Button
             android:id="@+id/registerButton2"
@@ -356,7 +357,7 @@
             android:textColor="#FFF"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/degreeEditText" />
+            app:layout_constraintTop_toBottomOf="@+id/degreeAutoCompleteTextView" />
 
         <ProgressBar
             android:id="@+id/progressBar"

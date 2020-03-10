@@ -4594,7 +4594,587 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">#0095b7</item>
 
-    </style></file><file name="file_paths" path="C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\res\xml\file_paths.xml" qualifiers="" type="xml"/><file name="header_preferences" path="C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\res\xml\header_preferences.xml" qualifiers="" type="xml"/><file name="messages_preferences" path="C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\res\xml\messages_preferences.xml" qualifiers="" type="xml"/><file name="sync_preferences" path="C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\res\xml\sync_preferences.xml" qualifiers="" type="xml"/></source><source path="C:\Users\Jay\AndroidStudioProjects\motive\app\build\generated\res\rs\debug"/><source path="C:\Users\Jay\AndroidStudioProjects\motive\app\build\generated\res\resValues\debug"/><source path="C:\Users\Jay\AndroidStudioProjects\motive\app\build\generated\res\google-services\debug"><file path="C:\Users\Jay\AndroidStudioProjects\motive\app\build\generated\res\google-services\debug\values\values.xml" qualifiers=""><string name="default_web_client_id" translatable="false">279544113941-he3eo9v4eg8oa1kqpqll3g1r8s99imhh.apps.googleusercontent.com</string><string name="firebase_database_url" translatable="false">https://motive-2020.firebaseio.com</string><string name="gcm_defaultSenderId" translatable="false">279544113941</string><string name="google_api_key" translatable="false">AIzaSyDb_5bj0HfgdTrhfptFMNKytQeyVHyGkpw</string><string name="google_app_id" translatable="false">1:279544113941:android:fffce61a87b13c9a3c171c</string><string name="google_crash_reporting_api_key" translatable="false">AIzaSyDb_5bj0HfgdTrhfptFMNKytQeyVHyGkpw</string><string name="google_storage_bucket" translatable="false">motive-2020.appspot.com</string><string name="project_id" translatable="false">motive-2020</string></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\Jay\AndroidStudioProjects\motive\app\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\Jay\AndroidStudioProjects\motive\app\src\debug\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="AlertDialog">
+    </style></file><file name="file_paths" path="C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\res\xml\file_paths.xml" qualifiers="" type="xml"/><file name="header_preferences" path="C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\res\xml\header_preferences.xml" qualifiers="" type="xml"/><file name="messages_preferences" path="C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\res\xml\messages_preferences.xml" qualifiers="" type="xml"/><file name="sync_preferences" path="C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\res\xml\sync_preferences.xml" qualifiers="" type="xml"/><file path="C:\Users\Jay\AndroidStudioProjects\motive\app\src\main\res\values\degree_list.xml" qualifiers=""><string-array name="degrees">
+        <item>Accounting and Finance</item>
+
+        <item>Actuarial Mathematics</item>
+
+        <item>Advanced Psychology</item>
+
+        <item>Aeronautical and Aerospace Engineering</item>
+
+        <item>Ancient History and English</item>
+
+        <item>Ancient History and History</item>
+
+        <item>Ancient History and Philosophy</item>
+
+        <item>Applied Health (Medical Education)</item>
+
+        <item>Arabic and Chinese</item>
+
+        <item>Arabic and Islamic Studies</item>
+
+        <item>Arabic and Japanese</item>
+
+        <item>Arabic and Middle Eastern Studies</item>
+
+        <item>Arabic and Portuguese</item>
+
+        <item>Arabic and Russian A</item>
+
+        <item>Arabic and Russian B</item>
+
+        <item>Arabic, Middle Eastern and Islamic Studies</item>
+
+        <item>Architectural Engineering</item>
+
+        <item>Architecture</item>
+
+        <item>Art and Design</item>
+
+        <item>Arts and Humanities with Foundation Year</item>
+
+        <item>Asia Pacific Studies</item>
+
+        <item>Asia Pacific Studies and Chinese</item>
+
+        <item>Asia Pacific Studies and International Relations</item>
+
+        <item>Asia Pacific Studies and Japanese</item>
+
+        <item>Asia Pacific Studies and Politics</item>
+
+        <item>Automotive Engineering</item>
+
+        <item>Aviation Technology with Pilot Studies and Management</item>
+
+        <item>Banking and Finance</item>
+
+        <item>Biochemistry</item>
+
+        <item>Biochemistry in Relation to Medicine</item>
+
+        <item>Biological Sciences</item>
+
+        <item>Biological Sciences (Biotechnology with Enterprise) </item>
+
+        <item>Biology</item>
+
+        <item>Biology and History and Philosophy of Science</item>
+
+        <item>Biomedical and Healthcare Ethics</item>
+
+        <item>Business Economics</item>
+
+        <item>Business Management</item>
+
+        <item>Business Management and Leadership</item>
+
+        <item>Business Management and the Human Resource</item>
+
+        <item>Business Management with Marketing</item>
+
+        <item>Business Studies with Foundation Year</item>
+
+        <item>Cardiovascular Medicine</item>
+
+        <item>Cell Biology of Human Disease</item>
+
+        <item>Chartered Manager (Degree) Apprenticeship</item>
+
+        <item>Chemical Engineering</item>
+
+        <item>Chemical and Energy Engineering</item>
+
+        <item>Chemical and Materials Engineering</item>
+
+        <item>Chemical and Nuclear Engineering</item>
+
+        <item>Chemistry</item>
+
+        <item>Chemistry and Mathematics</item>
+
+        <item>Chemistry with Study Abroad</item>
+
+        <item>Chemistry with a Year in Industry</item>
+
+        <item>Child and Family Studies</item>
+
+        <item>Childhood Studies</item>
+
+        <item>Chinese (Modern) </item>
+
+        <item>Chinese and East Asian Religions and Cultures</item>
+
+        <item>Chinese and Italian B</item>
+
+        <item>Chinese and Japanese Studies</item>
+
+        <item>Chinese and Portuguese</item>
+
+        <item>Chinese and Russian A</item>
+
+        <item>Chinese and Russian B</item>
+
+        <item>Chinese and Thai Studies</item>
+
+        <item>Civil Engineering</item>
+
+        <item>Civil Engineering with Project Management</item>
+
+        <item>Civil Engineering with Transport</item>
+
+        <item>Civil and Environmental Engineering</item>
+
+        <item>Civil and Structural Engineering</item>
+
+        <item>Classical Civilisation</item>
+
+        <item>Classical Civilisation and English</item>
+
+        <item>Classical Civilisation and History</item>
+
+        <item>Classical Civilisation and Philosophy</item>
+
+        <item>Classical Literature and English</item>
+
+        <item>Classical Literature and French</item>
+
+        <item>Classical Literature and Italian B</item>
+
+        <item>Classical Literature and Philosophy</item>
+
+        <item>Classical Literature and Russian B</item>
+
+        <item>Clinical Anatomy</item>
+
+        <item>Communication and Media</item>
+
+        <item>Computer Science</item>
+
+        <item>Computer Science (Digital and Technology Solutions) </item>
+
+        <item>Computer Science and Mathematics</item>
+
+        <item>Computer Science with Artificial Intelligence</item>
+
+        <item>Computer Science with High-Performance Graphics and Games Engineering</item>
+
+        <item>Criminal Justice and Criminology</item>
+
+        <item>Cultural and Media Studies</item>
+
+        <item>Dental Hygiene and Dental Therapy</item>
+
+        <item>Dental Surgery MChD/BChD, Oral Science BSc</item>
+
+        <item>Diagnostic Radiography</item>
+
+        <item>Digital Media</item>
+
+        <item>East Asian Religions and Cultures</item>
+
+        <item>East Asian Religions and Cultures and Japanese</item>
+
+        <item>East Asian Religions and Cultures and Thai Studies</item>
+
+        <item>Ecology and Conservation Biology</item>
+
+        <item>Economics</item>
+
+        <item>Economics and Finance</item>
+
+        <item>Economics and Geography</item>
+
+        <item>Economics and History</item>
+
+        <item>Economics and Mathematics</item>
+
+        <item>Economics and Philosophy</item>
+
+        <item>Economics and Politics</item>
+
+        <item>Education</item>
+
+        <item>Electronic Engineering</item>
+
+        <item>Electronic and Communications Engineering</item>
+
+        <item>Electronic and Electrical Engineering</item>
+
+        <item>Electronics and Computer Engineering</item>
+
+        <item>Electronics and Renewable Energy Systems</item>
+
+        <item>English Language and Linguistics</item>
+
+        <item>English Language and Literature</item>
+
+        <item>English Literature</item>
+
+        <item>English Literature and Theatre Studies</item>
+
+        <item>English Literature with Creative Writing</item>
+
+        <item>English and Comparative Literature</item>
+
+        <item>English and Film Studies</item>
+
+        <item>English and History</item>
+
+        <item>English and History of Art</item>
+
+        <item>English and Music</item>
+
+        <item>English and Philosophy</item>
+
+        <item>English and Social Policy</item>
+
+        <item>English and Sociology</item>
+
+        <item>Environment and Business</item>
+
+        <item>Environmental Science</item>
+
+        <item>Environmental Science (International)</item>
+
+        <item>Fashion Design</item>
+
+        <item>Fashion Marketing</item>
+
+        <item>Fashion Technology</item>
+
+        <item>Film, Photography and Media</item>
+
+        <item>Financial Mathematics</item>
+
+        <item>Fine Art</item>
+
+        <item>Fine Art with Contemporary Cultural Theory</item>
+
+        <item>Fine Art with History of Art</item>
+
+        <item>Food Science</item>
+
+        <item>Food Science (Industrial)</item>
+
+        <item>Food Science and Nutrition</item>
+
+        <item>Food Science and Nutrition (Industrial)</item>
+
+        <item>French</item>
+
+        <item>Gateway Year to Medicine</item>
+
+        <item>Genetics</item>
+
+        <item>Geography</item>
+
+        <item>Geography and Geology</item>
+
+        <item>Geography with Environmental Mathematics</item>
+
+        <item>Geography with Transport Studies</item>
+
+        <item>Geology</item>
+
+        <item>Geology (International) </item>
+
+        <item>Geophysics</item>
+
+        <item>Geophysics (International) </item>
+
+        <item>German</item>
+
+        <item>Graphic and Communication Design</item>
+
+        <item>Healthcare Science (Audiology) </item>
+
+        <item>Healthcare Science (Cardiac Physiology) </item>
+
+        <item>Healthcare for Assistant Practitioners</item>
+
+        <item>History</item>
+
+        <item>History and History and Philosophy of Science</item>
+
+        <item>History and History of Art</item>
+
+        <item>History and Philosophy</item>
+
+        <item>History and Philosophy of Science and Physics</item>
+
+        <item>History and Philosophy of Science and Politics</item>
+
+        <item>History and Philosophy of Science and Theology and Religious Studies</item>
+
+        <item>History and Sociology</item>
+
+        <item>History of Art</item>
+
+        <item>History of Art with Cultural Studies</item>
+
+        <item>Human Physiology</item>
+
+        <item>Human Physiology in Relation to Medicine</item>
+
+        <item>Human Resource Management</item>
+
+        <item>Intercalated Degree in International Health</item>
+
+        <item>Interdisciplinary Science with Foundation Year</item>
+
+        <item>Interdisciplinary Studies with Preparation for Higher Education</item>
+
+        <item>International Business</item>
+
+        <item>International Business and Finance</item>
+
+        <item>International Business and Marketing</item>
+
+        <item>International Development</item>
+
+        <item>International Foundation Year - Arts and Social Science Route</item>
+
+        <item>International Foundation Year - Business Route</item>
+
+        <item>International Foundation Year - Design Route</item>
+
+        <item>International Foundation Year - Engineering Route</item>
+
+        <item>International Foundation Year - Science and Healthcare Route</item>
+
+        <item>International History and Politics</item>
+
+        <item>International Relations</item>
+
+        <item>Islamic Studies</item>
+
+        <item>Italian B</item>
+
+        <item>Italian B and Japanese</item>
+
+        <item>Italian B and Portuguese</item>
+
+        <item>Italian B and Russian A</item>
+
+        <item>Japanese</item>
+
+        <item>Japanese and Russian A</item>
+
+        <item>Japanese and Russian B</item>
+
+        <item>Journalism</item>
+
+        <item>Languages and Cultures</item>
+
+        <item>Languages, Cultures and Business</item>
+
+        <item>Languages, Cultures and Economics</item>
+
+        <item>Languages, Cultures and English</item>
+
+        <item>Languages, Cultures and Film Studies</item>
+
+        <item>Languages, Cultures and History</item>
+
+        <item>Languages, Cultures and International Relations</item>
+
+        <item>Languages, Cultures and Linguistics</item>
+
+        <item>Languages, Cultures and Philosophy</item>
+
+        <item>Languages, Cultures and Politics</item>
+
+        <item>Law</item>
+
+        <item>Law with European Legal Studies</item>
+
+        <item>Law with French Law</item>
+
+        <item>Law with German Law</item>
+
+        <item>Law with Hispanic Law</item>
+
+        <item>Law with International Legal Studies</item>
+
+        <item>Learning and Teaching</item>
+
+        <item>Learning and Teaching (Special Educational Needs and Disability)</item>
+
+        <item>Liberal Arts</item>
+
+        <item>Liberal Arts (International Language)</item>
+
+        <item>Linguistics and Philosophy</item>
+
+        <item>Linguistics and Phonetics</item>
+
+        <item>Mathematics</item>
+
+        <item>Mathematics and Music</item>
+
+        <item>Mathematics and Philosophy</item>
+
+        <item>Mathematics and Statistics</item>
+
+        <item>Mechanical Engineering</item>
+
+        <item>Mechatronics and Robotics</item>
+
+        <item>Medical Biochemistry</item>
+
+        <item>Medical Engineering</item>
+
+        <item>Medical Microbiology</item>
+
+        <item>Medical Sciences</item>
+
+        <item>Medicinal Chemistry</item>
+
+        <item>Medicinal Chemistry with Study Abroad</item>
+
+        <item>Medicinal Chemistry with a Year in Industry</item>
+
+        <item>Medicine and Surgery</item>
+
+        <item>Microbiology</item>
+
+        <item>Microbiology in Relation to Medicine</item>
+
+        <item>Middle Eastern Studies</item>
+
+        <item>Middle Eastern Studies and Politics</item>
+
+        <item>Midwifery</item>
+
+        <item>Music</item>
+
+        <item>Music (Performance) </item>
+
+        <item>Music and Music Psychology</item>
+
+        <item>Music with Enterprise</item>
+
+        <item>Music, Multimedia and Electronics</item>
+
+        <item>Natural Sciences</item>
+
+        <item>Neuroscience</item>
+
+        <item>Neuroscience in Relation to Medicine</item>
+
+        <item>Nursing (Adult) </item>
+
+        <item>Nursing (Adult) (Apprenticeship Route) </item>
+
+        <item>Nursing (Child) </item>
+
+        <item>Nursing (Mental Health) </item>
+
+        <item>Nursing Associate (Apprenticeship) </item>
+
+        <item>Nutrition</item>
+
+        <item>Nutrition (Industrial) </item>
+
+        <item>Pharmacology</item>
+
+        <item>Pharmacology in Relation to Medicine</item>
+
+        <item>Philosophy</item>
+
+        <item>Philosophy and History and Philosophy of Science</item>
+
+        <item>Philosophy and Physics</item>
+
+        <item>Philosophy and Politics</item>
+
+        <item>Philosophy, Ethics and Religion</item>
+
+        <item>Philosophy, Politics and Economics</item>
+
+        <item>Philosophy, Psychology and Scientific Thought</item>
+
+        <item>Physics</item>
+
+        <item>Physics with Astrophysics</item>
+
+        <item>Politics</item>
+
+        <item>Politics and Social Policy</item>
+
+        <item>Politics and Sociology</item>
+
+        <item>Portuguese and Russian A</item>
+
+        <item>Portuguese and Russian B</item>
+
+        <item>Product Design</item>
+
+        <item>Professional Studies</item>
+
+        <item>Psychology</item>
+
+        <item>Psychology (Intercalated Programme)</item>
+
+        <item>Psychology with Education</item>
+
+        <item>Religion, Politics and Society</item>
+
+        <item>Social Policy</item>
+
+        <item>Social Policy and Crime</item>
+
+        <item>Social Policy and Sociology</item>
+
+        <item>Social Policy with Enterprise</item>
+
+        <item>Social Science</item>
+
+        <item>Social Work</item>
+
+        <item>Sociology</item>
+
+        <item>Sociology and International Relations</item>
+
+        <item>Spanish</item>
+
+        <item>Spanish, Portuguese and Latin American Studies</item>
+
+        <item>Sport and Exercise Sciences</item>
+
+        <item>Sports Science and Physiology</item>
+
+        <item>Sports Science in Relation to Medicine</item>
+
+        <item>Studies in Science with Foundation Year</item>
+
+        <item>Sustainability and Environmental Management</item>
+
+        <item>Sustainability and Environmental Management (International)</item>
+
+        <item>Teaching English to Speakers of Other Languages (TESOL)</item>
+
+        <item>Textile Design</item>
+
+        <item>Thai Studies</item>
+
+        <item>Theatre and Performance</item>
+
+        <item>Theatre and Performance with Enterprise</item>
+
+        <item>Theology and Religious Studies</item>
+
+        <item>Theoretical Physics</item>
+
+        <item>Zoology</item>
+
+        <item>Zoology in Relation to Medicine and Veterinary Science</item>
+
+
+    </string-array></file></source><source path="C:\Users\Jay\AndroidStudioProjects\motive\app\build\generated\res\rs\debug"/><source path="C:\Users\Jay\AndroidStudioProjects\motive\app\build\generated\res\resValues\debug"/><source path="C:\Users\Jay\AndroidStudioProjects\motive\app\build\generated\res\google-services\debug"><file path="C:\Users\Jay\AndroidStudioProjects\motive\app\build\generated\res\google-services\debug\values\values.xml" qualifiers=""><string name="default_web_client_id" translatable="false">279544113941-he3eo9v4eg8oa1kqpqll3g1r8s99imhh.apps.googleusercontent.com</string><string name="firebase_database_url" translatable="false">https://motive-2020.firebaseio.com</string><string name="gcm_defaultSenderId" translatable="false">279544113941</string><string name="google_api_key" translatable="false">AIzaSyDb_5bj0HfgdTrhfptFMNKytQeyVHyGkpw</string><string name="google_app_id" translatable="false">1:279544113941:android:fffce61a87b13c9a3c171c</string><string name="google_crash_reporting_api_key" translatable="false">AIzaSyDb_5bj0HfgdTrhfptFMNKytQeyVHyGkpw</string><string name="google_storage_bucket" translatable="false">motive-2020.appspot.com</string><string name="project_id" translatable="false">motive-2020</string></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\Jay\AndroidStudioProjects\motive\app\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\Jay\AndroidStudioProjects\motive\app\src\debug\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="AlertDialog">
         <attr name="android:layout"/>
         <attr format="reference" name="buttonPanelSideLayout"/>
         <attr format="reference" name="listLayout"/>

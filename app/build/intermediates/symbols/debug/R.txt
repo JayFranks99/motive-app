@@ -39,11 +39,12 @@ int animator mtrl_fab_transformation_sheet_expand_spec 0x7f020009
 int array com_google_android_gms_fonts_certs 0x7f030000
 int array com_google_android_gms_fonts_certs_dev 0x7f030001
 int array com_google_android_gms_fonts_certs_prod 0x7f030002
-int array halls 0x7f030003
-int array motives 0x7f030004
-int array preloaded_fonts 0x7f030005
-int array reply_entries 0x7f030006
-int array reply_values 0x7f030007
+int array degrees 0x7f030003
+int array halls 0x7f030004
+int array motives 0x7f030005
+int array preloaded_fonts 0x7f030006
+int array reply_entries 0x7f030007
+int array reply_values 0x7f030008
 int attr actionBarDivider 0x7f040000
 int attr actionBarItemBackground 0x7f040001
 int attr actionBarPopupTheme 0x7f040002
@@ -1348,7 +1349,7 @@ int id dark 0x7f0a0069
 int id dateAndTimeTextview 0x7f0a006a
 int id decor_content_parent 0x7f0a006b
 int id default_activity_button 0x7f0a006c
-int id degreeEditText 0x7f0a006d
+int id degreeAutoCompleteTextView 0x7f0a006d
 int id degreeHeading 0x7f0a006e
 int id descriptionEditText 0x7f0a006f
 int id descriptionTextView 0x7f0a0070

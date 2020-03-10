@@ -54,11 +54,12 @@ public final class R {
     public static final int com_google_android_gms_fonts_certs=0x7f030000;
     public static final int com_google_android_gms_fonts_certs_dev=0x7f030001;
     public static final int com_google_android_gms_fonts_certs_prod=0x7f030002;
-    public static final int halls=0x7f030003;
-    public static final int motives=0x7f030004;
-    public static final int preloaded_fonts=0x7f030005;
-    public static final int reply_entries=0x7f030006;
-    public static final int reply_values=0x7f030007;
+    public static final int degrees=0x7f030003;
+    public static final int halls=0x7f030004;
+    public static final int motives=0x7f030005;
+    public static final int preloaded_fonts=0x7f030006;
+    public static final int reply_entries=0x7f030007;
+    public static final int reply_values=0x7f030008;
   }
   public static final class attr {
     /**
@@ -5541,7 +5542,7 @@ public final class R {
     public static final int dateAndTimeTextview=0x7f0a006a;
     public static final int decor_content_parent=0x7f0a006b;
     public static final int default_activity_button=0x7f0a006c;
-    public static final int degreeEditText=0x7f0a006d;
+    public static final int degreeAutoCompleteTextView=0x7f0a006d;
     public static final int degreeHeading=0x7f0a006e;
     public static final int descriptionEditText=0x7f0a006f;
     public static final int descriptionTextView=0x7f0a0070;

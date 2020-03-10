@@ -76,7 +76,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     EditText mUserBio;
     AutoCompleteTextView mMainMotive;
     MultiAutoCompleteTextView mOtherMotives;
-    EditText mDegree;
+    AutoCompleteTextView mDegree;
     Button mRegisterButton;
     ProgressBar progressBar;
     FirebaseAuth fAuth;
@@ -107,7 +107,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         mUserBio = findViewById(R.id.descriptionEditText);
         mMainMotive = findViewById(R.id.mainMotiveAutoCompleteTextView);
         mOtherMotives = findViewById(R.id.motivesMultiAutoCompleteTextView);
-        mDegree = findViewById(R.id.degreeEditText);
+        mDegree = findViewById(R.id.degreeAutoCompleteTextView);
         mRegisterButton = findViewById(R.id.registerButton2);
         progressBar = findViewById(R.id.progressBar);
         cPassword = findViewById(R.id.confirmPasswordEditText);
@@ -150,6 +150,13 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         mOtherMotives.setAdapter(adapter3);
         mOtherMotives.setTokenizer(new MultiAutoCompleteTextView.CommaTokenizer());
         mOtherMotives.setDropDownBackgroundResource(R.color.autocomplete_background_color);
+
+        String[] degree = getResources().getStringArray(R.array.degrees);
+        ArrayAdapter<String> adapter4 = new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_1, degree);
+
+        mDegree.setAdapter(adapter4);
+        mDegree.setDropDownBackgroundResource(R.color.autocomplete_background_color);
 
         //Register button click
 

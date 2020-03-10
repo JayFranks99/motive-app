@@ -40,6 +40,7 @@ animator mtrl_fab_transformation_sheet_expand_spec
 array com_google_android_gms_fonts_certs
 array com_google_android_gms_fonts_certs_dev
 array com_google_android_gms_fonts_certs_prod
+array degrees
 array halls
 array motives
 array preloaded_fonts
@@ -1349,7 +1350,7 @@ id dark
 id dateAndTimeTextview
 id decor_content_parent
 id default_activity_button
-id degreeEditText
+id degreeAutoCompleteTextView
 id degreeHeading
 id descriptionEditText
 id descriptionTextView
