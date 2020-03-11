@@ -311,12 +311,11 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                                 }
                             });
 
-
                             Toast.makeText(RegisterActivity.this, "User Created.", Toast.LENGTH_SHORT).show();
 
                             userID = fAuth.getCurrentUser().getUid();
                             DocumentReference documentReference = fStore.collection("users").document(userID);
-                            Map<String, Object> user = new HashMap<>();
+                            HashMap<String, Object> user = new HashMap<>();
                             user.put("username", username);
                             user.put("email", email);
                             user.put("halls", halls);
@@ -328,7 +327,8 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                             user.put("other motives", otherMotives);
                             user.put("degree", degree);
                             user.put("image",imageUrl);
-                            documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
+                            user.put("address", geoLocate());
+                           documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
                                 public void onSuccess(Void aVoid) {
                                     Log.d(TAG1, "onSuccess: user profile is created for " + userID);
@@ -341,9 +341,17 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                                 }
                             });
 
-                            startActivity(new Intent(getApplicationContext(), MotiveHomeActivity.class));
+
+
+                            Intent i = new Intent(getApplicationContext(), MotiveHomeActivity.class);
+
+                            Bundle extras = new Bundle();
+                            extras.putSerializable("user", user);
+                            i.putExtras(extras);
+
+                            startActivity(i);
                             //execute out method for geolocating
-                            geoLocate();
+
 
                         } else {
 
@@ -353,7 +361,9 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                     }
                 });
 
-            }private void geoLocate() {
+            }
+
+            private Address geoLocate() {
                    Log.d(TAG, "geoLocate:geolocating");
 
                    String postcode = mPostcode.getText().toString();
@@ -371,9 +381,12 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
                        Address address = list.get(0);
                        Log.d(TAG, "geoLocate: found a location:  " + address.toString());
+                       return address;
                        // Toast.makeText(this, address.toString(), Toast.LENGTH_SHORT).show();
                       // moveCamera(new LatLng(address.getLatitude(), address.getLongitude()), DEFAULT_ZOOM);
                    }
+
+                   return null;
                }
             });
 

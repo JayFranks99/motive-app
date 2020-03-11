@@ -1,19 +1,18 @@
 package com.example.motive;
-
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
-
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
-
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
@@ -22,14 +21,19 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
 import androidx.fragment.app.Fragment;
-
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import com.google.android.gms.maps.OnMapReadyCallback;
+import android.location.Address;
+
+import static com.example.motive.RegisterActivity.TAG1;
 
 
 public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyCallback {
@@ -42,11 +46,19 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
 
     List<Fragment> FragmentList;
 
+    HashMap<String, Object> user;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_motivehome);
         FindViewsById();
+
+
+        Bundle b = this.getIntent().getExtras();
+        if (b != null) {
+            user = (HashMap<String,Object>)b.getSerializable("user");
+        }
 
         myProfileIcon.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -125,6 +137,8 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
         super.onConfigurationChanged(newConfig);
     }
 
+    //Google Maps Method
+
     @Override
     public void onMapReady(GoogleMap googleMap) {
         googleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
@@ -165,10 +179,43 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
         });
 
         // Markers and camera zoom
-        LatLng Jay = new LatLng(53.8179462, -1.5687024);
-        googleMap.addMarker(new MarkerOptions().position(Jay).title("JayFranks99").snippet("Football").icon(BitmapDescriptorFactory.fromResource(R.drawable.f_icon)));
-        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Jay,15));
+        Address jayAddress = (Address)user.get("address");
+        LatLng jayLatLng = new LatLng(jayAddress.getLatitude(), jayAddress.getLongitude());
+        googleMap.addMarker(new MarkerOptions().position(jayLatLng).title((String)user.get("username")).snippet((String)user.get("main motive")).icon(BitmapDescriptorFactory.fromResource(R.drawable.f_icon)));
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(jayLatLng,15));
 
+/*
+        List<HashMap<String,Object>> userList = new ArrayList<HashMap<String,Object>>();
+
+        documentReference.get(user).addOnSuccessListener(new OnSuccessListener<Void>() {
+            @Override
+            public void onSuccess(Void aVoid) {
+                Log.d(TAG1, "onSuccess: user profile is created for " + userID);
+
+                //With said ddata .ToList()
+                //userList = dataFromDatabase.ToList();
+                //userList = aVoid.toList
+                //get data back out
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Log.d(TAG1, "onFailure: " + e.toString());
+            }
+        });
+
+        //TODO:
+        //Link list to Database
+
+        for (int i = 0; i < userList.size(); i++) {
+            Address address = (Address)user.get("address");
+            LatLng latLng = new LatLng(address.getLatitude(), address.getLongitude());
+            googleMap.addMarker(new MarkerOptions().position(latLng).title((String)userList.get(i).get("username")).snippet((String)userList.get(i).get("main motive")).icon(BitmapDescriptorFactory.fromResource(R.drawable.f_icon)));
+            if (i == 0){
+                googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng,15));
+            }
+        }
+*/
         LatLng George = new LatLng(53.8198745, -1.5677403);
         googleMap.addMarker(new MarkerOptions().position(George).title("George99").snippet("Football").icon(BitmapDescriptorFactory.fromResource(R.drawable.f_icon)));
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(George,15));
