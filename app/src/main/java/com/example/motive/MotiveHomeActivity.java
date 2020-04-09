@@ -31,6 +31,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.firebase.firestore.GeoPoint;
+
 import android.location.Address;
 
 import static com.example.motive.RegisterActivity.TAG1;
@@ -55,9 +57,9 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
         FindViewsById();
 
 
-        Bundle b = this.getIntent().getExtras();
-        if (b != null) {
-            user = (HashMap<String,Object>)b.getSerializable("user");
+        Bundle dbfields = this.getIntent().getExtras();
+        if (dbfields != null) {
+            user = (HashMap<String,Object>)dbfields.getSerializable("user");
         }
 
         myProfileIcon.setOnClickListener(new View.OnClickListener() {
@@ -143,16 +145,14 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
     public void onMapReady(GoogleMap googleMap) {
         googleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
 
+        // Markers and camera zoom
         final Context context = this;
-
-      //  Toast.makeText(context, "Map Ready Called", Toast.LENGTH_SHORT).show();
-
 
         googleMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
             @Override
             public boolean onMarkerClick(Marker marker) {
 
-                final String[] items = {"View Profile", "Message", "Close"};
+                 final String[] items = {"View Profile", "Message", "Close"};
 
                 new AlertDialog.Builder(context)
                         .setTitle(marker.getTitle())
@@ -177,14 +177,13 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
                 return false;
             }
         });
-
-        // Markers and camera zoom
-        Address jayAddress = (Address)user.get("address");
-        LatLng jayLatLng = new LatLng(jayAddress.getLatitude(), jayAddress.getLongitude());
+/*
+        LatLng jayLatLng = new LatLng(user.get("lat"), user.get("lng"));
         googleMap.addMarker(new MarkerOptions().position(jayLatLng).title((String)user.get("username")).snippet((String)user.get("main motive")).icon(BitmapDescriptorFactory.fromResource(R.drawable.f_icon)));
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(jayLatLng,15));
 
-/*
+
+
         List<HashMap<String,Object>> userList = new ArrayList<HashMap<String,Object>>();
 
         documentReference.get(user).addOnSuccessListener(new OnSuccessListener<Void>() {
@@ -206,6 +205,7 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
 
         //TODO:
         //Link list to Database
+        // for loop is for getiing correct user profile
 
         for (int i = 0; i < userList.size(); i++) {
             Address address = (Address)user.get("address");
@@ -215,7 +215,7 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
                 googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng,15));
             }
         }
-*/
+
         LatLng George = new LatLng(53.8198745, -1.5677403);
         googleMap.addMarker(new MarkerOptions().position(George).title("George99").snippet("Football").icon(BitmapDescriptorFactory.fromResource(R.drawable.f_icon)));
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(George,15));
@@ -228,7 +228,7 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
         googleMap.addMarker(new MarkerOptions().position(Mick).title("Millie98").snippet("Chess").icon(BitmapDescriptorFactory.fromResource(R.drawable.chess_icon)));
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Mick,15));
 
-
+*/
     }
 
 }

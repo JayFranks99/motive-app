@@ -25,7 +25,6 @@ import android.widget.ImageView;
 import android.widget.MultiAutoCompleteTextView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -33,7 +32,6 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.core.content.FileProvider;
-
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -48,7 +46,6 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.squareup.picasso.Picasso;
-
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -313,8 +310,10 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
                             Toast.makeText(RegisterActivity.this, "User Created.", Toast.LENGTH_SHORT).show();
 
+                            //Enter register data to database
                             userID = fAuth.getCurrentUser().getUid();
                             DocumentReference documentReference = fStore.collection("users").document(userID);
+                            //user HashMap called user
                             HashMap<String, Object> user = new HashMap<>();
                             user.put("username", username);
                             user.put("email", email);
@@ -327,7 +326,10 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                             user.put("other motives", otherMotives);
                             user.put("degree", degree);
                             user.put("image",imageUrl);
-                            user.put("address", geoLocate());
+                            user.put("address",geoLocate().toString());
+                            user.put("lat",geoLocate().getLatitude());
+                            user.put("lng",geoLocate().getLongitude());
+
                            documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
                                 public void onSuccess(Void aVoid) {
@@ -341,9 +343,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                                 }
                             });
 
-
-
-                            Intent i = new Intent(getApplicationContext(), MotiveHomeActivity.class);
+                           Intent i = new Intent(getApplicationContext(), MotiveHomeActivity.class);
 
                             Bundle extras = new Bundle();
                             extras.putSerializable("user", user);
@@ -351,7 +351,6 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
                             startActivity(i);
                             //execute out method for geolocating
-
 
                         } else {
 
@@ -378,17 +377,16 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                    }
 
                    if (list.size() > 0) {
-
                        Address address = list.get(0);
                        Log.d(TAG, "geoLocate: found a location:  " + address.toString());
                        return address;
                        // Toast.makeText(this, address.toString(), Toast.LENGTH_SHORT).show();
                       // moveCamera(new LatLng(address.getLatitude(), address.getLongitude()), DEFAULT_ZOOM);
                    }
-
                    return null;
                }
             });
+
 
         cameraBtn.setOnClickListener(new View.OnClickListener() {
             @Override
