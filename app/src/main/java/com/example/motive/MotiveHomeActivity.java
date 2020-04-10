@@ -177,12 +177,12 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
                 return false;
             }
         });
-/*
-        LatLng jayLatLng = new LatLng(user.get("lat"), user.get("lng"));
+
+        LatLng jayLatLng = new LatLng ((double) user.get("lat"),(double) user.get("lng"));
         googleMap.addMarker(new MarkerOptions().position(jayLatLng).title((String)user.get("username")).snippet((String)user.get("main motive")).icon(BitmapDescriptorFactory.fromResource(R.drawable.f_icon)));
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(jayLatLng,15));
 
-
+/*
 
         List<HashMap<String,Object>> userList = new ArrayList<HashMap<String,Object>>();
 
@@ -219,14 +219,6 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
         LatLng George = new LatLng(53.8198745, -1.5677403);
         googleMap.addMarker(new MarkerOptions().position(George).title("George99").snippet("Football").icon(BitmapDescriptorFactory.fromResource(R.drawable.f_icon)));
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(George,15));
-
-        LatLng Tom = new LatLng(53.8177046, -1.5633514);
-        googleMap.addMarker(new MarkerOptions().position(Tom).title("Tom99").snippet("Tennis").icon(BitmapDescriptorFactory.fromResource(R.drawable.tennis_icon)));
-        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Tom,15));
-
-        LatLng Mick = new LatLng(53.8205374, -1.5660997);
-        googleMap.addMarker(new MarkerOptions().position(Mick).title("Millie98").snippet("Chess").icon(BitmapDescriptorFactory.fromResource(R.drawable.chess_icon)));
-        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Mick,15));
 
 */
     }
