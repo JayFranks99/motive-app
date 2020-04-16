@@ -1314,6 +1314,7 @@ id auto
 id backImageView
 id backImageView10
 id backImageView100
+id backImageView1000
 id backgroundLayout
 id barrier
 id beerImageView
@@ -1413,7 +1414,9 @@ id icon_only
 id ifRoom
 id image
 id imageView
+id imageView1
 id imageView2
+id imageView3
 id info
 id invisible
 id italic
