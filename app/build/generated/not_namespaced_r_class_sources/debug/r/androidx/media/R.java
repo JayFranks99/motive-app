@@ -99,25 +99,25 @@ public final class R {
         public static final int forever = 0x7f0a0094;
         public static final int icon = 0x7f0a00ad;
         public static final int icon_group = 0x7f0a00af;
-        public static final int info = 0x7f0a00b7;
-        public static final int italic = 0x7f0a00b9;
-        public static final int line1 = 0x7f0a00c2;
-        public static final int line3 = 0x7f0a00c3;
-        public static final int media_actions = 0x7f0a00d0;
-        public static final int normal = 0x7f0a00e1;
-        public static final int notification_background = 0x7f0a00e2;
-        public static final int notification_main_column = 0x7f0a00e3;
-        public static final int notification_main_column_container = 0x7f0a00e4;
-        public static final int right_icon = 0x7f0a0107;
-        public static final int right_side = 0x7f0a0108;
-        public static final int status_bar_latest_event_content = 0x7f0a0139;
-        public static final int tag_transition_group = 0x7f0a014a;
-        public static final int tag_unhandled_key_event_manager = 0x7f0a014b;
-        public static final int tag_unhandled_key_listeners = 0x7f0a014c;
-        public static final int text = 0x7f0a014e;
-        public static final int text2 = 0x7f0a014f;
-        public static final int time = 0x7f0a0160;
-        public static final int title = 0x7f0a0167;
+        public static final int info = 0x7f0a00b6;
+        public static final int italic = 0x7f0a00b8;
+        public static final int line1 = 0x7f0a00c1;
+        public static final int line3 = 0x7f0a00c2;
+        public static final int media_actions = 0x7f0a00cf;
+        public static final int normal = 0x7f0a00e0;
+        public static final int notification_background = 0x7f0a00e1;
+        public static final int notification_main_column = 0x7f0a00e2;
+        public static final int notification_main_column_container = 0x7f0a00e3;
+        public static final int right_icon = 0x7f0a0106;
+        public static final int right_side = 0x7f0a0107;
+        public static final int status_bar_latest_event_content = 0x7f0a0138;
+        public static final int tag_transition_group = 0x7f0a0149;
+        public static final int tag_unhandled_key_event_manager = 0x7f0a014a;
+        public static final int tag_unhandled_key_listeners = 0x7f0a014b;
+        public static final int text = 0x7f0a014d;
+        public static final int text2 = 0x7f0a014e;
+        public static final int time = 0x7f0a015f;
+        public static final int title = 0x7f0a0166;
     }
     public static final class integer {
         private integer() {}

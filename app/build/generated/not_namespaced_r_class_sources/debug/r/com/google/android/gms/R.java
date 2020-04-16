@@ -92,18 +92,18 @@ public final class R {
         public static final int dark = 0x7f0a006a;
         public static final int hybrid = 0x7f0a00ac;
         public static final int icon_only = 0x7f0a00b0;
-        public static final int light = 0x7f0a00c1;
-        public static final int none = 0x7f0a00e0;
-        public static final int normal = 0x7f0a00e1;
-        public static final int progressBar = 0x7f0a00fa;
-        public static final int radio = 0x7f0a00ff;
-        public static final int satellite = 0x7f0a0109;
-        public static final int standard = 0x7f0a0137;
-        public static final int terrain = 0x7f0a014d;
-        public static final int text = 0x7f0a014e;
-        public static final int text2 = 0x7f0a014f;
-        public static final int wide = 0x7f0a0181;
-        public static final int wrap_content = 0x7f0a0184;
+        public static final int light = 0x7f0a00c0;
+        public static final int none = 0x7f0a00df;
+        public static final int normal = 0x7f0a00e0;
+        public static final int progressBar = 0x7f0a00f9;
+        public static final int radio = 0x7f0a00fe;
+        public static final int satellite = 0x7f0a0108;
+        public static final int standard = 0x7f0a0136;
+        public static final int terrain = 0x7f0a014c;
+        public static final int text = 0x7f0a014d;
+        public static final int text2 = 0x7f0a014e;
+        public static final int wide = 0x7f0a0180;
+        public static final int wrap_content = 0x7f0a0183;
     }
     public static final class integer {
         private integer() {}
