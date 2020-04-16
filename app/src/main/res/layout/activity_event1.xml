@@ -9,7 +9,7 @@
     >
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/golfnew"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:scaleType="centerCrop"
@@ -22,7 +22,7 @@
         app:srcCompat="@drawable/golfnew" />
 
     <TextView
-        android:id="@+id/eventNameTextView"
+        android:id="@+id/eventNameTextView1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -33,10 +33,10 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/golfnew" />
 
     <TextView
-        android:id="@+id/creatorNameTextView"
+        android:id="@+id/creatorNameTextView1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -45,10 +45,10 @@
         android:text="Created by Leeds Golf Society"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/eventNameTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/eventNameTextView1" />
 
     <TextView
-        android:id="@+id/headingOneTextView"
+        android:id="@+id/headingOneTextView1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -59,10 +59,10 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/creatorNameTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/creatorNameTextView1" />
 
     <TextView
-        android:id="@+id/headingTwoTextView"
+        android:id="@+id/headingTwoTextView1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -73,10 +73,10 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dateAndTimeTextview" />
+        app:layout_constraintTop_toBottomOf="@+id/dateAndTimeTextview1" />
 
     <TextView
-        android:id="@+id/dateAndTimeTextview"
+        android:id="@+id/dateAndTimeTextview1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -85,10 +85,10 @@
         android:text="Sunday, 23rd March 2020  - 10:00am to 2:00pm"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/headingOneTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/headingOneTextView1" />
 
     <TextView
-        android:id="@+id/locationDetailsTextView"
+        android:id="@+id/locationDetailsTextView1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -97,10 +97,10 @@
         android:text="Wike Ridge Lane, Shadwell, Leeds LS17 9JW"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/headingTwoTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/headingTwoTextView1" />
 
     <TextView
-        android:id="@+id/headingThreeTextView"
+        android:id="@+id/headingThreeTextView1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -111,10 +111,10 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/locationDetailsTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/locationDetailsTextView1" />
 
     <TextView
-        android:id="@+id/descriptionTextView"
+        android:id="@+id/descriptionTextView1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -123,7 +123,7 @@
         android:text="Casual game of golf at Leeds Golf Centre. All abilities are welcome, just having a laugh hitting a ball around a course. Email jay.franks@icloud.com if you have any questions, see you there!"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/headingThreeTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/headingThreeTextView1" />
 
     <ImageView
         android:id="@+id/backImageView100"

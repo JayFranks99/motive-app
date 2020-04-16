@@ -10,17 +10,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class EventThreeActivity extends AppCompatActivity {
 
-    ImageView backButton;
+    ImageView backButton3;
 
 
     @Override
     protected void onCreate (Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_event1);
+        setContentView(R.layout.activity_event3);
 
-        backButton = findViewById(R.id.backImageView100);
+        backButton3 = findViewById(R.id.backImageView100);
 
-        backButton.setOnClickListener(new View.OnClickListener() {
+        backButton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 finish();

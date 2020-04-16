@@ -26,16 +26,17 @@ public class EventsFragment extends Fragment {
     ImageView spanishimage;
 
 
-    private void FindViewById(View view) {
+  private void FindViewById(View view) {
 
         golfimage = view.findViewById(R.id.golfImageView);
-        beerimage = view.findViewById(R.id.beerImageView);
+        beerimage = view.findViewById(R.id.beerImageViewNew);
         spanishimage = view.findViewById(R.id.spanishImageView);
 
         golfimage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent jayIntent = new Intent(getActivity(),
+                Intent jayIntent;
+                jayIntent = new Intent(getActivity(),
                         EventOneActivity.class);
                 startActivity(jayIntent);
             }
@@ -44,8 +45,9 @@ public class EventsFragment extends Fragment {
         beerimage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent jayIntent = new Intent(getActivity(),
-                        EventOneActivity.class);
+                Intent jayIntent;
+                jayIntent = new Intent(getActivity(),
+                        EventTwoActivity.class);
                 startActivity(jayIntent);
             }
         });
@@ -54,14 +56,12 @@ public class EventsFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent jayIntent = new Intent(getActivity(),
-                        EventOneActivity.class);
+                        EventThreeActivity.class);
                 startActivity(jayIntent);
             }
         });
-
-
-
     }
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -72,4 +72,3 @@ public class EventsFragment extends Fragment {
         return view;
     }
 }
-

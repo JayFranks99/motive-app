@@ -77,10 +77,10 @@
             android:textSize="18sp"
             android:paddingLeft="5dp"
             android:paddingTop="2dp"
-            app:layout_constraintEnd_toEndOf="@+id/beerImageView"
+            app:layout_constraintEnd_toEndOf="@+id/beerImageViewNew"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/beerImageView"
-            app:layout_constraintTop_toBottomOf="@+id/beerImageView" />
+            app:layout_constraintStart_toStartOf="@+id/beerImageViewNew"
+            app:layout_constraintTop_toBottomOf="@+id/beerImageViewNew" />
 
         <Switch
             android:id="@+id/beerSwitch"
@@ -94,7 +94,7 @@
             android:switchPadding="5dp"/>
 
         <ImageView
-            android:id="@+id/beerImageView"
+            android:id="@+id/beerImageViewNew"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginStart="16dp"

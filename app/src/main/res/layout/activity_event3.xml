@@ -9,7 +9,6 @@
     >
 
 
-
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="0dp"
@@ -24,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent"/>
 
     <ImageView
-        android:id="@+id/backImageView1000"
+        android:id="@+id/backImageView100"
         android:layout_width="40dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
