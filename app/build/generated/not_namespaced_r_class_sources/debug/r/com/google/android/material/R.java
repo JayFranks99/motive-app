@@ -1152,7 +1152,7 @@ public final class R {
         public static final int up = 0x7f0a016c;
         public static final int view_offset_helper = 0x7f0a0170;
         public static final int visible = 0x7f0a0171;
-        public static final int wrap_content = 0x7f0a0178;
+        public static final int wrap_content = 0x7f0a0179;
     }
     public static final class integer {
         private integer() {}
@@ -1212,32 +1212,32 @@ public final class R {
         public static final int abc_search_view = 0x7f0d0019;
         public static final int abc_select_dialog_material = 0x7f0d001a;
         public static final int abc_tooltip = 0x7f0d001b;
-        public static final int design_bottom_navigation_item = 0x7f0d0027;
-        public static final int design_bottom_sheet_dialog = 0x7f0d0028;
-        public static final int design_layout_snackbar = 0x7f0d0029;
-        public static final int design_layout_snackbar_include = 0x7f0d002a;
-        public static final int design_layout_tab_icon = 0x7f0d002b;
-        public static final int design_layout_tab_text = 0x7f0d002c;
-        public static final int design_menu_item_action_area = 0x7f0d002d;
-        public static final int design_navigation_item = 0x7f0d002e;
-        public static final int design_navigation_item_header = 0x7f0d002f;
-        public static final int design_navigation_item_separator = 0x7f0d0030;
-        public static final int design_navigation_item_subheader = 0x7f0d0031;
-        public static final int design_navigation_menu = 0x7f0d0032;
-        public static final int design_navigation_menu_item = 0x7f0d0033;
-        public static final int design_text_input_password_icon = 0x7f0d0034;
-        public static final int mtrl_layout_snackbar = 0x7f0d003b;
-        public static final int mtrl_layout_snackbar_include = 0x7f0d003c;
-        public static final int notification_action = 0x7f0d003d;
-        public static final int notification_action_tombstone = 0x7f0d003e;
-        public static final int notification_template_custom_big = 0x7f0d0045;
-        public static final int notification_template_icon_group = 0x7f0d0046;
-        public static final int notification_template_part_chronometer = 0x7f0d004a;
-        public static final int notification_template_part_time = 0x7f0d004b;
-        public static final int select_dialog_item_material = 0x7f0d005c;
-        public static final int select_dialog_multichoice_material = 0x7f0d005d;
-        public static final int select_dialog_singlechoice_material = 0x7f0d005e;
-        public static final int support_simple_spinner_dropdown_item = 0x7f0d005f;
+        public static final int design_bottom_navigation_item = 0x7f0d0029;
+        public static final int design_bottom_sheet_dialog = 0x7f0d002a;
+        public static final int design_layout_snackbar = 0x7f0d002b;
+        public static final int design_layout_snackbar_include = 0x7f0d002c;
+        public static final int design_layout_tab_icon = 0x7f0d002d;
+        public static final int design_layout_tab_text = 0x7f0d002e;
+        public static final int design_menu_item_action_area = 0x7f0d002f;
+        public static final int design_navigation_item = 0x7f0d0030;
+        public static final int design_navigation_item_header = 0x7f0d0031;
+        public static final int design_navigation_item_separator = 0x7f0d0032;
+        public static final int design_navigation_item_subheader = 0x7f0d0033;
+        public static final int design_navigation_menu = 0x7f0d0034;
+        public static final int design_navigation_menu_item = 0x7f0d0035;
+        public static final int design_text_input_password_icon = 0x7f0d0036;
+        public static final int mtrl_layout_snackbar = 0x7f0d003d;
+        public static final int mtrl_layout_snackbar_include = 0x7f0d003e;
+        public static final int notification_action = 0x7f0d003f;
+        public static final int notification_action_tombstone = 0x7f0d0040;
+        public static final int notification_template_custom_big = 0x7f0d0047;
+        public static final int notification_template_icon_group = 0x7f0d0048;
+        public static final int notification_template_part_chronometer = 0x7f0d004c;
+        public static final int notification_template_part_time = 0x7f0d004d;
+        public static final int select_dialog_item_material = 0x7f0d005e;
+        public static final int select_dialog_multichoice_material = 0x7f0d005f;
+        public static final int select_dialog_singlechoice_material = 0x7f0d0060;
+        public static final int support_simple_spinner_dropdown_item = 0x7f0d0061;
     }
     public static final class string {
         private string() {}

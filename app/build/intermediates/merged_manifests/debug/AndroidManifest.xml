@@ -37,7 +37,6 @@
         android:label="motive."
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity android:name="com.example.motive.SplashActivity" >
             <intent-filter>
@@ -52,6 +51,8 @@
         <activity android:name="com.example.motive.ProfileActivity" />
         <activity android:name="com.example.motive.SettingsActivity" />
         <activity android:name="com.example.motive.EventOneActivity" />
+        <activity android:name="com.example.motive.EventTwoActivity" />
+        <activity android:name="com.example.motive.EventThreeActivity" />
         <activity
             android:name="com.example.motive.FirstActivity"
             android:configChanges="orientation|screenSize|screenLayout|keyboardHidden" >

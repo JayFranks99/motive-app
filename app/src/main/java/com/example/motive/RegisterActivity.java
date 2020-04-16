@@ -180,6 +180,12 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                     mUsername.setError("Username is required.");
                     return;
                 }
+
+                if (password.length() < 5) {
+                    mUsername.setError("Username must be at least 5 characters long");
+                    return;
+                }
+
                 if (TextUtils.isEmpty(email)) {
                     mEmail.setError("Email is required.");
                     return;
