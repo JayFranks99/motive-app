@@ -79,111 +79,75 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_event3.xml">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer2" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_mental.xml">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/motive/MotiveHomeActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1377">
-              <caret line="81" column="57" selection-start-line="81" selection-start-column="57" selection-end-line="81" selection-end-column="57" />
+            <state relative-caret-position="388">
+              <caret line="206" column="10" selection-start-line="206" selection-start-column="10" selection-end-line="206" selection-end-column="10" />
+              <folding>
+                <element signature="e#3674#3675#0" expanded="true" />
+                <element signature="e#3705#3706#0" expanded="true" />
+                <element signature="e#3752#3753#0" expanded="true" />
+                <element signature="e#3784#3785#0" expanded="true" />
+                <element signature="e#3830#3831#0" expanded="true" />
+                <element signature="e#3861#3862#0" expanded="true" />
+                <element signature="e#3906#3907#0" expanded="true" />
+                <element signature="e#3936#3937#0" expanded="true" />
+                <element signature="e#3984#3985#0" expanded="true" />
+                <element signature="e#4017#4018#0" expanded="true" />
+              </folding>
             </state>
           </provider>
-          <provider editor-type-id="android-designer2" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_event1.xml">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="99" column="73" selection-start-line="99" selection-start-column="73" selection-end-line="99" selection-end-column="73" />
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/motive/RegisterActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4658">
+              <caret line="343" column="41" lean-forward="true" selection-start-line="343" selection-start-column="41" selection-end-line="343" selection-end-column="41" />
             </state>
           </provider>
-          <provider selected="true" editor-type-id="android-designer2" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/motive/EventsFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-131">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#789#1078#0" expanded="true" />
-                <element signature="e#1077#1078#0" expanded="true" />
-                <element signature="e#1119#1417#0" expanded="true" />
-                <element signature="e#1416#1417#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/motive/EventOneActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#576#721#0" expanded="true" />
-                <element signature="e#720#721#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/motive/EventTwoActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#577#722#0" expanded="true" />
-                <element signature="e#721#722#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/motive/EventThreeActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#579#724#0" expanded="true" />
-                <element signature="e#723#724#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_events.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="813">
-              <caret line="75" column="26" selection-start-line="75" selection-start-column="26" selection-end-line="75" selection-end-column="52" />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer2" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_event2.xml">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_settings.xml">
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="2346">
-              <caret line="138" column="41" selection-start-line="138" selection-start-column="41" selection-end-line="138" selection-end-column="41" />
+            <state relative-caret-position="306">
+              <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
             </state>
           </provider>
           <provider selected="true" editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="4386">
+              <caret line="280" column="43" selection-start-line="280" selection-start-column="43" selection-end-line="280" selection-end-column="43" />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="32" />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/motive/ProfileActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="923">
+              <caret line="69" column="16" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -228,7 +192,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/motive/FirstActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_events.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_settings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/circle.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/xml/file_paths.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_motivehome.xml" />
@@ -237,7 +200,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/motive/SplashActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/motive/ProfileActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/motive/LogInActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/motive/SettingsActivity.java" />
@@ -246,9 +208,7 @@
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/motiveslist.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/degree_list.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_first.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/motive/RegisterActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_messages.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/motive/MessagesFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/motive/MotiveHomeActivity.java" />
@@ -261,6 +221,10 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/motive/EventOneActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_event3.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_event2.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/motive/ProfileActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/motive/RegisterActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_settings.xml" />
       </list>
     </option>
   </component>
@@ -307,6 +271,23 @@
               <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="motive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="motive" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="motive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="motive" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="motive" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="motive" type="b2602c69:ProjectViewProjectNode" />
@@ -667,7 +648,7 @@
       <window_info id="Designer" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Resources Explorer" order="5" sideWeight="0.7512275" weight="0.3272921" />
-      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.5524957" visible="true" weight="0.10341151" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.5524957" visible="true" weight="0.17590618" />
       <window_info id="Build Variants" order="7" sideWeight="0.42475387" side_tool="true" weight="0.13539445" />
       <window_info id="Captures" order="8" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="0" weight="0.5531915" />
@@ -832,14 +813,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="32" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/arrays.xml">
       <provider selected="true" editor-type-id="text-editor" />
@@ -902,24 +875,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="5389">
-          <caret line="317" column="43" selection-start-line="317" selection-start-column="43" selection-end-line="317" selection-end-column="43" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/motive/ProfileActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" column="63" lean-forward="true" selection-start-line="49" selection-start-column="63" selection-end-line="49" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_motivehome.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
@@ -927,16 +882,6 @@
         </state>
       </provider>
       <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/motive/RegisterActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="95" column="51" lean-forward="true" selection-start-line="92" selection-start-column="4" selection-end-line="95" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/motive/MentalFragment.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -974,14 +919,6 @@
       </provider>
       <provider selected="true" editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_settings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="31" selection-end-column="46" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/custom_progress_bar.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -1004,6 +941,14 @@
       </provider>
       <provider editor-type-id="android-manifest" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_event2.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_events.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="813">
@@ -1012,65 +957,14 @@
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/motive/MotiveHomeActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/motive/EventThreeActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="206" column="10" selection-start-line="206" selection-start-column="10" selection-end-line="206" selection-end-column="10" />
-          <folding>
-            <element signature="e#3674#3675#0" expanded="true" />
-            <element signature="e#3705#3706#0" expanded="true" />
-            <element signature="e#3752#3753#0" expanded="true" />
-            <element signature="e#3784#3785#0" expanded="true" />
-            <element signature="e#3830#3831#0" expanded="true" />
-            <element signature="e#3861#3862#0" expanded="true" />
-            <element signature="e#3906#3907#0" expanded="true" />
-            <element signature="e#3936#3937#0" expanded="true" />
-            <element signature="e#3984#3985#0" expanded="true" />
-            <element signature="e#4017#4018#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_mental.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1377">
-          <caret line="81" column="57" selection-start-line="81" selection-start-column="57" selection-end-line="81" selection-end-column="57" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_event1.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="99" column="73" selection-start-line="99" selection-start-column="73" selection-end-line="99" selection-end-column="73" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_event3.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_event2.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="2346">
-          <caret line="138" column="41" selection-start-line="138" selection-start-column="41" selection-end-line="138" selection-end-column="41" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/motive/EventOneActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        <state relative-caret-position="255">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#576#721#0" expanded="true" />
-            <element signature="e#720#721#0" expanded="true" />
+            <element signature="e#579#724#0" expanded="true" />
+            <element signature="e#723#724#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1087,14 +981,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/motive/EventThreeActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/motive/EventOneActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        <state relative-caret-position="459">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#579#724#0" expanded="true" />
-            <element signature="e#723#724#0" expanded="true" />
+            <element signature="e#576#721#0" expanded="true" />
+            <element signature="e#720#721#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1112,6 +1006,90 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_event1.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="21" selection-end-column="44" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_mental.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1377">
+          <caret line="81" column="57" selection-start-line="81" selection-start-column="57" selection-end-line="81" selection-end-column="57" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_event3.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/motive/MotiveHomeActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="206" column="10" selection-start-line="206" selection-start-column="10" selection-end-line="206" selection-end-column="10" />
+          <folding>
+            <element signature="e#3674#3675#0" expanded="true" />
+            <element signature="e#3705#3706#0" expanded="true" />
+            <element signature="e#3752#3753#0" expanded="true" />
+            <element signature="e#3784#3785#0" expanded="true" />
+            <element signature="e#3830#3831#0" expanded="true" />
+            <element signature="e#3861#3862#0" expanded="true" />
+            <element signature="e#3906#3907#0" expanded="true" />
+            <element signature="e#3936#3937#0" expanded="true" />
+            <element signature="e#3984#3985#0" expanded="true" />
+            <element signature="e#4017#4018#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/motive/ProfileActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="923">
+          <caret line="69" column="16" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="32" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="4386">
+          <caret line="280" column="43" selection-start-line="280" selection-start-column="43" selection-end-line="280" selection-end-column="43" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/motive/RegisterActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4658">
+          <caret line="343" column="41" lean-forward="true" selection-start-line="343" selection-start-column="41" selection-end-line="343" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_settings.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
     </entry>
   </component>
 </project>

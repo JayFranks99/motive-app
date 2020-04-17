@@ -175,7 +175,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="64dp"
-        android:text="Map Data"
+        android:text="Map Preferences"
         android:textColor="#0095B7"
         android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -208,30 +208,6 @@
         app:layout_constraintTop_toTopOf="@+id/ghostMode" />
 
     <TextView
-        android:id="@+id/whileUsing"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="64dp"
-        android:text="While Using"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ghostMode" />
-
-    <Switch
-        android:id="@+id/whileUsingSwitch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:switchPadding="5dp"
-        app:layout_constraintBottom_toBottomOf="@+id/whileUsing"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/whileUsing"
-        app:layout_constraintTop_toTopOf="@+id/whileUsing" />
-
-    <TextView
         android:id="@+id/everyone"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -242,7 +218,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/whileUsing" />
+        app:layout_constraintTop_toBottomOf="@+id/ghostMode" />
 
     <Switch
         android:id="@+id/everyoneSwitch"

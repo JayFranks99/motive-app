@@ -67,7 +67,6 @@ public class  ProfileActivity extends AppCompatActivity {
                 bio.setText(documentSnapshot.getString("user bio"));
                 degree.setText(documentSnapshot.getString("degree"));
                 motives.setText(documentSnapshot.getString("other motives"));
-                profilePic.setImageURI(Uri.parse(documentSnapshot.getString("image")));
                 //Picasso class
             }
         });

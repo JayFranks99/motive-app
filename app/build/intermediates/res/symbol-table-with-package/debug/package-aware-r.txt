@@ -1319,7 +1319,6 @@ id barrier
 id beerImageViewNew
 id beerSwitch
 id beginning
-id blockEditText
 id blocking
 id blueBackground
 id bottom
@@ -1554,7 +1553,6 @@ id src_over
 id standard
 id start
 id status_bar_latest_event_content
-id streetEditText
 id stretch
 id submenuarrow
 id submit_area

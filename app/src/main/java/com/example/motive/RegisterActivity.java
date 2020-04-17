@@ -67,8 +67,6 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     EditText mPassword;
     EditText cPassword;
     AutoCompleteTextView mHalls;
-    EditText mStreetName;
-    EditText mBlock;
     EditText mPostcode;
     EditText mUserBio;
     AutoCompleteTextView mMainMotive;
@@ -98,8 +96,6 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         mUsername = findViewById(R.id.usernameEditText);
         mEmail = findViewById(R.id.emailEditText);
         mPassword = findViewById(R.id.passwordEditText);
-        mStreetName = findViewById(R.id.streetEditText);
-        mBlock = findViewById(R.id.blockEditText);
         mPostcode = findViewById(R.id.postcodeEditText);
         mUserBio = findViewById(R.id.descriptionEditText);
         mMainMotive = findViewById(R.id.mainMotiveAutoCompleteTextView);
@@ -160,14 +156,12 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         mRegisterButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                final String username = mUsername.getText().toString();
                 final String email = mEmail.getText().toString().trim();
                 final String password = mPassword.getText().toString().trim();
                 final String confirmPassword = cPassword.getText().toString();
                 final String halls = mHalls.getText().toString();
-                final String streetName = mStreetName.getText().toString();
-                final String block = mBlock.getText().toString();
                 final String postcode = mPostcode.getText().toString();
+                final String username = mUsername.getText().toString();
                 final String userBio = mUserBio.getText().toString();
                 final String mainMotive = mMainMotive.getText().toString();
                 final String otherMotives = mOtherMotives.getText().toString();
@@ -175,16 +169,6 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                 final String imageUrl = storageReference.getDownloadUrl().toString();
                 //image
 
-
-                if (TextUtils.isEmpty(username)) {
-                    mUsername.setError("Username is required.");
-                    return;
-                }
-
-                if (password.length() < 5) {
-                    mUsername.setError("Username must be at least 5 characters long");
-                    return;
-                }
 
                 if (TextUtils.isEmpty(email)) {
                     mEmail.setError("Email is required.");
@@ -227,25 +211,16 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                     return;
                 }
 
-                if (TextUtils.isEmpty(streetName)) {
-                    mStreetName.setError("Street name is required.");
-                    return;
-                }
-
-                if (TextUtils.isEmpty(block)) {
-                    mBlock.setError("Block name or house number is required.");
-                    return;
-                }
-
-                if (block.length() > 4) {
-                    mBlock.setError("Please enter a valid block / room number");
-                    return;
-                }
-
                 if (TextUtils.isEmpty(postcode)) {
                     mPostcode.setError("Postcode is required.");
                     return;
                 }
+
+                if (TextUtils.isEmpty(username)) {
+                    mUsername.setError("Username is required.");
+                    return;
+                }
+
                 if (TextUtils.isEmpty(userBio)) {
                     mUserBio.setError("A user bio must be entered");
                     return;
@@ -321,12 +296,10 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                             DocumentReference documentReference = fStore.collection("users").document(userID);
                             //user HashMap called user
                             HashMap<String, Object> user = new HashMap<>();
-                            user.put("username", username);
                             user.put("email", email);
                             user.put("halls", halls);
-                            user.put("street name", streetName);
-                            user.put("block", block);
                             user.put("postcode", postcode);
+                            user.put("username", username);
                             user.put("user bio", userBio);
                             user.put("main motive", mainMotive);
                             user.put("other motives", otherMotives);
