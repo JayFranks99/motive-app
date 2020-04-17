@@ -23,6 +23,9 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.UploadTask;
 import com.squareup.picasso.Picasso;
 import java.util.Objects;
 
@@ -36,6 +39,7 @@ public class  ProfileActivity extends AppCompatActivity {
     FirebaseFirestore fStore;
     ImageView profileImage;
     Button changeProfileImage;
+    StorageReference storageReference;
 
     private static final String TAG = "ProfileActivity";
 
@@ -60,6 +64,18 @@ public class  ProfileActivity extends AppCompatActivity {
 
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
+        storageReference = FirebaseStorage.getInstance().getReference();
+
+        //Profile image reference for each user registered, seperate directory
+        StorageReference profileRef = storageReference.child("users/"+fAuth.getCurrentUser().getUid()+"/profile.jpg");
+
+        profileRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+            @Override
+            public void onSuccess(Uri uri) {
+                Picasso.get().load(uri).into(profileImage);
+            }
+        });
+
         userId = fAuth.getCurrentUser().getUid();
 
         DocumentReference documentReference = fStore.collection("users").document(userId);
@@ -71,7 +87,6 @@ public class  ProfileActivity extends AppCompatActivity {
                 bio.setText(documentSnapshot.getString("user bio"));
                 degree.setText(documentSnapshot.getString("degree"));
                 motives.setText(documentSnapshot.getString("other motives"));
-                //Picasso class
             }
         });
 
@@ -124,8 +139,29 @@ public class  ProfileActivity extends AppCompatActivity {
         if(requestCode == 1000) {
             if (resultCode == Activity.RESULT_OK){
                 Uri imageUri = data.getData();
-                profileImage.setImageURI(imageUri);
+                uploadImagetoFirebase(imageUri);
             }
         }
+    }
+
+    private void uploadImagetoFirebase(Uri imageUri) {
+        // uplaod image to firebase storage
+        final StorageReference fileRef = storageReference.child("users/"+fAuth.getCurrentUser().getUid()+"/profile.jpg");
+        fileRef.putFile(imageUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+            @Override
+            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                fileRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                    @Override
+                    public void onSuccess(Uri uri) {
+                        Picasso.get().load(uri).into(profileImage);
+                    }
+                });
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Toast.makeText(ProfileActivity.this, "Failed", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }

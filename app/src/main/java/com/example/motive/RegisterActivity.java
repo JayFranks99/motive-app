@@ -166,7 +166,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                 final String mainMotive = mMainMotive.getText().toString();
                 final String otherMotives = mOtherMotives.getText().toString();
                 final String degree = mDegree.getText().toString();
-                final String imageUrl = storageReference.getDownloadUrl().toString();
+              //  final String imageUrl = storageReference.getDownloadUrl().toString();
                 //image
 
 
@@ -304,7 +304,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                             user.put("main motive", mainMotive);
                             user.put("other motives", otherMotives);
                             user.put("degree", degree);
-                            user.put("image",imageUrl);
+                            //user.put("image",imageUrl);
                             user.put("address",geoLocate().toString());
                             user.put("lat",geoLocate().getLatitude());
                             user.put("lng",geoLocate().getLongitude());
@@ -435,7 +435,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
             }
         }
     }
-
+//amend images
     private void uploadImageToFirebase(String name, Uri contentUri) {
         final StorageReference image = storageReference.child("images/" + name);
         image.putFile(contentUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
