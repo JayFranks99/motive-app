@@ -1152,7 +1152,7 @@ public final class R {
         public static final int up = 0x7f0a0174;
         public static final int view_offset_helper = 0x7f0a0178;
         public static final int visible = 0x7f0a0179;
-        public static final int wrap_content = 0x7f0a0181;
+        public static final int wrap_content = 0x7f0a017f;
     }
     public static final class integer {
         private integer() {}

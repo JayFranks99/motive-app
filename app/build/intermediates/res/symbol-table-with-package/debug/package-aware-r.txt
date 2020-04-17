@@ -1620,8 +1620,6 @@ id viewPager
 id view_offset_helper
 id visible
 id webView
-id whileUsing
-id whileUsingSwitch
 id whiteBackgroundView
 id wide
 id withText

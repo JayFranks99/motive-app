@@ -49,7 +49,6 @@ public class LogInActivity extends AppCompatActivity implements View.OnClickList
         registerLink = findViewById(R.id.registerTextView);
         backgroundLayout = findViewById(R.id.backgroundLayout);
         backgroundLayout.setOnClickListener(this);
-
         fAuth = FirebaseAuth.getInstance();
         progressBar = findViewById(R.id.progressBar);
 

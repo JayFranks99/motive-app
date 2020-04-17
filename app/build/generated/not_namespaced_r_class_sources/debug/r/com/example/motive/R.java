@@ -6378,13 +6378,11 @@ public final class R {
     public static final int view_offset_helper=0x7f0a0178;
     public static final int visible=0x7f0a0179;
     public static final int webView=0x7f0a017a;
-    public static final int whileUsing=0x7f0a017b;
-    public static final int whileUsingSwitch=0x7f0a017c;
-    public static final int whiteBackgroundView=0x7f0a017d;
-    public static final int wide=0x7f0a017e;
-    public static final int withText=0x7f0a017f;
-    public static final int wrap=0x7f0a0180;
-    public static final int wrap_content=0x7f0a0181;
+    public static final int whiteBackgroundView=0x7f0a017b;
+    public static final int wide=0x7f0a017c;
+    public static final int withText=0x7f0a017d;
+    public static final int wrap=0x7f0a017e;
+    public static final int wrap_content=0x7f0a017f;
   }
   public static final class integer {
     public static final int abc_config_activityDefaultDur=0x7f0b0000;

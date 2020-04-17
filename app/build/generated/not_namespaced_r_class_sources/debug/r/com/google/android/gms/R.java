@@ -102,8 +102,8 @@ public final class R {
         public static final int terrain = 0x7f0a014a;
         public static final int text = 0x7f0a014b;
         public static final int text2 = 0x7f0a014c;
-        public static final int wide = 0x7f0a017e;
-        public static final int wrap_content = 0x7f0a0181;
+        public static final int wide = 0x7f0a017c;
+        public static final int wrap_content = 0x7f0a017f;
     }
     public static final class integer {
         private integer() {}
