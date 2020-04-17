@@ -1,19 +1,19 @@
 package com.example.motive;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
@@ -24,7 +24,6 @@ import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.squareup.picasso.Picasso;
-
 import java.util.Objects;
 
 public class  ProfileActivity extends AppCompatActivity {
@@ -35,7 +34,8 @@ public class  ProfileActivity extends AppCompatActivity {
     TextView username, halls, bio, motives, degree;
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
-    ImageView profilePic;
+    ImageView profileImage;
+    Button changeProfileImage;
 
     private static final String TAG = "ProfileActivity";
 
@@ -48,12 +48,16 @@ public class  ProfileActivity extends AppCompatActivity {
         backImageView = findViewById(R.id.backImageView);
         fAuth = FirebaseAuth.getInstance();
         resendCodeButton = findViewById(R.id.resendCodeButton);
-        profilePic = findViewById(R.id.displayImageView);
+
         username = findViewById(R.id.profileUsername);
         halls = findViewById(R.id.profileHalls);
         bio = findViewById(R.id.profileUserBio);
         motives = findViewById(R.id.profileMotives);
-        degree= findViewById(R.id.profileDegree);
+        degree = findViewById(R.id.profileDegree);
+
+        profileImage = findViewById(R.id.displayImageView);
+        changeProfileImage = findViewById(R.id.changeProfile);
+
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
         userId = fAuth.getCurrentUser().getUid();
@@ -103,5 +107,25 @@ public class  ProfileActivity extends AppCompatActivity {
             }
         });
 
+
+        changeProfileImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // open gallery
+                Intent openGalleryIntent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                startActivityForResult(openGalleryIntent, 1000);
+            }
+        });
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(requestCode == 1000) {
+            if (resultCode == Activity.RESULT_OK){
+                Uri imageUri = data.getData();
+                profileImage.setImageURI(imageUri);
+            }
+        }
     }
 }

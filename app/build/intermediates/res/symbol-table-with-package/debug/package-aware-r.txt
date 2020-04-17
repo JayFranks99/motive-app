@@ -1331,6 +1331,7 @@ id center_vertical
 id chains
 id changePassword
 id changePasswordImageView
+id changeProfile
 id checkbox
 id checked
 id chronometer
@@ -1367,7 +1368,6 @@ id direct
 id disableHome
 id displayImageView
 id editProfile
-id editProfileButton
 id editProfileImageView
 id edit_query
 id emailEditText

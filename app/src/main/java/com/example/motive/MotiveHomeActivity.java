@@ -187,7 +187,7 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
 
         List<HashMap<String,Object>> userList = new ArrayList<HashMap<String,Object>>();
 
-        documentReference.get(user).addOnSuccessListener(new OnSuccessListener<Void>() {
+        documentRefere  nce.get(user).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void aVoid) {
                 Log.d(TAG1, "onSuccess: user profile is created for " + userID);
