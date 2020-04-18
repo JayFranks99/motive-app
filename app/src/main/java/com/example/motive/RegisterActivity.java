@@ -296,7 +296,6 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                             DocumentReference documentReference = fStore.collection("users").document(userID);
                             //user HashMap called user
                             HashMap<String, Object> user = new HashMap<>();
-
                             user.put("email", email);
                             user.put("halls", halls);
                             user.put("postcode", postcode);
