@@ -39,6 +39,7 @@ public class  ProfileActivity extends AppCompatActivity {
     FirebaseFirestore fStore;
     ImageView profileImage;
     Button changeProfileImage;
+    Button editProfileFields;
     StorageReference storageReference;
 
     private static final String TAG = "ProfileActivity";
@@ -68,7 +69,6 @@ public class  ProfileActivity extends AppCompatActivity {
 
         //Profile image reference for each user registered, seperate directory
         StorageReference profileRef = storageReference.child("users/"+fAuth.getCurrentUser().getUid()+"/profile.jpg");
-
         profileRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
             @Override
             public void onSuccess(Uri uri) {

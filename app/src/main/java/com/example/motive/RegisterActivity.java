@@ -166,8 +166,8 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                 final String mainMotive = mMainMotive.getText().toString();
                 final String otherMotives = mOtherMotives.getText().toString();
                 final String degree = mDegree.getText().toString();
-              //  final String imageUrl = storageReference.getDownloadUrl().toString();
-                //image
+                // final String imageUrl = storageReference.getDownloadUrl().toString();
+
 
 
                 if (TextUtils.isEmpty(email)) {
@@ -296,15 +296,15 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                             DocumentReference documentReference = fStore.collection("users").document(userID);
                             //user HashMap called user
                             HashMap<String, Object> user = new HashMap<>();
+
                             user.put("email", email);
                             user.put("halls", halls);
                             user.put("postcode", postcode);
-                            user.put("username", username);
                             user.put("user bio", userBio);
                             user.put("main motive", mainMotive);
                             user.put("other motives", otherMotives);
                             user.put("degree", degree);
-                            //user.put("image",imageUrl);
+                            user.put("username", username);
                             user.put("address",geoLocate().toString());
                             user.put("lat",geoLocate().getLatitude());
                             user.put("lng",geoLocate().getLongitude());
@@ -430,14 +430,14 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                 String imageFileName = "JPEG_" + timeStamp +"."+getFileExt(contentURI);
                 Log.d("tag", "onActivityResult: Gallery Image uri: " + imageFileName);
                // selectedImage.setImageURI(contentURI);
-
                 uploadImageToFirebase(imageFileName, contentURI);
             }
         }
     }
-//amend images
+
+    //upload on if register is success
     private void uploadImageToFirebase(String name, Uri contentUri) {
-        final StorageReference image = storageReference.child("images/" + name);
+        final StorageReference image = storageReference.child("users/"+fAuth.getCurrentUser()+"/profile.jpg");
         image.putFile(contentUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
             @Override
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
