@@ -14,7 +14,7 @@
 
         <View
             android:id="@+id/blueBackground"
-            android:layout_width="404d0dp"
+            android:layout_width="0dp"
             android:layout_height="357dp"
             android:background="#0095B7"
             app:layout_constraintEnd_toEndOf="parent"
@@ -36,8 +36,10 @@
 
         <EditText
             android:id="@+id/usernameEditText"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
             android:ems="10"
             android:hint="Username"
             android:inputType="text"
@@ -49,15 +51,18 @@
 
         <EditText
             android:id="@+id/hallsEditText"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
             android:ems="10"
             android:hint="Halls"
             android:inputType="text"
             android:textColor="#FFF"
             android:textColorHint="#CCC9C9"
-            app:layout_constraintTop_toBottomOf="@+id/usernameEditText"
-            tools:layout_editor_absoluteX="99dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/usernameEditText" />
 
         <TextView
             android:id="@+id/textView3"
@@ -74,7 +79,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/backButtonEditProfile"
             android:layout_width="40dp"
             android:layout_height="50dp"
             android:layout_marginStart="16dp"
@@ -184,7 +189,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="100dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="100dp"
             android:layout_marginEnd="100dp"
             android:text="Save"
             app:layout_constraintEnd_toEndOf="parent"

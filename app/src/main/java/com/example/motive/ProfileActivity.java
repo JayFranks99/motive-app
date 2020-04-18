@@ -61,7 +61,8 @@ public class  ProfileActivity extends AppCompatActivity {
         degree = findViewById(R.id.profileDegree);
 
         profileImage = findViewById(R.id.displayImageView);
-        changeProfileImage = findViewById(R.id.changeProfile);
+        changeProfileImage = findViewById(R.id.changeProfilePicture);
+        editProfileFields = findViewById(R.id.editprofileButton);
 
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
@@ -122,6 +123,18 @@ public class  ProfileActivity extends AppCompatActivity {
             }
         });
 
+        editProfileFields.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent edit;
+                edit = new Intent(getBaseContext(),
+                        UpdateProfileActivity.class);
+                startActivity(edit);
+            }
+        });
+
+
+
 
         changeProfileImage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -132,6 +145,8 @@ public class  ProfileActivity extends AppCompatActivity {
             }
         });
     }
+
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {

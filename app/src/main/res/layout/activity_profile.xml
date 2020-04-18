@@ -83,7 +83,7 @@
             app:layout_constraintTop_toBottomOf="@+id/profileUsername" />
 
         <Button
-            android:id="@+id/changeProfile"
+            android:id="@+id/changeProfilePicture"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -113,7 +113,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/changeProfile" />
+            app:layout_constraintTop_toBottomOf="@+id/changeProfilePicture" />
 
         <TextView
             android:id="@+id/profileUserBio"
@@ -195,7 +195,7 @@
             android:layout_height="50dp"
             android:layout_marginEnd="16dp"
             android:background="@drawable/my_button2"
-            android:text="Vercify"
+            android:text="Verify"
             android:textColor="#FFF"
             android:visibility="invisible"
             app:layout_constraintBottom_toBottomOf="@+id/profileTextView"
@@ -203,7 +203,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/editprofileButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="100dp"

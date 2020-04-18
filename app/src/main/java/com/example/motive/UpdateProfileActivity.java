@@ -6,6 +6,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -24,11 +26,13 @@ public class UpdateProfileActivity extends AppCompatActivity {
 
     private EditText newUsername, newHalls, newBio, newDegree, newMotives;
     private Button saveButton;
+    ImageView backImage;
     private  FirebaseAuth fAuth;
     private FirebaseFirestore fStore;
     String userId;
     public static final String TAG1 = "TAG";
     HashMap<String, Object> user;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,10 +45,10 @@ public class UpdateProfileActivity extends AppCompatActivity {
         newDegree = findViewById(R.id.degreePlainText);
         newMotives = findViewById(R.id.motivesEditText);
         saveButton = findViewById(R.id.buttonSave);
+        backImage = findViewById(R.id.backButtonEditProfile);
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
         userId = fAuth.getCurrentUser().getUid();
-
 
         Bundle dbfields = this.getIntent().getExtras();
         if (dbfields != null) {
@@ -85,7 +89,7 @@ public class UpdateProfileActivity extends AppCompatActivity {
                 documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
-                        Log.d(TAG1, "onSuccess: user profile is created for " + userId);
+                        Log.d(TAG1, "onSuccess: user profile is updated " + userId);
 
                     }
                 }).addOnFailureListener(new OnFailureListener() {
@@ -95,15 +99,19 @@ public class UpdateProfileActivity extends AppCompatActivity {
                     }
                 });
 
-                Intent i = new Intent(getApplicationContext(), UpdateProfileActivity.class);
+                Intent i = new Intent(getApplicationContext(), ProfileActivity.class);
 
                 Bundle extras = new Bundle();
                 extras.putSerializable("user", user);
                 i.putExtras(extras);
             }
         });
-
-
+        backImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                    finish();
+                }
+        });
     }
 }
 

@@ -1311,6 +1311,7 @@ id all
 id always
 id async
 id auto
+id backButtonEditProfile
 id backImageView
 id backImageView10
 id backImageView100
@@ -1323,6 +1324,7 @@ id blocking
 id blueBackground
 id bottom
 id buttonPanel
+id buttonSave
 id cameraBtn
 id cancel_action
 id center
@@ -1331,7 +1333,7 @@ id center_vertical
 id chains
 id changePassword
 id changePasswordImageView
-id changeProfile
+id changeProfilePicture
 id checkbox
 id checked
 id chronometer
@@ -1354,6 +1356,8 @@ id decor_content_parent
 id default_activity_button
 id degreeAutoCompleteTextView
 id degreeHeading
+id degreeHeadingEditText
+id degreePlainText
 id descriptionEditText
 id descriptionTextView
 id descriptionTextView1
@@ -1370,6 +1374,7 @@ id displayImageView
 id editProfile
 id editProfileImageView
 id edit_query
+id editprofileButton
 id emailEditText
 id end
 id end_padder
@@ -1404,6 +1409,7 @@ id gone
 id group_divider
 id groups
 id hallsAutoCompleteTextView
+id hallsEditText
 id headingOneTextView
 id headingOneTextView1
 id headingThreeTextView
@@ -1456,6 +1462,7 @@ id mini
 id motiveHeading
 id motiveLogo
 id motiveView
+id motivesEditText
 id motivesMultiAutoCompleteTextView
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
@@ -1585,6 +1592,7 @@ id textView13
 id textView14
 id textView15
 id textView2
+id textView3
 id textView9
 id text_input_password_toggle
 id textinput_counter
@@ -1615,6 +1623,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id userBioEditText
 id usernameEditText
 id viewPager
 id view_offset_helper
@@ -1691,6 +1700,7 @@ layout activity_profile
 layout activity_register
 layout activity_settings
 layout activity_splash
+layout activity_update_profile
 layout custom_dialog
 layout custom_dialogue_layout
 layout design_bottom_navigation_item
