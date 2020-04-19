@@ -1333,7 +1333,6 @@ id center_vertical
 id chains
 id changePassword
 id changePasswordImageView
-id changeProfilePicture
 id checkbox
 id checked
 id chronometer
@@ -1373,6 +1372,7 @@ id disableHome
 id displayImageView
 id editProfile
 id editProfileImageView
+id editProfilePictureTextView
 id edit_query
 id editprofileButton
 id emailEditText
@@ -1449,7 +1449,11 @@ id logInButton2
 id logInDetailsTextView
 id logOutButton
 id loginEditText
+id mainMotive
 id mainMotiveAutoCompleteTextView
+id mainMotiveEditText2
+id mainMotiveHeading
+id mainMotiveTextView
 id map
 id mapData
 id masked
@@ -1622,6 +1626,7 @@ id unchecked
 id uniform
 id unlabeled
 id up
+id updateProfileBackground
 id useLogo
 id userBioEditText
 id usernameEditText

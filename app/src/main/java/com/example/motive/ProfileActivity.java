@@ -34,11 +34,10 @@ public class  ProfileActivity extends AppCompatActivity {
     ImageView backImageView;
     Button resendCodeButton;
     String userId;
-    TextView username, halls, bio, motives, degree;
+    TextView username, halls, bio, motives, degree, mainUserMotive;
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
     ImageView profileImage;
-    Button changeProfileImage;
     Button editProfileFields;
     StorageReference storageReference;
 
@@ -57,11 +56,10 @@ public class  ProfileActivity extends AppCompatActivity {
         username = findViewById(R.id.profileUsername);
         halls = findViewById(R.id.profileHalls);
         bio = findViewById(R.id.profileUserBio);
+        mainUserMotive = findViewById(R.id.mainMotive);
         motives = findViewById(R.id.profileMotives);
         degree = findViewById(R.id.profileDegree);
-
         profileImage = findViewById(R.id.displayImageView);
-        changeProfileImage = findViewById(R.id.changeProfilePicture);
         editProfileFields = findViewById(R.id.editprofileButton);
 
         fAuth = FirebaseAuth.getInstance();
@@ -69,7 +67,7 @@ public class  ProfileActivity extends AppCompatActivity {
         storageReference = FirebaseStorage.getInstance().getReference();
 
         //Profile image reference for each user registered, seperate directory
-        StorageReference profileRef = storageReference.child("users/"+fAuth.getCurrentUser().getUid()+"/profile.jpg");
+        StorageReference profileRef = storageReference.child("users/" + fAuth.getCurrentUser().getUid() + "/profile.jpg");
         profileRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
             @Override
             public void onSuccess(Uri uri) {
@@ -87,6 +85,7 @@ public class  ProfileActivity extends AppCompatActivity {
                 halls.setText(documentSnapshot.getString("halls"));
                 bio.setText(documentSnapshot.getString("user bio"));
                 degree.setText(documentSnapshot.getString("degree"));
+                mainUserMotive.setText(documentSnapshot.getString("main motive"));
                 motives.setText(documentSnapshot.getString("other motives"));
             }
         });
@@ -108,7 +107,7 @@ public class  ProfileActivity extends AppCompatActivity {
                     }).addOnFailureListener(new OnFailureListener() {
                         @Override
                         public void onFailure(@NonNull Exception e) {
-                            Log.d(TAG,"Email not send " + e.getMessage());
+                            Log.d(TAG, "Email not send " + e.getMessage());
                         }
                     });
                 }
@@ -133,50 +132,5 @@ public class  ProfileActivity extends AppCompatActivity {
             }
         });
 
-
-
-
-        changeProfileImage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // open gallery
-                Intent openGalleryIntent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-                startActivityForResult(openGalleryIntent, 1000);
-            }
-        });
-    }
-
-
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if(requestCode == 1000) {
-            if (resultCode == Activity.RESULT_OK){
-                Uri imageUri = data.getData();
-                uploadImagetoFirebase(imageUri);
-            }
-        }
-    }
-
-    private void uploadImagetoFirebase(Uri imageUri) {
-        // uplaod image to firebase storage
-        final StorageReference fileRef = storageReference.child("users/"+fAuth.getCurrentUser().getUid()+"/profile.jpg");
-        fileRef.putFile(imageUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-            @Override
-            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                fileRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
-                    @Override
-                    public void onSuccess(Uri uri) {
-                        Picasso.get().load(uri).into(profileImage);
-                    }
-                });
-            }
-        }).addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception e) {
-                Toast.makeText(ProfileActivity.this, "Failed", Toast.LENGTH_SHORT).show();
-            }
-        });
     }
 }

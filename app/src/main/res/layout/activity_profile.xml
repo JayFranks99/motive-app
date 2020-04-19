@@ -82,23 +82,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/profileUsername" />
 
-        <Button
-            android:id="@+id/changeProfilePicture"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:background="@drawable/my_button"
-            android:text="Edit Profile Picture"
-            android:textColor="#0095B7"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/profileHalls">
-
-        </Button>
-
         <TextView
             android:id="@+id/aboutUser"
             android:layout_width="0dp"
@@ -113,7 +96,23 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/changeProfilePicture" />
+            app:layout_constraintTop_toBottomOf="@+id/editprofileButton" />
+
+        <TextView
+            android:id="@+id/mainMotiveHeading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:text="Main Motive"
+            android:textAlignment="center"
+            android:textColor="#0095B7"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profileUserBio" />
 
         <TextView
             android:id="@+id/profileUserBio"
@@ -143,7 +142,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/profileUserBio" />
+            app:layout_constraintTop_toBottomOf="@+id/profileMotives" />
 
         <TextView
             android:id="@+id/profileDegree"
@@ -166,14 +165,14 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="16dp"
-            android:text="Motives"
+            android:text="Other Motives"
             android:textAlignment="center"
             android:textColor="#0095B7"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/profileDegree" />
+            app:layout_constraintTop_toBottomOf="@+id/mainMotive" />
 
         <TextView
             android:id="@+id/profileMotives"
@@ -206,16 +205,29 @@
             android:id="@+id/editprofileButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="100dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginEnd="100dp"
-            android:background="@drawable/my_button2"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="75dp"
+            android:background="@drawable/my_button"
             android:text="Edit Profile"
-            android:textColor="#FFF"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="#0095B7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profileHalls" />
+
+        <TextView
+            android:id="@+id/mainMotive"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:text="Football"
+            android:textAlignment="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/profileMotives" />
+            app:layout_constraintTop_toBottomOf="@+id/mainMotiveHeading" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

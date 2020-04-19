@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/updateProfileBackground"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
+        android:layout_height="wrap_content">
 
         <View
             android:id="@+id/blueBackground"
             android:layout_width="0dp"
-            android:layout_height="357dp"
+            android:layout_height="394dp"
             android:background="#0095B7"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -39,16 +38,19 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="32dp"
             android:backgroundTint="#FFF"
             android:ems="10"
-            android:hint="Username"
+            android:hint="Username (Instagram)"
             android:inputType="text"
+            android:textAlignment="center"
             android:textColor="#FFF"
             android:textColorHint="#CCC9C9"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/displayImageView" />
+            app:layout_constraintTop_toBottomOf="@+id/editProfilePictureTextView" />
 
         <EditText
             android:id="@+id/hallsEditText"
@@ -60,6 +62,7 @@
             android:ems="10"
             android:hint="Halls"
             android:inputType="text"
+            android:textAlignment="center"
             android:textColor="#FFF"
             android:textColorHint="#CCC9C9"
             app:layout_constraintEnd_toEndOf="parent"
@@ -92,18 +95,35 @@
 
         <TextView
             android:id="@+id/aboutTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
             android:text="About"
+            android:textAlignment="center"
+            android:textColor="#0095B7"
+            android:textSize="18dp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/blueBackground"
+            app:layout_constraintTop_toBottomOf="@+id/blueBackground" />
+
+        <TextView
+            android:id="@+id/mainMotiveTextView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="16dp"
+            android:text="Main Motive"
             android:textAlignment="center"
             android:textColor="#0095B7"
-            android:textSize="18dp"/>
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userBioEditText" />
 
         <EditText
             android:id="@+id/userBioEditText"
@@ -112,14 +132,34 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="32dp"
+            android:backgroundTint="#0095B7"
             android:ems="10"
             android:hint="User Bio"
             android:inputType="text"
+            android:textAlignment="center"
             android:textColorHint="#CCC9C9"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/aboutTextView" />
 
+
+        <EditText
+            android:id="@+id/mainMotiveEditText2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:backgroundTint="#0095B7"
+            android:ems="10"
+            android:hint="Main Motive"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textColorHint="#CCC9C9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mainMotiveTextView" />
 
         <TextView
             android:id="@+id/degreeHeadingEditText"
@@ -135,8 +175,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toBottomOf="@id/userBioEditText"/>
-
+            app:layout_constraintTop_toBottomOf="@+id/motivesEditText" />
 
         <EditText
             android:id="@+id/degreePlainText"
@@ -145,9 +184,11 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="32dp"
+            android:backgroundTint="#0095B7"
             android:ems="10"
             android:hint="Degree"
             android:inputType="text"
+            android:textAlignment="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -159,11 +200,13 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="32dp"
+            android:backgroundTint="#0095B7"
             android:ems="10"
-            android:hint="Motives"
+            android:hint="Other Motives"
             android:inputType="text"
+            android:textAlignment="center"
             android:textColorHint="#CCC9C9"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -177,28 +220,42 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="16dp"
-            android:text="Motives"
+            android:text="Other Motives"
             android:textAlignment="center"
             android:textColor="#0095B7"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/degreePlainText"/>
+            app:layout_constraintTop_toBottomOf="@+id/mainMotiveEditText2" />
 
         <Button
             android:id="@+id/buttonSave"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="100dp"
-            android:layout_marginTop="100dp"
-            android:layout_marginEnd="100dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="150dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/my_button"
             android:text="Save"
             android:textColor="#0095B7"
-            android:background="@drawable/my_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/degreePlainText" />
+
+        <TextView
+            android:id="@+id/editProfilePictureTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="EDIT PROFILE PHOTO"
+            android:textColor="#FFF"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/motivesEditText" />
+            app:layout_constraintTop_toBottomOf="@+id/displayImageView" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -508,6 +508,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
     }
 
+    //Hide keyboard when clicking on the background view of the activity
     @Override
     public void onClick(View view) {
         if (view.getId() == R.id.registerBackground) {
