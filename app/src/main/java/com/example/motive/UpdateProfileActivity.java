@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -89,6 +90,9 @@ public class UpdateProfileActivity extends AppCompatActivity {
                 documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
+
+                        Toast.makeText(UpdateProfileActivity.this, "Changes saved.", Toast.LENGTH_SHORT).show();
+
                         Log.d(TAG1, "onSuccess: user profile is updated " + userId);
 
                     }
