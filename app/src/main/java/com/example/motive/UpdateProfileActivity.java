@@ -2,6 +2,7 @@ package com.example.motive;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Paint;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -17,6 +18,8 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
+
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
@@ -34,7 +37,7 @@ import com.squareup.picasso.Picasso;
 import java.util.HashMap;
 import java.util.Objects;
 
-public class UpdateProfileActivity extends AppCompatActivity {
+public class UpdateProfileActivity extends AppCompatActivity implements View.OnClickListener {
 
     EditText newUsername, newHalls, newBio, newDegree, newMotives, newMainMotive;
     Button saveButton;
@@ -46,6 +49,7 @@ public class UpdateProfileActivity extends AppCompatActivity {
     public static final String TAG1 = "TAG";
     HashMap<String, Object> user;
     StorageReference storageReference;
+    ConstraintLayout updateProfileBackground;
 
 
     @Override
@@ -63,6 +67,13 @@ public class UpdateProfileActivity extends AppCompatActivity {
         backImage = findViewById(R.id.backButtonEditProfile);
         profileImage = findViewById(R.id.displayImageView);
         editProfilePicture = findViewById(R.id.editProfilePictureTextView);
+        updateProfileBackground = findViewById(R.id.updateProfileBackground);
+        updateProfileBackground.setOnClickListener(this);
+
+
+        //Underline Text View
+        editProfilePicture.setPaintFlags(editProfilePicture.getPaintFlags()|Paint.UNDERLINE_TEXT_FLAG);
+
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
         userId = fAuth.getCurrentUser().getUid();
@@ -83,6 +94,8 @@ public class UpdateProfileActivity extends AppCompatActivity {
             }
         });
 
+
+
         final DocumentReference documentReference = fStore.collection("users").document(userId);
         documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
             @Override
@@ -93,6 +106,7 @@ public class UpdateProfileActivity extends AppCompatActivity {
                 newDegree.setText(documentSnapshot.getString("degree"));
                 newMainMotive.setText(documentSnapshot.getString("main motive"));
                 newMotives.setText(documentSnapshot.getString("other motives"));
+
             }
         });
 
@@ -196,7 +210,7 @@ public class UpdateProfileActivity extends AppCompatActivity {
     }
 
     //Hide keyboard when clicking on the background view of the activity
-
+    @Override
     public void onClick(View view) {
         if (view.getId() == R.id.updateProfileBackground) {
             InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
