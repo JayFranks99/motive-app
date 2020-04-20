@@ -49,6 +49,7 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
     List<Fragment> FragmentList;
 
     HashMap<String, Object> user;
+    HashMap<String, Object> userLocations;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +61,11 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
         Bundle dbfields = this.getIntent().getExtras();
         if (dbfields != null) {
             user = (HashMap<String,Object>)dbfields.getSerializable("user");
+        }
+
+        Bundle locations = this.getIntent().getExtras();
+        if (locations != null) {
+            userLocations= (HashMap<String,Object>)locations.getSerializable("user locations");
         }
 
         myProfileIcon.setOnClickListener(new View.OnClickListener() {
@@ -179,7 +185,7 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
             }
         });
 
-        LatLng jayLatLng = new LatLng ((double) user.get("lat"),(double) user.get("lng"));
+        LatLng jayLatLng = new LatLng ((double) userLocations.get("lat"),(double) userLocations.get("lng"));
         googleMap.addMarker(new MarkerOptions().position(jayLatLng).title((String)user.get("username")).snippet((String)user.get("main motive")).icon(BitmapDescriptorFactory.fromResource(R.drawable.f_icon)));
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(jayLatLng,15));
 
@@ -187,7 +193,7 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
 
         List<HashMap<String,Object>> userList = new ArrayList<HashMap<String,Object>>();
 
-        documentRefere  nce.get(user).addOnSuccessListener(new OnSuccessListener<Void>() {
+        documentReference.get(user).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void aVoid) {
                 Log.d(TAG1, "onSuccess: user profile is created for " + userID);

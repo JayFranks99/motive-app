@@ -166,7 +166,6 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                 final String mainMotive = mMainMotive.getText().toString();
                 final String otherMotives = mOtherMotives.getText().toString();
                 final String degree = mDegree.getText().toString();
-                // final String imageUrl = storageReference.getDownloadUrl().toString();
 
 
 
@@ -265,8 +264,8 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
                 progressBar.setVisibility(View.VISIBLE);
 
-                // register the user in firebase
 
+                // register the user in firebase
                 fAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
@@ -274,7 +273,6 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
                             //send verification link
                             //display pop up making them verify email
-
                             FirebaseUser fuser = fAuth.getCurrentUser();
                             fuser.sendEmailVerification().addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
@@ -304,11 +302,8 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                             user.put("other motives", otherMotives);
                             user.put("degree", degree);
                             user.put("username", username);
-                            user.put("address",geoLocate().toString());
-                            user.put("lat",geoLocate().getLatitude());
-                            user.put("lng",geoLocate().getLongitude());
 
-                           documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
+                            documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
                                 public void onSuccess(Void aVoid) {
                                     Log.d(TAG1, "onSuccess: user profile is created for " + userID);
@@ -321,11 +316,37 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                                 }
                             });
 
-                           Intent i = new Intent(getApplicationContext(), MotiveHomeActivity.class);
+
+                            DocumentReference documentReferenceTwo = fStore.collection("user locations").document(userID);
+                            //user HashMap called userLocation
+                            HashMap<String, Object> userLocations = new HashMap<>();
+                            userLocations.put("address",geoLocate().toString());
+                            userLocations.put("lat",geoLocate().getLatitude());
+                            userLocations.put("lng",geoLocate().getLongitude());
+
+                            documentReferenceTwo.set(userLocations).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                @Override
+                                public void onSuccess(Void aVoid) {
+                                    Log.d(TAG1, "onSuccess: user location reciveved" + userID);
+
+                                }
+                            }).addOnFailureListener(new OnFailureListener() {
+                                @Override
+                                public void onFailure(@NonNull Exception e) {
+                                    Log.d(TAG1, "onFailure: " + e.toString());
+                                }
+                            });
+
+
+                            Intent i = new Intent(getApplicationContext(), MotiveHomeActivity.class);
 
                             Bundle extras = new Bundle();
                             extras.putSerializable("user", user);
                             i.putExtras(extras);
+
+                            Bundle extrasTwo = new Bundle();
+                            extrasTwo.putSerializable("user locations", userLocations);
+                            i.putExtras(extrasTwo);
 
                             startActivity(i);
                             //execute out method for geolocating

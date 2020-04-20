@@ -115,7 +115,7 @@ public class  ProfileActivity extends AppCompatActivity {
 
         }
 
-        /*backImageView.setOnClickListener(new View.OnClickListener() {
+        backImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent home;
@@ -124,8 +124,6 @@ public class  ProfileActivity extends AppCompatActivity {
                 startActivity(home);
             }
         });
-
-         */
 
         editProfileFields.setOnClickListener(new View.OnClickListener() {
             @Override
