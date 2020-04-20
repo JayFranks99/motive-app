@@ -79,8 +79,8 @@ public final class R {
         public static final int common_google_signin_btn_text_light_focused = 0x7f08007f;
         public static final int common_google_signin_btn_text_light_normal = 0x7f080080;
         public static final int common_google_signin_btn_text_light_normal_background = 0x7f080081;
-        public static final int googleg_disabled_color_18 = 0x7f08008e;
-        public static final int googleg_standard_color_18 = 0x7f08008f;
+        public static final int googleg_disabled_color_18 = 0x7f08008f;
+        public static final int googleg_standard_color_18 = 0x7f080090;
     }
     public static final class id {
         private id() {}
@@ -92,18 +92,18 @@ public final class R {
         public static final int dark = 0x7f0a006b;
         public static final int hybrid = 0x7f0a00b2;
         public static final int icon_only = 0x7f0a00b6;
-        public static final int light = 0x7f0a00c6;
-        public static final int none = 0x7f0a00ea;
-        public static final int normal = 0x7f0a00eb;
-        public static final int progressBar = 0x7f0a0104;
-        public static final int radio = 0x7f0a0109;
-        public static final int satellite = 0x7f0a0113;
-        public static final int standard = 0x7f0a0141;
-        public static final int terrain = 0x7f0a0156;
-        public static final int text = 0x7f0a0157;
-        public static final int text2 = 0x7f0a0158;
-        public static final int wide = 0x7f0a018b;
-        public static final int wrap_content = 0x7f0a018e;
+        public static final int light = 0x7f0a00c7;
+        public static final int none = 0x7f0a00eb;
+        public static final int normal = 0x7f0a00ec;
+        public static final int progressBar = 0x7f0a0105;
+        public static final int radio = 0x7f0a010a;
+        public static final int satellite = 0x7f0a0114;
+        public static final int standard = 0x7f0a0142;
+        public static final int terrain = 0x7f0a0157;
+        public static final int text = 0x7f0a0158;
+        public static final int text2 = 0x7f0a0159;
+        public static final int wide = 0x7f0a018c;
+        public static final int wrap_content = 0x7f0a018f;
     }
     public static final class integer {
         private integer() {}

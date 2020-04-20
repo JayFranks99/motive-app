@@ -82,7 +82,7 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/motive/RegisterActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="430">
-              <caret line="170" column="39" lean-forward="true" selection-start-line="170" selection-start-column="39" selection-end-line="170" selection-end-column="39" />
+              <caret line="170" column="39" selection-start-line="170" selection-start-column="39" selection-end-line="170" selection-end-column="39" />
               <folding>
                 <element signature="e#10561#14270#0" expanded="true" />
                 <element signature="e#12897#13204#0" expanded="true" />
@@ -95,20 +95,30 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/motive/UpdateProfileActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="159" column="16" selection-start-line="159" selection-start-column="16" selection-end-line="159" selection-end-column="16" />
+              <caret line="159" selection-start-line="159" selection-end-line="159" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_first.xml">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="-34">
+              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="android-designer2" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/motive/SettingsActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1989">
-              <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="141" />
+              <caret line="141" selection-start-line="141" selection-end-line="141" />
               <folding>
                 <element signature="e#1865#2010#0" expanded="true" />
                 <element signature="e#2009#2010#0" expanded="true" />
@@ -136,7 +146,7 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/motive/MotiveHomeActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2278">
-              <caret line="182" lean-forward="true" selection-start-line="182" selection-end-line="182" />
+              <caret line="182" selection-start-line="182" selection-end-line="182" />
               <folding>
                 <element signature="e#3674#3675#0" expanded="true" />
                 <element signature="e#3705#3706#0" expanded="true" />
@@ -157,7 +167,7 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/motive/ProfileActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="583">
-              <caret line="120" column="25" lean-forward="true" selection-start-line="120" selection-start-column="25" selection-end-line="120" selection-end-column="25" />
+              <caret line="120" column="25" selection-start-line="120" selection-start-column="25" selection-end-line="120" selection-end-column="25" />
               <folding>
                 <element signature="e#4302#4606#0" expanded="true" />
                 <element signature="e#4605#4606#0" expanded="true" />
@@ -251,7 +261,6 @@
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/motiveslist.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/degree_list.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_first.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_messages.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/motive/MessagesFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_mental.xml" />
@@ -274,6 +283,7 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_update_profile.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/motive/RegisterActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/motive/UpdateProfileActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_first.xml" />
       </list>
     </option>
   </component>
@@ -455,6 +465,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="res" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="motive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="motive" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="drawable-mdpi" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="motive" type="b2602c69:ProjectViewProjectNode" />
@@ -696,7 +715,7 @@
       <window_info id="Designer" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Resources Explorer" order="5" sideWeight="0.7512275" weight="0.3272921" />
-      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.5524957" weight="0.17590618" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.5524957" visible="true" weight="0.17590618" />
       <window_info id="Build Variants" order="7" sideWeight="0.42475387" side_tool="true" weight="0.13539445" />
       <window_info id="Captures" order="8" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="0" weight="0.5531915" />
@@ -943,14 +962,6 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-mdpi/beer.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_first.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="4" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/custom_progress_bar.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -1122,7 +1133,7 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/motive/ProfileActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="583">
-          <caret line="120" column="25" lean-forward="true" selection-start-line="120" selection-start-column="25" selection-end-line="120" selection-end-column="25" />
+          <caret line="120" column="25" selection-start-line="120" selection-start-column="25" selection-end-line="120" selection-end-column="25" />
           <folding>
             <element signature="e#4302#4606#0" expanded="true" />
             <element signature="e#4605#4606#0" expanded="true" />
@@ -1137,7 +1148,7 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/motive/SettingsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1989">
-          <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="141" />
+          <caret line="141" selection-start-line="141" selection-end-line="141" />
           <folding>
             <element signature="e#1865#2010#0" expanded="true" />
             <element signature="e#2009#2010#0" expanded="true" />
@@ -1163,7 +1174,7 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/motive/MotiveHomeActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2278">
-          <caret line="182" lean-forward="true" selection-start-line="182" selection-end-line="182" />
+          <caret line="182" selection-start-line="182" selection-end-line="182" />
           <folding>
             <element signature="e#3674#3675#0" expanded="true" />
             <element signature="e#3705#3706#0" expanded="true" />
@@ -1179,18 +1190,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_update_profile.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="-190">
-          <caret line="199" column="34" selection-start-line="199" selection-start-column="34" selection-end-line="199" selection-end-column="34" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/motive/UpdateProfileActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="159" selection-start-line="159" selection-end-line="159" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/motive/RegisterActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="430">
-          <caret line="170" column="39" lean-forward="true" selection-start-line="170" selection-start-column="39" selection-end-line="170" selection-end-column="39" />
+          <caret line="170" column="39" selection-start-line="170" selection-start-column="39" selection-end-line="170" selection-end-column="39" />
           <folding>
             <element signature="e#10561#14270#0" expanded="true" />
             <element signature="e#12897#13204#0" expanded="true" />
@@ -1202,12 +1212,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/motive/UpdateProfileActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="159" column="16" selection-start-line="159" selection-start-column="16" selection-end-line="159" selection-end-column="16" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_update_profile.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="-190">
+          <caret line="199" column="34" selection-start-line="199" selection-start-column="34" selection-end-line="199" selection-end-column="34" />
         </state>
       </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_first.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
     </entry>
   </component>
 </project>

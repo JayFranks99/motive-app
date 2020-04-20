@@ -448,6 +448,10 @@
         "source": "C:\\Users\\Jay\\.gradle\\caches\\transforms-2\\files-2.1\\2e4ed34acbb880a0ef9546072100a488\\appcompat-1.1.0-alpha05\\res\\drawable-xhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
+        "merged": "C:\\Users\\Jay\\AndroidStudioProjects\\motive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_friends.png.flat",
+        "source": "C:\\Users\\Jay\\AndroidStudioProjects\\motive\\app\\src\\main\\res\\drawable-xxxhdpi\\friends.png"
+    },
+    {
         "merged": "C:\\Users\\Jay\\AndroidStudioProjects\\motive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
         "source": "C:\\Users\\Jay\\.gradle\\caches\\transforms-2\\files-2.1\\2e4ed34acbb880a0ef9546072100a488\\appcompat-1.1.0-alpha05\\res\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
@@ -620,6 +624,10 @@
         "source": "C:\\Users\\Jay\\AndroidStudioProjects\\motive\\app\\src\\main\\res\\drawable-xxxhdpi\\beer.jpg"
     },
     {
+        "merged": "C:\\Users\\Jay\\AndroidStudioProjects\\motive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_friends.png.flat",
+        "source": "C:\\Users\\Jay\\AndroidStudioProjects\\motive\\app\\src\\main\\res\\drawable-xxhdpi\\friends.png"
+    },
+    {
         "merged": "C:\\Users\\Jay\\AndroidStudioProjects\\motive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_focused_holo.9.png.flat",
         "source": "C:\\Users\\Jay\\.gradle\\caches\\transforms-2\\files-2.1\\2e4ed34acbb880a0ef9546072100a488\\appcompat-1.1.0-alpha05\\res\\drawable-hdpi-v4\\abc_list_focused_holo.9.png"
     },
@@ -690,6 +698,10 @@
     {
         "merged": "C:\\Users\\Jay\\AndroidStudioProjects\\motive\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_applogo.png.flat",
         "source": "C:\\Users\\Jay\\AndroidStudioProjects\\motive\\app\\src\\main\\res\\mipmap-mdpi\\applogo.png"
+    },
+    {
+        "merged": "C:\\Users\\Jay\\AndroidStudioProjects\\motive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_friends.png.flat",
+        "source": "C:\\Users\\Jay\\AndroidStudioProjects\\motive\\app\\src\\main\\res\\drawable-hdpi\\friends.png"
     },
     {
         "merged": "C:\\Users\\Jay\\AndroidStudioProjects\\motive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_design_ic_visibility_off.png.flat",
@@ -1600,6 +1612,10 @@
         "source": "C:\\Users\\Jay\\.gradle\\caches\\transforms-2\\files-2.1\\2e4ed34acbb880a0ef9546072100a488\\appcompat-1.1.0-alpha05\\res\\drawable\\abc_cab_background_internal_bg.xml"
     },
     {
+        "merged": "C:\\Users\\Jay\\AndroidStudioProjects\\motive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_friends.png.flat",
+        "source": "C:\\Users\\Jay\\AndroidStudioProjects\\motive\\app\\src\\main\\res\\drawable-xhdpi\\friends.png"
+    },
+    {
         "merged": "C:\\Users\\Jay\\AndroidStudioProjects\\motive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\Jay\\.gradle\\caches\\transforms-2\\files-2.1\\2e4ed34acbb880a0ef9546072100a488\\appcompat-1.1.0-alpha05\\res\\drawable-ldrtl-xhdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
@@ -1946,6 +1962,10 @@
     {
         "merged": "C:\\Users\\Jay\\AndroidStudioProjects\\motive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "C:\\Users\\Jay\\.gradle\\caches\\transforms-2\\files-2.1\\2e4ed34acbb880a0ef9546072100a488\\appcompat-1.1.0-alpha05\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\Jay\\AndroidStudioProjects\\motive\\app\\build\\intermediates\\res\\merged\\debug\\drawable_friends.png.flat",
+        "source": "C:\\Users\\Jay\\AndroidStudioProjects\\motive\\app\\src\\main\\res\\drawable\\friends.png"
     },
     {
         "merged": "C:\\Users\\Jay\\AndroidStudioProjects\\motive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
@@ -2686,5 +2706,9 @@
     {
         "merged": "C:\\Users\\Jay\\AndroidStudioProjects\\motive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_preference_list_divider_material.xml.flat",
         "source": "C:\\Users\\Jay\\.gradle\\caches\\transforms-2\\files-2.1\\7be2ab36fa1bfe1cefd17adec497ec69\\preference-1.1.0-alpha05\\res\\drawable-v21\\preference_list_divider_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jay\\AndroidStudioProjects\\motive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_friends.png.flat",
+        "source": "C:\\Users\\Jay\\AndroidStudioProjects\\motive\\app\\src\\main\\res\\drawable-mdpi\\friends.png"
     }
 ]

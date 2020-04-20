@@ -1194,6 +1194,7 @@ drawable events_icon
 drawable f_icon
 drawable football_profilepic
 drawable forward_icon
+drawable friends
 drawable golfnew
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
@@ -1429,6 +1430,7 @@ id image
 id imageView
 id imageView2
 id imageView3
+id imageView6
 id info
 id invisible
 id italic

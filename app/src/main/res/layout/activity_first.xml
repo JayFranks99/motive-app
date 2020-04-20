@@ -6,6 +6,18 @@
     android:layout_height="match_parent"
     android:background="#0095B7">
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/friends" />
+    </FrameLayout>
+
     <View
         android:id="@+id/whiteBackgroundView"
         android:layout_width="0dp"

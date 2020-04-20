@@ -157,7 +157,7 @@ public class UpdateProfileActivity extends AppCompatActivity implements View.OnC
                 String motives = newMotives.getText().toString();
                 String mainM = newMainMotive.getText().toString();
 
-                
+
                 if (TextUtils.isEmpty(name)) {
                     newUsername.setError("Username is required.");
                     return;
