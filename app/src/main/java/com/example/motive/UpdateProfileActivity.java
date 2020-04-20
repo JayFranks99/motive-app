@@ -155,13 +155,11 @@ public class UpdateProfileActivity extends AppCompatActivity implements View.OnC
                 i.putExtras(extras);
             }
         });
+
         backImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent back;
-                back = new Intent(getBaseContext(),
-                      ProfileActivity.class);
-                startActivity(back);
+                finish();
             }
         });
 

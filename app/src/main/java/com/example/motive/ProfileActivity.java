@@ -118,10 +118,7 @@ public class  ProfileActivity extends AppCompatActivity {
         backImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent home;
-                home = new Intent(getBaseContext(),
-                        MotiveHomeActivity.class);
-                startActivity(home);
+                finish();
             }
         });
 

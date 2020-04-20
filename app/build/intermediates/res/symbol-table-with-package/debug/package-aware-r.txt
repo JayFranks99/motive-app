@@ -1357,6 +1357,7 @@ id degreeAutoCompleteTextView
 id degreeHeading
 id degreeHeadingEditText
 id degreePlainText
+id deleteButton
 id descriptionEditText
 id descriptionTextView
 id descriptionTextView1

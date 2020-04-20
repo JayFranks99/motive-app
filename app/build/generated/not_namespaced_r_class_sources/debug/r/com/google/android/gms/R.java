@@ -90,20 +90,20 @@ public final class R {
         public static final int auto = 0x7f0a0045;
         public static final int center = 0x7f0a0056;
         public static final int dark = 0x7f0a006b;
-        public static final int hybrid = 0x7f0a00b1;
-        public static final int icon_only = 0x7f0a00b5;
-        public static final int light = 0x7f0a00c5;
-        public static final int none = 0x7f0a00e9;
-        public static final int normal = 0x7f0a00ea;
-        public static final int progressBar = 0x7f0a0103;
-        public static final int radio = 0x7f0a0108;
-        public static final int satellite = 0x7f0a0112;
-        public static final int standard = 0x7f0a0140;
-        public static final int terrain = 0x7f0a0155;
-        public static final int text = 0x7f0a0156;
-        public static final int text2 = 0x7f0a0157;
-        public static final int wide = 0x7f0a018a;
-        public static final int wrap_content = 0x7f0a018d;
+        public static final int hybrid = 0x7f0a00b2;
+        public static final int icon_only = 0x7f0a00b6;
+        public static final int light = 0x7f0a00c6;
+        public static final int none = 0x7f0a00ea;
+        public static final int normal = 0x7f0a00eb;
+        public static final int progressBar = 0x7f0a0104;
+        public static final int radio = 0x7f0a0109;
+        public static final int satellite = 0x7f0a0113;
+        public static final int standard = 0x7f0a0141;
+        public static final int terrain = 0x7f0a0156;
+        public static final int text = 0x7f0a0157;
+        public static final int text2 = 0x7f0a0158;
+        public static final int wide = 0x7f0a018b;
+        public static final int wrap_content = 0x7f0a018e;
     }
     public static final class integer {
         private integer() {}

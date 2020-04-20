@@ -184,7 +184,8 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
                 return false;
             }
         });
-
+        //get uid
+        //just doing it for current user wants to be all
         LatLng jayLatLng = new LatLng ((double) userLocations.get("lat"),(double) userLocations.get("lng"));
         googleMap.addMarker(new MarkerOptions().position(jayLatLng).title((String)user.get("username")).snippet((String)user.get("main motive")).icon(BitmapDescriptorFactory.fromResource(R.drawable.f_icon)));
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(jayLatLng,15));
