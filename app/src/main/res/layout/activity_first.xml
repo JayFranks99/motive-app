@@ -6,27 +6,27 @@
     android:layout_height="match_parent"
     android:background="#0095B7">
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/friends" />
-    </FrameLayout>
-
     <View
         android:id="@+id/whiteBackgroundView"
         android:layout_width="0dp"
-        android:layout_height="225dp"
+        android:layout_height="175dp"
         android:background="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/friends" />
+    </FrameLayout>
 
     <Button
         android:id="@+id/registerButton2"
@@ -34,9 +34,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:background="@drawable/my_button2"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/my_button"
         android:text="Register"
-        android:textColor="#FFFFFF"
+        android:textColor="#0095B7"
         app:layout_constraintBottom_toTopOf="@id/logInButton2"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
         app:layout_constraintHorizontal_bias="0.0"
@@ -48,9 +49,10 @@
         android:id="@+id/logInButton2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/my_button"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/my_button2"
         android:text="Log in"
-        android:textColor="#0095B7"
+        android:textColor="#FFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/registerButton2"
         app:layout_constraintHorizontal_bias="0.0"
@@ -77,7 +79,7 @@
         android:layout_centerInParent="true"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="150dp"
         android:text="Are you a first year at the Unviersity of Leeds? Sign up below to start finding students similar to you!"
         android:textAlignment="center"
         android:textColor="#FFF"

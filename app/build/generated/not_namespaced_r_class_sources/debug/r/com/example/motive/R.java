@@ -6188,7 +6188,7 @@ public final class R {
     public static final int imageView=0x7f0a00b9;
     public static final int imageView2=0x7f0a00ba;
     public static final int imageView3=0x7f0a00bb;
-    public static final int imageView6=0x7f0a00bc;
+    public static final int imageView7=0x7f0a00bc;
     public static final int info=0x7f0a00bd;
     public static final int invisible=0x7f0a00be;
     public static final int italic=0x7f0a00bf;
