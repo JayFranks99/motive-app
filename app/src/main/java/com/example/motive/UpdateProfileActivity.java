@@ -6,20 +6,22 @@ import android.graphics.Paint;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.MultiAutoCompleteTextView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
-
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
@@ -33,13 +35,14 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.squareup.picasso.Picasso;
-
 import java.util.HashMap;
 import java.util.Objects;
 
 public class UpdateProfileActivity extends AppCompatActivity implements View.OnClickListener {
 
-    EditText newUsername, newHalls, newBio, newDegree, newMotives, newMainMotive;
+    EditText newUsername, newBio;
+    AutoCompleteTextView newDegree, newHalls, newMainMotive;
+    MultiAutoCompleteTextView newMotives;
     Button saveButton;
     TextView editProfilePicture;
     ImageView backImage, profileImage;
@@ -50,6 +53,7 @@ public class UpdateProfileActivity extends AppCompatActivity implements View.OnC
     HashMap<String, Object> user;
     StorageReference storageReference;
     ConstraintLayout updateProfileBackground;
+
 
 
     @Override
@@ -73,6 +77,39 @@ public class UpdateProfileActivity extends AppCompatActivity implements View.OnC
 
         //Underline Text View
         editProfilePicture.setPaintFlags(editProfilePicture.getPaintFlags()|Paint.UNDERLINE_TEXT_FLAG);
+
+        //auto-complete arrays
+
+        String[] halls = getResources().getStringArray(R.array.halls);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_1, halls);
+
+       newHalls.setAdapter(adapter);
+        newHalls.setDropDownBackgroundResource(R.color.autocomplete_background_color);
+
+        String[] motive = getResources().getStringArray(R.array.motives);
+        ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(this,
+                android.R.layout.simple_expandable_list_item_1, motive);
+
+        newMainMotive.setAdapter(adapter2);
+        newMainMotive.setDropDownBackgroundResource(R.color.autocomplete_background_color);
+
+        String[] motives = getResources().getStringArray(R.array.motives);
+        ArrayAdapter<String> adapter3 = new ArrayAdapter<String>(this,
+                android.R.layout.simple_expandable_list_item_1, motives);
+
+        newMotives.setAdapter(adapter3);
+        newMotives.setTokenizer(new MultiAutoCompleteTextView.CommaTokenizer());
+        newMotives.setDropDownBackgroundResource(R.color.autocomplete_background_color);
+
+        String[] degree = getResources().getStringArray(R.array.degrees);
+        ArrayAdapter<String> adapter4 = new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_1, degree);
+
+        newDegree.setAdapter(adapter4);
+        newDegree.setDropDownBackgroundResource(R.color.autocomplete_background_color);
+
+        //
 
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
@@ -119,6 +156,66 @@ public class UpdateProfileActivity extends AppCompatActivity implements View.OnC
                 String degree = newDegree.getText().toString();
                 String motives = newMotives.getText().toString();
                 String mainM = newMainMotive.getText().toString();
+
+                
+                if (TextUtils.isEmpty(name)) {
+                    newUsername.setError("Username is required.");
+                    return;
+                }
+
+                if (TextUtils.isEmpty(halls)) {
+                    newHalls.setError("Halls name is required.");
+                    return;
+                }
+
+
+                if (TextUtils.isEmpty(name)) {
+                  newUsername.setError("Username is required.");
+                    return;
+                }
+
+                if (TextUtils.isEmpty(name)) {
+                    newUsername.setError("A user bio must be entered");
+                    return;
+                }
+
+                if (bio.length() < 20) {
+                    newBio.setError("User bio must be at least 20 characters long");
+                    return;
+                }
+
+                if (TextUtils.isEmpty(mainM)) {
+                    newMainMotive.setError("A main motive is required");
+                    return;
+                }
+
+
+                if (mainM.length() > 30) {
+                    newMainMotive.setError("Only your main motive required");
+                    return;
+                }
+
+                if (TextUtils.isEmpty(motives)) {
+                    newMotives.setError("Other motives are required");
+                    return;
+                }
+
+                if (motives.length() > 150) {
+                    newMotives.setError("Less than 150 characters please");
+                    return;
+                }
+
+
+                if (TextUtils.isEmpty(degree)) {
+                    newDegree.setError("Degree is required");
+                    return;
+                }
+
+                if (degree.length() > 40) {
+                    newDegree.setError("Less than 40 characters please");
+                    return;
+                }
+
 
 
                 userId = fAuth.getCurrentUser().getUid();

@@ -136,6 +136,8 @@ public class SettingsActivity extends AppCompatActivity {
                         home = new Intent(getBaseContext(),
                                 FirstActivity.class);
                         startActivity(home);
+                        FirebaseAuth.getInstance().signOut();
+                        finish();
                     }
 
 

@@ -168,6 +168,10 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                 final String degree = mDegree.getText().toString();
 
 
+                if (TextUtils.isEmpty(username)) {
+                    mUsername.setError("Username is required.");
+                    return;
+                }
 
                 if (TextUtils.isEmpty(email)) {
                     mEmail.setError("Email is required.");

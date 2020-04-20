@@ -81,8 +81,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/motive/RegisterActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3451">
-              <caret line="292" column="62" selection-start-line="292" selection-start-column="62" selection-end-line="292" selection-end-column="62" />
+            <state relative-caret-position="430">
+              <caret line="170" column="39" lean-forward="true" selection-start-line="170" selection-start-column="39" selection-end-line="170" selection-end-column="39" />
               <folding>
                 <element signature="e#10561#14270#0" expanded="true" />
                 <element signature="e#12897#13204#0" expanded="true" />
@@ -95,11 +95,20 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/motive/UpdateProfileActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="159" column="16" selection-start-line="159" selection-start-column="16" selection-end-line="159" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/motive/SettingsActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="58" selection-end-column="11" />
+            <state relative-caret-position="1989">
+              <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="141" />
               <folding>
                 <element signature="e#1865#2010#0" expanded="true" />
                 <element signature="e#2009#2010#0" expanded="true" />
@@ -115,7 +124,6 @@
                 <element signature="e#4422#4423#0" expanded="true" />
                 <element signature="e#4469#6223#0" expanded="true" />
                 <element signature="e#4795#5832#0" expanded="true" />
-                <element signature="e#5831#5832#0" expanded="true" />
                 <element signature="e#5908#6142#0" expanded="true" />
                 <element signature="e#6141#6142#0" expanded="true" />
                 <element signature="e#6222#6223#0" expanded="true" />
@@ -145,27 +153,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/motive/UpdateProfileActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="158" column="8" selection-start-line="158" selection-start-column="8" selection-end-line="158" selection-end-column="8" />
-              <folding>
-                <element signature="e#3571#3752#0" expanded="true" />
-                <element signature="e#3751#3752#0" expanded="true" />
-                <element signature="e#4590#6533#0" expanded="true" />
-                <element signature="e#5672#6030#0" expanded="true" />
-                <element signature="e#6029#6030#0" expanded="true" />
-                <element signature="e#6532#6533#0" expanded="true" />
-                <element signature="e#6897#7042#0" expanded="true" />
-                <element signature="e#7041#7042#0" expanded="true" />
-                <element signature="e#7098#7435#0" expanded="true" />
-                <element signature="e#7434#7435#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/motive/ProfileActivity.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -181,6 +168,16 @@
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_update_profile.xml">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="-190">
+              <caret line="199" column="34" selection-start-line="199" selection-start-column="34" selection-end-line="199" selection-end-column="34" />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="android-designer2" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -270,12 +267,12 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/motive/UserProfile.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_profile.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_update_profile.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/motive/RegisterActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_settings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/motive/ProfileActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/motive/MotiveHomeActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/motive/SettingsActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_update_profile.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/motive/RegisterActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/motive/UpdateProfileActivity.java" />
       </list>
     </option>
@@ -699,7 +696,7 @@
       <window_info id="Designer" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Resources Explorer" order="5" sideWeight="0.7512275" weight="0.3272921" />
-      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.5524957" visible="true" weight="0.17590618" />
+      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.5524957" weight="0.17590618" />
       <window_info id="Build Variants" order="7" sideWeight="0.42475387" side_tool="true" weight="0.13539445" />
       <window_info id="Captures" order="8" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="0" weight="0.5531915" />
@@ -728,11 +725,11 @@
       <window_info id="Designer" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Resources Explorer" order="5" sideWeight="0.7512275" weight="0.3272921" />
-      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.5524957" visible="true" weight="0.17590618" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.5524957" visible="true" weight="0.17590618" />
       <window_info id="Build Variants" order="7" sideWeight="0.42475387" side_tool="true" weight="0.13539445" />
       <window_info id="Captures" order="8" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="0" weight="0.5531915" />
-      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.49946696" weight="0.47020584" />
+      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.49946696" weight="0.58613217" />
       <window_info anchor="bottom" id="TODO" order="2" weight="0.32827735" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.32827735" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.32827735" />
@@ -1097,14 +1094,6 @@
       </provider>
       <provider selected="true" editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_update_profile.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="255" column="45" selection-start-line="255" selection-start-column="45" selection-end-line="255" selection-end-column="45" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/motive/EventsFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -1145,6 +1134,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/motive/SettingsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1989">
+          <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="141" />
+          <folding>
+            <element signature="e#1865#2010#0" expanded="true" />
+            <element signature="e#2009#2010#0" expanded="true" />
+            <element signature="e#2055#2352#0" expanded="true" />
+            <element signature="e#2351#2352#0" expanded="true" />
+            <element signature="e#2398#4423#0" expanded="true" />
+            <element signature="e#2956#4044#0" expanded="true" />
+            <element signature="e#3318#3639#0" expanded="true" />
+            <element signature="e#3638#3639#0" expanded="true" />
+            <element signature="e#3662#4002#0" expanded="true" />
+            <element signature="e#4001#4002#0" expanded="true" />
+            <element signature="e#4043#4044#0" expanded="true" />
+            <element signature="e#4422#4423#0" expanded="true" />
+            <element signature="e#4469#6223#0" expanded="true" />
+            <element signature="e#4795#5832#0" expanded="true" />
+            <element signature="e#5908#6142#0" expanded="true" />
+            <element signature="e#6141#6142#0" expanded="true" />
+            <element signature="e#6222#6223#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/motive/MotiveHomeActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2278">
@@ -1164,10 +1179,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_update_profile.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="-190">
+          <caret line="199" column="34" selection-start-line="199" selection-start-column="34" selection-end-line="199" selection-end-column="34" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/motive/RegisterActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3451">
-          <caret line="292" column="62" selection-start-line="292" selection-start-column="62" selection-end-line="292" selection-end-column="62" />
+        <state relative-caret-position="430">
+          <caret line="170" column="39" lean-forward="true" selection-start-line="170" selection-start-column="39" selection-end-line="170" selection-end-column="39" />
           <folding>
             <element signature="e#10561#14270#0" expanded="true" />
             <element signature="e#12897#13204#0" expanded="true" />
@@ -1179,49 +1202,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/motive/SettingsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="58" selection-end-column="11" />
-          <folding>
-            <element signature="e#1865#2010#0" expanded="true" />
-            <element signature="e#2009#2010#0" expanded="true" />
-            <element signature="e#2055#2352#0" expanded="true" />
-            <element signature="e#2351#2352#0" expanded="true" />
-            <element signature="e#2398#4423#0" expanded="true" />
-            <element signature="e#2956#4044#0" expanded="true" />
-            <element signature="e#3318#3639#0" expanded="true" />
-            <element signature="e#3638#3639#0" expanded="true" />
-            <element signature="e#3662#4002#0" expanded="true" />
-            <element signature="e#4001#4002#0" expanded="true" />
-            <element signature="e#4043#4044#0" expanded="true" />
-            <element signature="e#4422#4423#0" expanded="true" />
-            <element signature="e#4469#6223#0" expanded="true" />
-            <element signature="e#4795#5832#0" expanded="true" />
-            <element signature="e#5831#5832#0" expanded="true" />
-            <element signature="e#5908#6142#0" expanded="true" />
-            <element signature="e#6141#6142#0" expanded="true" />
-            <element signature="e#6222#6223#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/motive/UpdateProfileActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="158" column="8" selection-start-line="158" selection-start-column="8" selection-end-line="158" selection-end-column="8" />
-          <folding>
-            <element signature="e#3571#3752#0" expanded="true" />
-            <element signature="e#3751#3752#0" expanded="true" />
-            <element signature="e#4590#6533#0" expanded="true" />
-            <element signature="e#5672#6030#0" expanded="true" />
-            <element signature="e#6029#6030#0" expanded="true" />
-            <element signature="e#6532#6533#0" expanded="true" />
-            <element signature="e#6897#7042#0" expanded="true" />
-            <element signature="e#7041#7042#0" expanded="true" />
-            <element signature="e#7098#7435#0" expanded="true" />
-            <element signature="e#7434#7435#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="159" column="16" selection-start-line="159" selection-start-column="16" selection-end-line="159" selection-end-column="16" />
         </state>
       </provider>
     </entry>
