@@ -14,7 +14,7 @@
         <View
             android:id="@+id/blueBackground"
             android:layout_width="0dp"
-            android:layout_height="415dp"
+            android:layout_height="402dp"
             android:background="#0095B7"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -24,7 +24,7 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="26dp"
+            android:layout_marginTop="25dp"
             android:layout_marginEnd="16dp"
             android:src="@drawable/profile_icon"
             app:civ_border_color="#FFF"
@@ -33,31 +33,28 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
+
         <EditText
             android:id="@+id/usernameEditText"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="100dp"
-            android:layout_marginEnd="100dp"
+            android:layout_marginTop="16dp"
             android:backgroundTint="#FFF"
             android:ems="10"
-            android:gravity="center|center_vertical"
+            android:gravity="center|center_horizontal|center_vertical"
             android:hint="Username"
             android:inputType="text"
             android:textAlignment="center"
             android:textColor="#FFF"
             android:textColorHint="#CCC9C9"
-            android:textSize="40dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editProfilePictureTextView" />
 
         <AutoCompleteTextView
             android:id="@+id/hallsEditText"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="150dp"
-            android:layout_marginEnd="150dp"
             android:backgroundTint="#FFF"
             android:ems="10"
             android:gravity="center|center_horizontal|center_vertical"
@@ -89,7 +86,7 @@
             android:layout_width="40dp"
             android:layout_height="50dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView3"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/back_icon" />
@@ -128,11 +125,9 @@
 
         <EditText
             android:id="@+id/userBioEditText"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="75dp"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="75dp"
             android:backgroundTint="#000000"
             android:ems="10"
             android:hint="User Bio"
@@ -146,11 +141,9 @@
 
         <AutoCompleteTextView
             android:id="@+id/mainMotiveEditText2"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="125dp"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="125dp"
             android:backgroundTint="#000"
             android:ems="10"
             android:hint="Main Motive"
@@ -158,7 +151,6 @@
             android:textAlignment="center"
             android:textColorHint="#CCC9C9"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/mainMotiveTextView" />
 
@@ -181,11 +173,9 @@
 
         <AutoCompleteTextView
             android:id="@+id/degreePlainText"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="125dp"
             android:layout_marginTop="16dp"
-            android:layout_marginEnd="125dp"
             android:backgroundTint="#000"
             android:ems="10"
             android:gravity="center"
@@ -199,11 +189,9 @@
 
         <MultiAutoCompleteTextView
             android:id="@+id/motivesEditText"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="75dp"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="75dp"
             android:backgroundTint="#000"
             android:ems="10"
             android:hint="Other Motives"
@@ -211,7 +199,6 @@
             android:textAlignment="center"
             android:textColorHint="#CCC9C9"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/motiveHeading" />
 

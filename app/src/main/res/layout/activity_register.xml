@@ -318,7 +318,7 @@
             android:background="@drawable/my_button2"
             android:onClick="RegisterButtonClick"
             android:text="Register"
-            android:textColor="#FFF"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/degreeAutoCompleteTextView" />
@@ -330,7 +330,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
             android:layout_marginBottom="32dp"
-            android:visibility="invisible"
+            android:backgroundTint="#00FFFFFF"
+            android:progressTint="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

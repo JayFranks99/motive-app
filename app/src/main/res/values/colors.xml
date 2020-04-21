@@ -8,4 +8,5 @@
     <color name="orange">#eaad43</color>
     <color name="white">#fff</color>
     <color name="black">#000</color>
+    <color name="autocomplete_background_color">#FFF</color>
 </resources>

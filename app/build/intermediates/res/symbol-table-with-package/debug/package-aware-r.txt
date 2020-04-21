@@ -720,6 +720,8 @@ color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
 color background_material_light
+color black
+color blue
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -767,6 +769,7 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color green
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color material_blue_grey_800
@@ -810,6 +813,7 @@ color mtrl_textinput_hovered_box_stroke_color
 color notification_action_color_filter
 color notification_icon_bg_color
 color notification_material_background_media_default_color
+color orange
 color preference_fallback_accent_color
 color primary_dark_material_dark
 color primary_dark_material_light
@@ -833,6 +837,7 @@ color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
 color tooltip_background_dark
 color tooltip_background_light
+color white
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -1164,6 +1169,7 @@ drawable chess_img
 drawable choose_profileicon
 drawable choose_profileiconnew
 drawable circle
+drawable circlebackg
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -1324,6 +1330,7 @@ id beginning
 id blocking
 id blueBackground
 id bottom
+id btnViewProfile
 id buttonPanel
 id buttonSave
 id cameraBtn
@@ -1625,6 +1632,7 @@ id transition_scene_layoutid_cache
 id transition_transform
 id twoFactor
 id twoFactorImageView
+id txtclose
 id unchecked
 id uniform
 id unlabeled
@@ -1711,6 +1719,7 @@ layout activity_splash
 layout activity_update_profile
 layout custom_dialog
 layout custom_dialogue_layout
+layout custompopup
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
