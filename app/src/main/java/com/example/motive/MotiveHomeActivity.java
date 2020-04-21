@@ -4,14 +4,20 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
+
+import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -45,6 +51,7 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
     TabLayout tabLayout;
     ViewPager viewPager;
     PagerAdapter pagerAdapter;
+    //Dialog myDialog;
 
     List<Fragment> FragmentList;
 
@@ -56,6 +63,8 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_motivehome);
         FindViewsById();
+
+        //myDialog = new Dialog(this);
 
 
         Bundle dbfields = this.getIntent().getExtras();
@@ -102,8 +111,6 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
         pagerAdapter = new com.example.motive.PagerAdapter(getSupportFragmentManager(), FragmentList);
         viewPager.setAdapter(pagerAdapter);
 
-
-
     }
 
     private void FindViewsById() {
@@ -114,8 +121,26 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
     }
 
 
+   /* public void ShowPopup (View v) {
+        TextView txtclose;
+        Button  btnViewProfile;
+        myDialog.setContentView(R.layout.custompopup);
+        txtclose = (TextView) myDialog.findViewById(R.id.txtclose);
+        btnViewProfile = (Button) myDialog.findViewById(R.id.btnViewProfile);
 
-    @Override
+        txtclose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                myDialog.dismiss();
+            }
+        });
+        myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        myDialog.show();
+    }
+
+    */
+
+   @Override
     protected void onStart() {
         super.onStart();
     }
@@ -159,7 +184,8 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
             @Override
             public boolean onMarkerClick(Marker marker) {
 
-                 final String[] items = {"View Profile", "Message", "Close"};
+
+                final String[] items = {"View Profile", "Message", "Close"};
 
                 new AlertDialog.Builder(context)
                         .setTitle(marker.getTitle())

@@ -256,7 +256,12 @@ public class UpdateProfileActivity extends AppCompatActivity implements View.OnC
         backImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent refresh;
+                refresh = new Intent(getBaseContext(),
+                        ProfileActivity.class);
                 finish();
+                startActivity(refresh);
+                refresh.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
             }
         });
 

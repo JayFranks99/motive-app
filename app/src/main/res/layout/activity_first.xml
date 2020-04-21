@@ -78,6 +78,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="150dp"
         android:text="Are you a first year at the Unviersity of Leeds? Sign up below to start finding students similar to you!"

@@ -121,7 +121,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
-            android:text="1st year student looking to play football and golf with people. Give me a message if you fancy a game anytime, always happy to play."
+            android:text="User bio..."
             android:textAlignment="center"
             android:textSize="14dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -151,7 +151,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
-            android:text="Digital Media"
+            android:text="University degree..."
             android:textAlignment="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -181,7 +181,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
-            android:text="#Sports   #Football   #Golf   #Beer   #Drinking   #Gym    #Clubbing   #Darts  #LCFC"
+            android:text="motives..."
             android:textAlignment="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -223,11 +223,12 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="24dp"
-            android:text="Football"
+            android:text="Main motive..."
             android:textAlignment="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/mainMotiveHeading" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

@@ -62,6 +62,7 @@ public class  ProfileActivity extends AppCompatActivity {
         profileImage = findViewById(R.id.displayImageView);
         editProfileFields = findViewById(R.id.editprofileButton);
 
+
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
         storageReference = FirebaseStorage.getInstance().getReference();
