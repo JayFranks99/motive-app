@@ -37,7 +37,15 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.EventListener;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.firestore.GeoPoint;
+import com.google.firebase.firestore.QuerySnapshot;
 
 import android.location.Address;
 
@@ -51,12 +59,13 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
     TabLayout tabLayout;
     ViewPager viewPager;
     PagerAdapter pagerAdapter;
+    FirebaseAuth fAuth;
+    FirebaseFirestore fStore;
     //Dialog myDialog;
 
     List<Fragment> FragmentList;
 
     HashMap<String, Object> user;
-    HashMap<String, Object> userLocations;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,17 +73,13 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
         setContentView(R.layout.activity_motivehome);
         FindViewsById();
 
-        //myDialog = new Dialog(this);
+        fAuth = FirebaseAuth.getInstance();
+        fStore = FirebaseFirestore.getInstance();
 
 
         Bundle dbfields = this.getIntent().getExtras();
         if (dbfields != null) {
             user = (HashMap<String,Object>)dbfields.getSerializable("user");
-        }
-
-        Bundle locations = this.getIntent().getExtras();
-        if (locations != null) {
-            userLocations= (HashMap<String,Object>)locations.getSerializable("user locations");
         }
 
         myProfileIcon.setOnClickListener(new View.OnClickListener() {
@@ -148,6 +153,10 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
     @Override
     protected void onResume() {
         super.onResume();
+        if (mainMap != null) {
+            mainMap.clear();
+            onMapReady(mainMap);
+        }
     }
 
     @Override
@@ -173,8 +182,10 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
 
     //Google Maps Method
 
+    GoogleMap mainMap;
     @Override
     public void onMapReady(GoogleMap googleMap) {
+        mainMap = googleMap;
         googleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
 
         // Markers and camera zoom
@@ -182,7 +193,7 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
 
         googleMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
             @Override
-            public boolean onMarkerClick(Marker marker) {
+            public boolean onMarkerClick(final Marker marker) {
 
 
                 final String[] items = {"View Profile", "Message", "Close"};
@@ -197,7 +208,11 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
                                 switch (i)
                                 {
                                     case 0:
-                                        //View profile
+                                        //Intent myIntent = new Intent(getBaseContext(), ProfileActivity.class);
+                                        //  Bundle extras = new Bundle();
+                                        //extras.putSerializable("userId", marker.getTag().toString());
+                                        //myIntent.putExtras(extras);
+                                        //startActivity(myIntent);
                                         break;
                                     case 1:
                                         viewPager.setCurrentItem(3);
@@ -210,51 +225,29 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
                 return false;
             }
         });
-        //get uid
-        //just doing it for current user wants to be all
-        LatLng jayLatLng = new LatLng ((double) userLocations.get("lat"),(double) userLocations.get("lng"));
-        googleMap.addMarker(new MarkerOptions().position(jayLatLng).title((String)user.get("username")).snippet((String)user.get("main motive")).icon(BitmapDescriptorFactory.fromResource(R.drawable.f_icon)));
-        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(jayLatLng,15));
 
-/*
+        CollectionReference collectionReferenceUsers = fStore.collection("users");
 
-        List<HashMap<String,Object>> userList = new ArrayList<HashMap<String,Object>>();
-
-        documentReference.get(user).addOnSuccessListener(new OnSuccessListener<Void>() {
+        collectionReferenceUsers.addSnapshotListener(this, new EventListener<QuerySnapshot>() {
             @Override
-            public void onSuccess(Void aVoid) {
-                Log.d(TAG1, "onSuccess: user profile is created for " + userID);
+            public void onEvent(QuerySnapshot documentSnapshots, FirebaseFirestoreException e) {
+                List<DocumentSnapshot> documents = documentSnapshots.getDocuments();
 
-                //With said ddata .ToList()
-                //userList = dataFromDatabase.ToList();
-                //userList = aVoid.toList
-                //get data back out
-            }
-        }).addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception e) {
-                Log.d(TAG1, "onFailure: " + e.toString());
+                for (int i = 0; i < documents.size(); i++) {
+                    double lat = documents.get(i).getDouble("lat");
+                    double lng = documents.get(i).getDouble("lng");
+
+                    LatLng latLng = new LatLng(lat, lng);
+                    MarkerOptions marker = new MarkerOptions().position(latLng).title(documents.get(i).getString("username")).snippet(documents.get(i).getString("main motive")).icon(BitmapDescriptorFactory.fromResource(R.drawable.f_icon));
+//                    marker.
+                    mainMap.addMarker(marker);
+                    if (i == 0){
+                        mainMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng,15));
+                    }
+                }
             }
         });
 
-        //TODO:
-        //Link list to Database
-        // for loop is for getiing correct user profile
-
-        for (int i = 0; i < userList.size(); i++) {
-            Address address = (Address)user.get("address");
-            LatLng latLng = new LatLng(address.getLatitude(), address.getLongitude());
-            googleMap.addMarker(new MarkerOptions().position(latLng).title((String)userList.get(i).get("username")).snippet((String)userList.get(i).get("main motive")).icon(BitmapDescriptorFactory.fromResource(R.drawable.f_icon)));
-            if (i == 0){
-                googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng,15));
-            }
-        }
-
-        LatLng George = new LatLng(53.8198745, -1.5677403);
-        googleMap.addMarker(new MarkerOptions().position(George).title("George99").snippet("Football").icon(BitmapDescriptorFactory.fromResource(R.drawable.f_icon)));
-        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(George,15));
-
-*/
     }
 
 }

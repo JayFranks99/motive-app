@@ -306,6 +306,8 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                             user.put("other motives", otherMotives);
                             user.put("degree", degree);
                             user.put("username", username);
+                            user.put("lat",geoLocate().getLatitude());
+                            user.put("lng",geoLocate().getLongitude());
 
                             documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
@@ -320,37 +322,11 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                                 }
                             });
 
-
-                            DocumentReference documentReferenceTwo = fStore.collection("user locations").document(userID);
-                            //user HashMap called userLocation
-                            HashMap<String, Object> userLocations = new HashMap<>();
-                            userLocations.put("address",geoLocate().toString());
-                            userLocations.put("lat",geoLocate().getLatitude());
-                            userLocations.put("lng",geoLocate().getLongitude());
-
-                            documentReferenceTwo.set(userLocations).addOnSuccessListener(new OnSuccessListener<Void>() {
-                                @Override
-                                public void onSuccess(Void aVoid) {
-                                    Log.d(TAG1, "onSuccess: user location reciveved" + userID);
-
-                                }
-                            }).addOnFailureListener(new OnFailureListener() {
-                                @Override
-                                public void onFailure(@NonNull Exception e) {
-                                    Log.d(TAG1, "onFailure: " + e.toString());
-                                }
-                            });
-
-
                             Intent i = new Intent(getApplicationContext(), MotiveHomeActivity.class);
 
                             Bundle extras = new Bundle();
                             extras.putSerializable("user", user);
                             i.putExtras(extras);
-
-                            Bundle extrasTwo = new Bundle();
-                            extrasTwo.putSerializable("user locations", userLocations);
-                            i.putExtras(extrasTwo);
 
                             startActivity(i);
                             //execute out method for geolocating

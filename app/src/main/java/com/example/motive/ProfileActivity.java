@@ -67,16 +67,61 @@ public class  ProfileActivity extends AppCompatActivity {
         fStore = FirebaseFirestore.getInstance();
         storageReference = FirebaseStorage.getInstance().getReference();
 
-        //Profile image reference for each user registered, seperate directory
-        StorageReference profileRef = storageReference.child("users/" + fAuth.getCurrentUser().getUid() + "/profile.jpg");
-        profileRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+        backImageView.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onSuccess(Uri uri) {
-                Picasso.get().load(uri).into(profileImage);
+            public void onClick(View view) {
+                finish();
             }
         });
 
-        userId = fAuth.getCurrentUser().getUid();
+       // Bundle userBundleData = this.getIntent().getExtras();
+        //if (userBundleData != null) {
+        //     userId = userBundleData.getSerializable("userId").toString();
+        //     editProfileFields.setVisibility(View.GONE);
+        //  } else {
+        //      userId = fAuth.getCurrentUser().getUid();
+
+            userId = Objects.requireNonNull(fAuth.getCurrentUser()).getUid();
+            final FirebaseUser user = fAuth.getCurrentUser();
+
+            if (!user.isEmailVerified()) {
+                resendCodeButton.setVisibility(View.VISIBLE);
+                resendCodeButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        user.sendEmailVerification().addOnSuccessListener(new OnSuccessListener<Void>() {
+                            @Override
+                            public void onSuccess(Void aVoid) {
+                                Toast.makeText(ProfileActivity.this, "Verification email has been sent.", Toast.LENGTH_SHORT).show();
+                            }
+
+                        }).addOnFailureListener(new OnFailureListener() {
+                            @Override
+                            public void onFailure(@NonNull Exception e) {
+                                Log.d(TAG, "Email not send " + e.getMessage());
+                            }
+                        });
+                    }
+                });
+
+            }
+
+
+
+            editProfileFields.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent edit;
+                    edit = new Intent(getBaseContext(),
+                            UpdateProfileActivity.class);
+                    startActivity(edit);
+                }
+            });
+        }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
 
         DocumentReference documentReference = fStore.collection("users").document(userId);
         documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
@@ -91,45 +136,12 @@ public class  ProfileActivity extends AppCompatActivity {
             }
         });
 
-        userId = Objects.requireNonNull(fAuth.getCurrentUser()).getUid();
-        final FirebaseUser user = fAuth.getCurrentUser();
-
-        if (!user.isEmailVerified()) {
-            resendCodeButton.setVisibility(View.VISIBLE);
-            resendCodeButton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    user.sendEmailVerification().addOnSuccessListener(new OnSuccessListener<Void>() {
-                        @Override
-                        public void onSuccess(Void aVoid) {
-                            Toast.makeText(ProfileActivity.this, "Verification email has been sent.", Toast.LENGTH_SHORT).show();
-                        }
-
-                    }).addOnFailureListener(new OnFailureListener() {
-                        @Override
-                        public void onFailure(@NonNull Exception e) {
-                            Log.d(TAG, "Email not send " + e.getMessage());
-                        }
-                    });
-                }
-            });
-
-        }
-
-        backImageView.setOnClickListener(new View.OnClickListener() {
+        //Profile image reference for each user registered, seperate directory
+        StorageReference profileRef = storageReference.child("users/" + fAuth.getCurrentUser().getUid() + "/profile.jpg");
+        profileRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
             @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
-
-        editProfileFields.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent edit;
-                edit = new Intent(getBaseContext(),
-                        UpdateProfileActivity.class);
-                startActivity(edit);
+            public void onSuccess(Uri uri) {
+                Picasso.get().load(uri).into(profileImage);
             }
         });
 

@@ -38,7 +38,7 @@ public class PagerAdapter extends FragmentPagerAdapter {
                 returnValue = "Events";
                 break;
             case 2:
-                returnValue = "Mental";
+                returnValue = "Mental Health";
                 break;
             case 3:
                 returnValue = "Messages";

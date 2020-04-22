@@ -1437,7 +1437,12 @@ id image
 id imageView
 id imageView2
 id imageView3
+id imageView4
+id imageView5
+id imageView6
 id imageView7
+id imageView8
+id imageView9
 id info
 id invisible
 id italic
@@ -1607,7 +1612,9 @@ id textView14
 id textView15
 id textView2
 id textView3
+id textView4
 id textView9
+id textViewNew
 id text_input_password_toggle
 id textinput_counter
 id textinput_error

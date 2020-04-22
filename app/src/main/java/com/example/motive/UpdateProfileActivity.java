@@ -54,6 +54,8 @@ public class UpdateProfileActivity extends AppCompatActivity implements View.OnC
     StorageReference storageReference;
     ConstraintLayout updateProfileBackground;
 
+    double userLat;
+    double userLng;
 
 
     @Override
@@ -143,7 +145,8 @@ public class UpdateProfileActivity extends AppCompatActivity implements View.OnC
                 newDegree.setText(documentSnapshot.getString("degree"));
                 newMainMotive.setText(documentSnapshot.getString("main motive"));
                 newMotives.setText(documentSnapshot.getString("other motives"));
-
+                userLat = documentSnapshot.getDouble("lat");
+                userLng = documentSnapshot.getDouble("lng");
             }
         });
 
@@ -228,6 +231,9 @@ public class UpdateProfileActivity extends AppCompatActivity implements View.OnC
                 user.put("degree", degree);
                 user.put("username", name);
                 user.put("main motive", mainM);
+                user.put("lat", userLat);
+                user.put("lng", userLng);
+
 
                 documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
