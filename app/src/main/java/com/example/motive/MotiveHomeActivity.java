@@ -61,6 +61,7 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
     PagerAdapter pagerAdapter;
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
+    String userID;
     //Dialog myDialog;
 
     List<Fragment> FragmentList;
@@ -191,8 +192,14 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
+
         mainMap = googleMap;
         googleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+
+
+      //  userID = fAuth.getCurrentUser().getUid();
+       // DocumentReference documentReference = fStore.collection("users").document(userID);
+        // documentReference.get(mainMap.animateCamera(CameraUpdateFactory.zoomBy(15))
 
         // Markers and camera zoom
         final Context context = this;
@@ -200,6 +207,8 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
         googleMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
             @Override
             public boolean onMarkerClick(final Marker marker) {
+
+               // mainMap.animateCamera(CameraUpdateFactory.zoomBy(17));
 
                 final String[] items = {"View Profile", "Message", "Close"};
 
@@ -248,9 +257,8 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
 //                    marker.
                     mainMap.addMarker(marker);
                     if (i == 0){
+                        //Camera zooms in on start up
                         mainMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng,14));
-                        //Zoom in when google map marker is clicked
-                        //mainMap.animateCamera(CameraUpdateFactory.zoomBy(10));
                     }
                 }
             }

@@ -1204,8 +1204,10 @@ drawable friends
 drawable golfnew
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable halls_img
 drawable hh_icon
 drawable hhome_icon
+drawable hobbies_img
 drawable home_icon
 drawable ic_arrow_down_24dp
 drawable ic_launcher_background
@@ -1214,6 +1216,7 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable m_icon
+drawable making_friends
 drawable mental_icon
 drawable messages
 drawable messages_icon
@@ -1244,6 +1247,7 @@ drawable preference_list_divider_material
 drawable profile_icon
 drawable profile_icon_button
 drawable settings_icon
+drawable socials_image
 drawable spanish_img
 drawable sync
 drawable tennis_icon

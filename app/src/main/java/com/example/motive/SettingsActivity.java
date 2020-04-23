@@ -145,11 +145,9 @@ public class SettingsActivity extends AppCompatActivity {
 
                         userID = fAuth.getCurrentUser().getUid();
                         DocumentReference documentReference = fStore.collection("users").document(userID);
-                        DocumentReference documentReferenceTwo = fStore.collection("user locations").document(userID);
                         StorageReference profileRef = storageReference.child("users/"+fAuth.getCurrentUser().getUid()+"/profile.jpg");
 
                         documentReference.delete();
-                        documentReferenceTwo.delete();
                         profileRef.delete();
 
                         Intent home;
