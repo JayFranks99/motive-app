@@ -1213,11 +1213,13 @@ drawable ic_launcher_foreground
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable m_icon
 drawable mental_icon
 drawable messages
 drawable messages_icon
 drawable mmental_icon
 drawable mmessages_icon
+drawable motive_marker
 drawable motivelogo
 drawable motivelogo2
 drawable mtrl_snackbar_background

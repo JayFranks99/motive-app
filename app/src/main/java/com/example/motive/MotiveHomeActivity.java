@@ -148,7 +148,12 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
    @Override
     protected void onStart() {
         super.onStart();
-    }
+       if (mainMap != null) {
+           mainMap.clear();
+           onMapReady(mainMap);
+       }
+   }
+
 
     @Override
     protected void onResume() {
@@ -183,6 +188,7 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
     //Google Maps Method
 
     GoogleMap mainMap;
+
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mainMap = googleMap;
@@ -207,6 +213,7 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
                                 Toast.makeText(context, items[i], Toast.LENGTH_SHORT).show();
                                 switch (i)
                                 {
+                                    //view profile
                                     case 0:
                                         //Intent myIntent = new Intent(getBaseContext(), ProfileActivity.class);
                                         //  Bundle extras = new Bundle();
@@ -238,7 +245,7 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
                     double lng = documents.get(i).getDouble("lng");
 
                     LatLng latLng = new LatLng(lat, lng);
-                    MarkerOptions marker = new MarkerOptions().position(latLng).title(documents.get(i).getString("username")).snippet(documents.get(i).getString("main motive")).icon(BitmapDescriptorFactory.fromResource(R.drawable.f_icon));
+                    MarkerOptions marker = new MarkerOptions().position(latLng).title(documents.get(i).getString("username")).snippet(documents.get(i).getString("main motive")).icon(BitmapDescriptorFactory.fromResource(R.drawable.motive_marker));
 //                    marker.
                     mainMap.addMarker(marker);
                     if (i == 0){

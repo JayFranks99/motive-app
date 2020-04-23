@@ -56,6 +56,8 @@ public class UpdateProfileActivity extends AppCompatActivity implements View.OnC
 
     double userLat;
     double userLng;
+    String userEmail;
+    String userPostcode;
 
 
     @Override
@@ -147,6 +149,8 @@ public class UpdateProfileActivity extends AppCompatActivity implements View.OnC
                 newMotives.setText(documentSnapshot.getString("other motives"));
                 userLat = documentSnapshot.getDouble("lat");
                 userLng = documentSnapshot.getDouble("lng");
+                userEmail = documentSnapshot.getString("email");
+                userPostcode = documentSnapshot.getString("postcode");
             }
         });
 
@@ -233,6 +237,9 @@ public class UpdateProfileActivity extends AppCompatActivity implements View.OnC
                 user.put("main motive", mainM);
                 user.put("lat", userLat);
                 user.put("lng", userLng);
+                user.put("email", userEmail);
+                user.put("postcode", userPostcode);
+
 
 
                 documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
