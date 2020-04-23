@@ -36,7 +36,6 @@ public class SettingsActivity extends AppCompatActivity {
     String userID;
     Button deleteAccount;
     Switch ghostMode;
-    GoogleMap googleMap;
 
     private static final String TAG = "SettingsActivity";
 
@@ -57,7 +56,9 @@ public class SettingsActivity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The togggle is enabled
-                    //Remove markers
+                    //Remove markers, only for user logged in
+                    //fAuth.getCurrentUser
+                    //map.clear();
 
                 } else {
                     // The toggle is disabled

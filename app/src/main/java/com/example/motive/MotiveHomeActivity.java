@@ -201,7 +201,6 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
             @Override
             public boolean onMarkerClick(final Marker marker) {
 
-
                 final String[] items = {"View Profile", "Message", "Close"};
 
                 new AlertDialog.Builder(context)
@@ -249,7 +248,9 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
 //                    marker.
                     mainMap.addMarker(marker);
                     if (i == 0){
-                        mainMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng,15));
+                        mainMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng,14));
+                        //Zoom in when google map marker is clicked
+                        //mainMap.animateCamera(CameraUpdateFactory.zoomBy(10));
                     }
                 }
             }
