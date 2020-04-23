@@ -6,8 +6,10 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Switch;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -15,6 +17,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
@@ -32,6 +35,8 @@ public class SettingsActivity extends AppCompatActivity {
     StorageReference storageReference;
     String userID;
     Button deleteAccount;
+    Switch ghostMode;
+    GoogleMap googleMap;
 
     private static final String TAG = "SettingsActivity";
 
@@ -45,6 +50,20 @@ public class SettingsActivity extends AppCompatActivity {
         editProfile = findViewById(R.id.editProfileImageView);
         deleteAccount = findViewById(R.id.deleteButton);
         changePassword = findViewById(R.id.changePasswordImageView);
+
+        ghostMode = findViewById(R.id.ghostSwitch);
+
+        ghostMode.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    // The togggle is enabled
+                    //Remove markers
+
+                } else {
+                    // The toggle is disabled
+                }
+            }
+        });
 
         storageReference = FirebaseStorage.getInstance().getReference();
         fAuth = FirebaseAuth.getInstance();
