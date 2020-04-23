@@ -184,6 +184,8 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                     mEmail.setError("1st Year Univerisity of Leeds Students Only");
                     return;
                 }
+
+
                 if (email.contains("20")) {
                     Toast.makeText(RegisterActivity.this, "Uniersity of Leeds email", Toast.LENGTH_SHORT);
                 }else {
@@ -219,145 +221,13 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                     return;
                 }
 
-                if (postcode.contains("LS1")) {
-                    Toast.makeText(RegisterActivity.this, "Leeds Postcode", Toast.LENGTH_SHORT);
-                }else {
-                    mPostcode.setError("Leeds postcode only");
+                if (postcode.contains("LS")) {
+                    Toast.makeText(RegisterActivity.this, "Uniersity of Leeds email", Toast.LENGTH_SHORT);
+                } else {
+                    mPostcode.setError("1st Year Univerisity of Leeds Students Only");
                     return;
                 }
 
-                if (postcode.contains("LS2")) {
-                    Toast.makeText(RegisterActivity.this, "Leeds Postcode", Toast.LENGTH_SHORT);
-                }else {
-                    mPostcode.setError("Leeds postcode only");
-                    return;
-                }
-
-                if (postcode.contains("LS3")) {
-                    Toast.makeText(RegisterActivity.this, "Leeds Postcode", Toast.LENGTH_SHORT);
-                }else {
-                    mPostcode.setError("Leeds postcode only");
-                    return;
-                }
-
-                if (postcode.contains("LS4")) {
-                    Toast.makeText(RegisterActivity.this, "Leeds Postcode", Toast.LENGTH_SHORT);
-                }else {
-                    mPostcode.setError("Leeds postcode only");
-                    return;
-                }
-
-                if (postcode.contains("LS5")) {
-                    Toast.makeText(RegisterActivity.this, "Leeds Postcode", Toast.LENGTH_SHORT);
-                }else {
-                    mPostcode.setError("Leeds postcode only");
-                    return;
-                }
-
-                if (postcode.contains("LS6")) {
-                    Toast.makeText(RegisterActivity.this, "Leeds Postcode", Toast.LENGTH_SHORT);
-                }else {
-                    mPostcode.setError("Leeds postcode only");
-                    return;
-                }
-
-                if (postcode.contains("LS7")) {
-                    Toast.makeText(RegisterActivity.this, "Leeds Postcode", Toast.LENGTH_SHORT);
-                }else {
-                    mPostcode.setError("Leeds postcode only");
-                    return;
-                }
-
-                if (postcode.contains("LS8")) {
-                    Toast.makeText(RegisterActivity.this, "Leeds Postcode", Toast.LENGTH_SHORT);
-                }else {
-                    mPostcode.setError("Leeds postcode only");
-                    return;
-                }
-
-                if (postcode.contains("LS9")) {
-                    Toast.makeText(RegisterActivity.this, "Leeds Postcode", Toast.LENGTH_SHORT);
-                }else {
-                    mPostcode.setError("Leeds postcode only");
-                    return;
-                }
-
-                if (postcode.contains("LS10")) {
-                    Toast.makeText(RegisterActivity.this, "Leeds Postcode", Toast.LENGTH_SHORT);
-                }else {
-                    mPostcode.setError("Leeds postcode only");
-                    return;
-                }
-
-                if (postcode.contains("LS111")) {
-                    Toast.makeText(RegisterActivity.this, "Leeds Postcode", Toast.LENGTH_SHORT);
-                }else {
-                    mPostcode.setError("Leeds postcode only");
-                    return;
-                }
-
-                if (postcode.contains("LS12")) {
-                    Toast.makeText(RegisterActivity.this, "Leeds Postcode", Toast.LENGTH_SHORT);
-                }else {
-                    mPostcode.setError("Leeds postcode only");
-                    return;
-                }
-
-                if (postcode.contains("LS13")) {
-                    Toast.makeText(RegisterActivity.this, "Leeds Postcode", Toast.LENGTH_SHORT);
-                }else {
-                    mPostcode.setError("Leeds postcode only");
-                    return;
-                }
-
-                if (postcode.contains("LS14")) {
-                    Toast.makeText(RegisterActivity.this, "Leeds Postcode", Toast.LENGTH_SHORT);
-                }else {
-                    mPostcode.setError("Leeds postcode only");
-                    return;
-                }
-
-                if (postcode.contains("LS15")) {
-                    Toast.makeText(RegisterActivity.this, "Leeds Postcode", Toast.LENGTH_SHORT);
-                }else {
-                    mPostcode.setError("Leeds postcode only");
-                    return;
-                }
-
-                if (postcode.contains("LS16")) {
-                    Toast.makeText(RegisterActivity.this, "Leeds Postcode", Toast.LENGTH_SHORT);
-                }else {
-                    mPostcode.setError("Leeds postcode only");
-                    return;
-                }
-
-                if (postcode.contains("LS17")) {
-                    Toast.makeText(RegisterActivity.this, "Leeds Postcode", Toast.LENGTH_SHORT);
-                }else {
-                    mPostcode.setError("Leeds postcode only");
-                    return;
-                }
-
-                if (postcode.contains("LS18")) {
-                    Toast.makeText(RegisterActivity.this, "Leeds Postcode", Toast.LENGTH_SHORT);
-                }else {
-                    mPostcode.setError("Leeds postcode only");
-                    return;
-                }
-
-                if (postcode.contains("LS19")) {
-                    Toast.makeText(RegisterActivity.this, "Leeds Postcode", Toast.LENGTH_SHORT);
-                }else {
-                    mPostcode.setError("Leeds postcode only");
-                    return;
-                }
-
-                if (postcode.contains("LS20")) {
-                    Toast.makeText(RegisterActivity.this, "Leeds Postcode", Toast.LENGTH_SHORT);
-                }else {
-                    mPostcode.setError("Leeds postcode only");
-                    return;
-                }
 
                 if (TextUtils.isEmpty(username)) {
                     mUsername.setError("Username is required.");
