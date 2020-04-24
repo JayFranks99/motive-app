@@ -62,6 +62,7 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
     String userID;
+    ImageView home, events, mental, messages;
     //Dialog myDialog;
 
     List<Fragment> FragmentList;
@@ -117,6 +118,11 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
         pagerAdapter = new com.example.motive.PagerAdapter(getSupportFragmentManager(), FragmentList);
         viewPager.setAdapter(pagerAdapter);
 
+        tabLayout.getTabAt(0).setIcon(R.drawable.home_icon);
+        tabLayout.getTabAt(1).setIcon(R.drawable.events_icon);
+        tabLayout.getTabAt(2).setIcon(R.drawable.mental_icon);
+        tabLayout.getTabAt(3).setIcon(R.drawable.messages_icon);
+
     }
 
     private void FindViewsById() {
@@ -124,6 +130,10 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
         settingsIcon = findViewById(R.id.settingsImageView);
         viewPager = findViewById(R.id.viewPager);
         tabLayout = findViewById(R.id.tabLayout);
+        home = findViewById(R.id.tabHome);
+        events = findViewById(R.id.tabEvents);
+        mental = findViewById(R.id.tabMental);
+        messages = findViewById(R.id.tabMessages);
     }
 
 

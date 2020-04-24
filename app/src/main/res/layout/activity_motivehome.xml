@@ -60,38 +60,50 @@
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/viewPager"
         app:tabIndicatorColor="#F3EEEE"
+        app:tabGravity="fill"
+        app:tabPaddingEnd="40dp"
+        app:tabPaddingStart="40dp"
         app:tabTextColor="#FFFFFF">
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tabHome"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:icon="@drawable/hh_icon" />
+            android:icon="@drawable/hh_icon"
+            app:tabPaddingEnd="10dp"
+            app:tabPaddingStart="10dp"
+            />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tabEvents"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:icon="@drawable/events_icon" />
+            android:icon="@drawable/events_icon"
+            app:tabPaddingEnd="10dp"
+            app:tabPaddingStart="10dp"/>
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tabMental"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:icon="@drawable/mmental_icon" />
+            android:icon="@drawable/mmental_icon"
+            app:tabPaddingEnd="10dp"
+            app:tabPaddingStart="10dp"/>
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tabMessages"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:icon="@drawable/mmessages_icon" />
+            android:icon="@drawable/mmessages_icon"
+            app:tabPaddingEnd="10dp"
+            app:tabPaddingStart="10dp"/>
 
     </com.google.android.material.tabs.TabLayout>
 
