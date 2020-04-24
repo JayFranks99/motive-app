@@ -1328,6 +1328,7 @@ id backButtonEditProfile
 id backImageView
 id backImageView10
 id backImageView100
+id backImg
 id backgroundLayout
 id barrier
 id beerImageViewNew
@@ -1391,6 +1392,7 @@ id editProfilePictureTextView
 id edit_query
 id editprofileButton
 id emailEditText
+id emailHeading
 id end
 id end_padder
 id enterAlways
@@ -1398,8 +1400,6 @@ id enterAlwaysCollapsed
 id eventNameTextView
 id eventNameTextView1
 id eventsTextView
-id everyone
-id everyoneSwitch
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -1410,7 +1410,6 @@ id filled
 id fixed
 id forever
 id forgotPassword
-id friendsSwitch
 id galleryBtn
 id ghostMode
 id ghostSwitch
@@ -1451,6 +1450,8 @@ id imageView8
 id imageView9
 id info
 id invisible
+id issueDescriptionEt
+id issueTv
 id italic
 id item_touch_helper_previous_elevation
 id justFriends
@@ -1532,6 +1533,8 @@ id registerBackground
 id registerButton2
 id registerEditText
 id registerTextView
+id reportEditText
+id reportImageView
 id resendCodeButton
 id right
 id right_icon
@@ -1587,6 +1590,7 @@ id start
 id status_bar_latest_event_content
 id stretch
 id submenuarrow
+id submitButton
 id submit_area
 id switchWidget
 id tabEvents
@@ -1619,6 +1623,7 @@ id textView15
 id textView2
 id textView3
 id textView4
+id textView5
 id textView9
 id textViewNew
 id text_input_password_toggle
@@ -1653,7 +1658,9 @@ id up
 id updateProfileBackground
 id useLogo
 id userBioEditText
+id usernameET
 id usernameEditText
+id usersH
 id viewPager
 id view_offset_helper
 id visible
@@ -1722,11 +1729,11 @@ layout activity_event1
 layout activity_event2
 layout activity_event3
 layout activity_first
-layout activity_fresherprofile
 layout activity_login
 layout activity_motivehome
 layout activity_profile
 layout activity_register
+layout activity_report
 layout activity_settings
 layout activity_splash
 layout activity_update_profile

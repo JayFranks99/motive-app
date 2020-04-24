@@ -55,6 +55,7 @@
         <activity android:name="com.example.motive.EventTwoActivity" />
         <activity android:name="com.example.motive.EventThreeActivity" />
         <activity android:name="com.example.motive.UpdateProfileActivity" />
+        <activity android:name="com.example.motive.ReportActivity" />
         <activity
             android:name="com.example.motive.FirstActivity"
             android:configChanges="orientation|screenSize|screenLayout|keyboardHidden" >

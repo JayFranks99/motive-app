@@ -180,7 +180,7 @@ public class SettingsActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent report;
                 report = new Intent(getBaseContext(),
-                        UpdateProfileActivity.class);
+                        ReportActivity.class);
                 startActivity(report);
             }
         });
