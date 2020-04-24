@@ -20,6 +20,7 @@
             android:text="Events"
             android:textAlignment="center"
             android:textColor="#0095B7"
+            android:textStyle="bold"
             android:textSize="24dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

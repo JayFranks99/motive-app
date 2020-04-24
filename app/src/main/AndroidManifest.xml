@@ -31,6 +31,7 @@
         <activity android:name=".EventTwoActivity" />
         <activity android:name=".EventThreeActivity" />
         <activity android:name=".UpdateProfileActivity" />
+        <activity android:name=".ReportActivity" />
         <activity
             android:name=".FirstActivity"
             android:configChanges="orientation|screenSize|screenLayout|keyboardHidden">

@@ -27,6 +27,7 @@
             android:background="#0095B7"
             android:gravity="center"
             android:text="My Profile"
+            android:textStyle="bold"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="24dp"

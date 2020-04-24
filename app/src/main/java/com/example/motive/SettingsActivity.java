@@ -28,7 +28,7 @@ import com.google.firebase.storage.StorageReference;
 
 public class SettingsActivity extends AppCompatActivity {
 
-    ImageView backImageView10, editProfile;
+    ImageView backImageView10, editProfile, report;
     ImageView changePassword;
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
@@ -49,6 +49,7 @@ public class SettingsActivity extends AppCompatActivity {
         editProfile = findViewById(R.id.editProfileImageView);
         deleteAccount = findViewById(R.id.deleteButton);
         changePassword = findViewById(R.id.changePasswordImageView);
+        report = findViewById(R.id.reportImageView);
 
         ghostMode = findViewById(R.id.ghostSwitch);
 
@@ -173,7 +174,19 @@ public class SettingsActivity extends AppCompatActivity {
 
             }
         });
+
+        report.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent report;
+                report = new Intent(getBaseContext(),
+                        UpdateProfileActivity.class);
+                startActivity(report);
+            }
+        });
     }
+
+
 
     public void logout (View view) {
         FirebaseAuth.getInstance().signOut();

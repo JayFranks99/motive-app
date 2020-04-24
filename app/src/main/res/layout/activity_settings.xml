@@ -16,6 +16,7 @@
         android:text="Settings"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
+        android:textStyle="bold"
         android:textSize="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -142,6 +143,18 @@
         app:layout_constraintTop_toTopOf="@+id/language"
         app:srcCompat="@drawable/forward_icon" />
 
+    <ImageView
+        android:id="@+id/reportImageView"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/justFriends"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toEndOf="@+id/justFriends"
+        app:layout_constraintTop_toTopOf="@+id/justFriends"
+        app:srcCompat="@drawable/forward_icon" />
+
     <TextView
         android:id="@+id/notifications"
         android:layout_width="0dp"
@@ -175,7 +188,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="64dp"
-        android:text="Map Preferences"
+        android:text="Map Usage"
         android:textColor="#0095B7"
         android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -208,52 +221,17 @@
         app:layout_constraintTop_toTopOf="@+id/ghostMode" />
 
     <TextView
-        android:id="@+id/everyone"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="64dp"
-        android:text="Everyone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ghostMode" />
-
-    <Switch
-        android:id="@+id/everyoneSwitch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:switchPadding="5dp"
-        app:layout_constraintBottom_toBottomOf="@+id/everyone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/everyone"
-        app:layout_constraintTop_toTopOf="@+id/everyone" />
-
-    <TextView
         android:id="@+id/justFriends"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="64dp"
-        android:text="Just Friends"
+        android:text="Report"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/everyone" />
-
-    <Switch
-        android:id="@+id/friendsSwitch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:switchPadding="5dp"
-        app:layout_constraintBottom_toBottomOf="@+id/justFriends"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/justFriends"
-        app:layout_constraintTop_toTopOf="@+id/justFriends" />
+        app:layout_constraintTop_toBottomOf="@+id/ghostMode" />
 
     <Button
         android:id="@+id/logOutButton"
