@@ -207,6 +207,7 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
         googleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
 
 
+        //ZOOM IN ON CURRENT USER
       //  userID = fAuth.getCurrentUser().getUid();
        // DocumentReference documentReference = fStore.collection("users").document(userID);
         // documentReference.get(mainMap.animateCamera(CameraUpdateFactory.zoomBy(15))
@@ -222,30 +223,42 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
 
                 final String[] items = {"View Profile", "Message", "Close"};
 
-                new AlertDialog.Builder(context)
+                View customAlertView = getLayoutInflater().inflate(R.layout.custompopup, null);
+                final AlertDialog.Builder customAlert = new AlertDialog.Builder(context)
                         .setTitle(marker.getTitle())
-                        .setItems(items, new DialogInterface.OnClickListener() {
+                        .setView(customAlertView);
 
-                            @Override
-                            public void onClick(DialogInterface dialogInterface, int i) {
-                                Toast.makeText(context, items[i], Toast.LENGTH_SHORT).show();
-                                switch (i)
-                                {
-                                    //view profile
-                                    case 0:
-                                        //Intent myIntent = new Intent(getBaseContext(), ProfileActivity.class);
-                                        //  Bundle extras = new Bundle();
-                                        //extras.putSerializable("userId", marker.getTag().toString());
-                                        //myIntent.putExtras(extras);
-                                        //startActivity(myIntent);
-                                        break;
-                                    case 1:
-                                        viewPager.setCurrentItem(3);
-                                        //Message
-                                        break;
-                                }
-                            }
-                        }).show();
+                TextView alertUserName = customAlertView.findViewById(R.id.alertUserName);
+                alertUserName.setText(marker.getTitle());
+                TextView alertMotive = customAlertView.findViewById(R.id.alertMotive);
+                alertMotive.setText(marker.getSnippet());
+
+                Button alertButton = customAlertView.findViewById(R.id.alertBtnViewProfile);
+                alertButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Toast.makeText(context, "View Profile", Toast.LENGTH_SHORT).show();
+
+                        Intent myIntent = new Intent(getBaseContext(), ProfileActivity.class);
+                        Bundle extras = new Bundle();
+                        extras.putSerializable("userName", marker.getTitle());
+                        myIntent.putExtras(extras);
+                        startActivity(myIntent);
+
+                    }
+                });
+
+                TextView alertCloseTextView = customAlertView.findViewById(R.id.txtclose);
+                alertCloseTextView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Toast.makeText(context, "Close Button Pressed", Toast.LENGTH_SHORT).show();
+
+                    }
+                });
+
+
+                customAlert.show();
 
                 return false;
             }

@@ -53,19 +53,17 @@ public class SettingsActivity extends AppCompatActivity {
 
         ghostMode = findViewById(R.id.ghostSwitch);
 
-        ghostMode.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked) {
-                    // The togggle is enabled
-                    //Remove markers, only for user logged in
-                    //fAuth.getCurrentUser
-                    //map.clear();
-
-                } else {
-                    // The toggle is disabled
-                }
-            }
-        });
+//        ghostMode.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+//            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+//                if (isChecked) {
+//
+//                    map.clear();
+//
+//                } else {
+//                    // The toggle is disabled
+//                }
+//            }
+//        });
 
         storageReference = FirebaseStorage.getInstance().getReference();
         fAuth = FirebaseAuth.getInstance();

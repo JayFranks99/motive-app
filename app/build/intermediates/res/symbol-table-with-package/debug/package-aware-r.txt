@@ -1319,7 +1319,10 @@ id add
 id addressTextView
 id adjust_height
 id adjust_width
+id alertBtnViewProfile
+id alertMotive
 id alertTitle
+id alertUserName
 id all
 id always
 id async
@@ -1337,7 +1340,6 @@ id beginning
 id blocking
 id blueBackground
 id bottom
-id btnViewProfile
 id buttonPanel
 id buttonSave
 id cameraBtn

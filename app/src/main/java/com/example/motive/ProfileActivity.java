@@ -14,26 +14,35 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
+import com.google.firebase.firestore.QuerySnapshot;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.squareup.picasso.Picasso;
+
+import java.util.List;
 import java.util.Objects;
 
 public class  ProfileActivity extends AppCompatActivity {
 
     ImageView backImageView;
     Button resendCodeButton;
-    String userId;
+    String userId, userName;
     TextView username, halls, bio, motives, degree, mainUserMotive;
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
@@ -74,12 +83,32 @@ public class  ProfileActivity extends AppCompatActivity {
             }
         });
 
-       // Bundle userBundleData = this.getIntent().getExtras();
-        //if (userBundleData != null) {
-        //     userId = userBundleData.getSerializable("userId").toString();
-        //     editProfileFields.setVisibility(View.GONE);
-        //  } else {
-        //      userId = fAuth.getCurrentUser().getUid();
+        Bundle userBundleData = this.getIntent().getExtras();
+        if (userBundleData != null) {
+            userName = userBundleData.getSerializable("userName").toString();
+
+            CollectionReference collectionReferenceUsers = fStore.collection("users");
+
+
+            collectionReferenceUsers.addSnapshotListener(this, new EventListener<QuerySnapshot>() {
+                @Override
+                public void onEvent(QuerySnapshot documentSnapshots, FirebaseFirestoreException e) {
+                    List<DocumentSnapshot> documents = documentSnapshots.getDocuments();
+                    for (int i = 0; i < documents.size(); i++) {
+                        String name = documents.get(i).getString("username");
+
+                        if (name.equalsIgnoreCase(userName)) {
+                            userId = documents.get(i).getId();
+                            updateUI();
+                            break;
+                        }
+                    }
+                }
+            });
+
+            editProfileFields.setVisibility(View.GONE);
+        } else {
+            userId = fAuth.getCurrentUser().getUid();
 
             userId = Objects.requireNonNull(fAuth.getCurrentUser()).getUid();
             final FirebaseUser user = fAuth.getCurrentUser();
@@ -105,45 +134,54 @@ public class  ProfileActivity extends AppCompatActivity {
                 });
 
             }
-
-
-
-            editProfileFields.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent edit;
-                    edit = new Intent(getBaseContext(),
-                            UpdateProfileActivity.class);
-                    startActivity(edit);
-                }
-            });
         }
+
+
+        editProfileFields.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent edit;
+                edit = new Intent(getBaseContext(),
+                        UpdateProfileActivity.class);
+                startActivity(edit);
+            }
+        });
+    }
 
     @Override
     protected void onResume() {
         super.onResume();
 
-        DocumentReference documentReference = fStore.collection("users").document(userId);
-        documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
-            @Override
-            public void onEvent(DocumentSnapshot documentSnapshot, FirebaseFirestoreException e) {
-                username.setText(documentSnapshot.getString("username"));
-                halls.setText(documentSnapshot.getString("halls"));
-                bio.setText(documentSnapshot.getString("user bio"));
-                degree.setText(documentSnapshot.getString("degree"));
-                mainUserMotive.setText(documentSnapshot.getString("main motive"));
-                motives.setText(documentSnapshot.getString("other motives"));
-            }
-        });
-
-        //Profile image reference for each user registered, seperate directory
-        StorageReference profileRef = storageReference.child("users/" + fAuth.getCurrentUser().getUid() + "/profile.jpg");
-        profileRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
-            @Override
-            public void onSuccess(Uri uri) {
-                Picasso.get().load(uri).into(profileImage);
-            }
-        });
+        updateUI();
 
     }
+
+
+    public void updateUI() {
+        if (userId != null) {
+            DocumentReference documentReference = fStore.collection("users").document(userId);
+            documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
+                @Override
+                public void onEvent(DocumentSnapshot documentSnapshot, FirebaseFirestoreException e) {
+                    //Title text
+                    username.setText(documentSnapshot.getString("username"));
+                    halls.setText(documentSnapshot.getString("halls"));
+                    bio.setText(documentSnapshot.getString("user bio"));
+                    degree.setText(documentSnapshot.getString("degree"));
+                    mainUserMotive.setText(documentSnapshot.getString("main motive"));
+                    motives.setText(documentSnapshot.getString("other motives"));
+                }
+            });
+
+            //Profile image reference for each user registered, seperate directory
+            StorageReference profileRef = storageReference.child("users/" + fAuth.getCurrentUser().getUid() + "/profile.jpg");
+            profileRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                @Override
+                public void onSuccess(Uri uri) {
+                    Picasso.get().load(uri).into(profileImage);
+                }
+            });
+        }
+    }
+
 }

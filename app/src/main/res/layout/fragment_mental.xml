@@ -18,11 +18,11 @@
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:gravity="center"
-            android:text="Mental Health"
+            android:text="Wellbeing"
             android:textAlignment="center"
             android:textColor="#0095B7"
-            android:textStyle="bold"
             android:textSize="24dp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
