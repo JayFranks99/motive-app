@@ -11,9 +11,9 @@
         android:id="@+id/profileButton"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
         android:src="@drawable/profile_icon_button"
         app:layout_constraintBottom_toTopOf="@id/viewPager"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,8 +23,8 @@
         android:id="@+id/motiveView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
         android:fontFamily="@font/orbitron"
         android:text="motive."
         android:textColor="#FFFFFF"
@@ -38,9 +38,9 @@
         android:id="@+id/settingsImageView"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
         android:src="@drawable/settings_icon"
         app:layout_constraintBottom_toTopOf="@+id/viewPager"
         app:layout_constraintEnd_toEndOf="parent"
@@ -66,10 +66,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/viewPager"
-        app:tabIndicatorColor="#F3EEEE"
         app:tabGravity="fill"
-        app:tabPaddingEnd="40dp"
-        app:tabPaddingStart="40dp"
+        app:tabIndicatorColor="#F3EEEE"
+        app:tabPaddingEnd="0dp"
+        app:tabPaddingStart="0dp"
         app:tabTextColor="#FFFFFF">
 
         <com.google.android.material.tabs.TabItem
@@ -78,8 +78,7 @@
             android:layout_height="wrap_content"
             android:icon="@drawable/hh_icon"
             app:tabPaddingEnd="10dp"
-            app:tabPaddingStart="10dp"
-            />
+            app:tabPaddingStart="10dp" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tabEvents"
@@ -87,7 +86,7 @@
             android:layout_height="wrap_content"
             android:icon="@drawable/events_icon"
             app:tabPaddingEnd="10dp"
-            app:tabPaddingStart="10dp"/>
+            app:tabPaddingStart="10dp" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tabMental"
@@ -95,7 +94,7 @@
             android:layout_height="wrap_content"
             android:icon="@drawable/mmental_icon"
             app:tabPaddingEnd="10dp"
-            app:tabPaddingStart="10dp"/>
+            app:tabPaddingStart="10dp" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tabMessages"
@@ -103,7 +102,7 @@
             android:layout_height="wrap_content"
             android:icon="@drawable/mmessages_icon"
             app:tabPaddingEnd="10dp"
-            app:tabPaddingStart="10dp"/>
+            app:tabPaddingStart="10dp" />
 
     </com.google.android.material.tabs.TabLayout>
 

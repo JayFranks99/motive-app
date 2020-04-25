@@ -90,12 +90,10 @@ public class ReportActivity extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent myintent;
-                myintent = new Intent(getBaseContext(),
-                        SettingsActivity.class);
-                        startActivity(myintent);
+                finish();
             }
         });
-            }
+    }
+
 
 }
