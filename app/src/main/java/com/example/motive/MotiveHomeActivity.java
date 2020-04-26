@@ -225,7 +225,7 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
 
                 View customAlertView = getLayoutInflater().inflate(R.layout.custompopup, null);
                 final AlertDialog.Builder customAlert = new AlertDialog.Builder(context)
-                        .setTitle(marker.getTitle())
+                        //.setTitle(marker.getTitle())
                         .setView(customAlertView);
 
                 TextView alertUserName = customAlertView.findViewById(R.id.alertUserName);

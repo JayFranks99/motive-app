@@ -97,7 +97,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editprofileButton" />
+            app:layout_constraintTop_toBottomOf="@+id/blueBackground" />
 
         <TextView
             android:id="@+id/mainMotiveHeading"
@@ -153,6 +153,7 @@
             android:layout_marginEnd="16dp"
             android:text="University degree..."
             android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"

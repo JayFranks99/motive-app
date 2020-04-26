@@ -43,7 +43,7 @@ public class  ProfileActivity extends AppCompatActivity {
     ImageView backImageView;
     Button resendCodeButton;
     String userId, userName;
-    TextView username, halls, bio, motives, degree, mainUserMotive;
+    TextView username, halls, bio, motives, degree, mainUserMotive, profileUsernameNew;
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
     ImageView profileImage;
@@ -70,8 +70,7 @@ public class  ProfileActivity extends AppCompatActivity {
         degree = findViewById(R.id.profileDegree);
         profileImage = findViewById(R.id.displayImageView);
         editProfileFields = findViewById(R.id.editprofileButton);
-
-
+        profileUsernameNew = findViewById(R.id.profileTextView);
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
         storageReference = FirebaseStorage.getInstance().getReference();
@@ -164,6 +163,7 @@ public class  ProfileActivity extends AppCompatActivity {
                 @Override
                 public void onEvent(DocumentSnapshot documentSnapshot, FirebaseFirestoreException e) {
                     //Title text
+                    profileUsernameNew.setText(documentSnapshot.getString("username"));
                     username.setText(documentSnapshot.getString("username"));
                     halls.setText(documentSnapshot.getString("halls"));
                     bio.setText(documentSnapshot.getString("user bio"));
@@ -174,6 +174,7 @@ public class  ProfileActivity extends AppCompatActivity {
             });
 
             //Profile image reference for each user registered, seperate directory
+            
             StorageReference profileRef = storageReference.child("users/" + fAuth.getCurrentUser().getUid() + "/profile.jpg");
             profileRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                 @Override

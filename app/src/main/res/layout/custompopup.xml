@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="300dp"
-    android:layout_height="375dp"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
     android:background="@color/blue"
-    android:padding="5dp"
-    android:layout_gravity="center">
+    android:orientation="vertical"
+    android:padding="5dp">
 
     <TextView
         android:id="@+id/txtclose"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:textColor="@color/white"
-        android:text="X"
-        android:textStyle="bold"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
         android:layout_gravity="end"
+        android:background="@drawable/circlebackg"
         android:gravity="center"
-        android:background="@drawable/circlebackg"/>
+        android:text="X"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
 
 
     <LinearLayout
@@ -26,44 +26,45 @@
 
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/profile_icon"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
             android:layout_gravity="center"
-            android:layout_marginTop="15dp"/>
+            android:layout_marginTop="5dp"
+            android:src="@drawable/profile_icon" />
 
         <TextView
             android:id="@+id/alertUserName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Jay Franks"
-            android:textSize="30dp"
-            android:textStyle="bold"
-            android:textColor="@color/white"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="5dp"/>
+            android:layout_marginTop="2dp"
+            android:text="Jay Franks"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
         <TextView
             android:id="@+id/alertMotive"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Football"
-            android:textSize="20dp"
-            android:textColor="@color/white"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="5dp"/>
+            android:layout_marginTop="2dp"
+            android:text="Football"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
     </LinearLayout>
 
 
-
-        <Button
-            android:id="@+id/alertBtnViewProfile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="35dp"
-            android:background="@drawable/my_button"
-            android:padding="10dp"
-            android:text="View Profile"
-            android:textColor="@color/blue" />
+    <Button
+        android:id="@+id/alertBtnViewProfile"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/my_button"
+        android:padding="0dp"
+        android:text="View"
+        android:textColor="@color/blue"
+        android:textSize="10dp" />
 
 </LinearLayout>
