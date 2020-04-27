@@ -200,8 +200,8 @@ public class  ProfileActivity extends AppCompatActivity {
                     //DOESN'T WANT TO BE GET CURRENT USER!!!
                     //Image name needs to be the users username
                    // StorageReference profileRef = storageReference.child("users/name")
-                    //StorageReference profileRef = storageReference.child("users/" + userId + "profile.jpg");
-                    StorageReference profileRef = storageReference.child("users/" + "/profile.jpg");
+                    StorageReference profileRef = storageReference.child("users/" + userId + "/profile.jpg");
+                    //StorageReference profileRef = storageReference.child("users/" + "/profile.jpg");
                     profileRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                         @Override
                         public void onSuccess(Uri uri) {
