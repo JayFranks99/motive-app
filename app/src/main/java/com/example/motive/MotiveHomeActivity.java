@@ -78,7 +78,7 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
 
-
+        //Bundle
         Bundle dbfields = this.getIntent().getExtras();
         if (dbfields != null) {
             user = (HashMap<String,Object>)dbfields.getSerializable("user");
@@ -202,7 +202,7 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
 
                // mainMap.animateCamera(CameraUpdateFactory.zoomBy(17));
 
-                final String[] items = {"View Profile", "Message", "Close"};
+                //Custom Alert Dialogue
 
                 final View customAlertView = getLayoutInflater().inflate(R.layout.custompopup, null);
                 final AlertDialog.Builder customAlert = new AlertDialog.Builder(context)

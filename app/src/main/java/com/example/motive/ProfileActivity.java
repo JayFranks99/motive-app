@@ -91,12 +91,14 @@ public class  ProfileActivity extends AppCompatActivity {
 
 
         //Getting the correct user profile and updating the UI from my profile to user profile
+        //From google map marker username
+        //if the name on the marker matches a username in the database, then when view profile is clicked update the ui so it displays that users information
+
         Bundle userBundleData = this.getIntent().getExtras();
         if (userBundleData != null) {
             userName = userBundleData.getSerializable("userName").toString();
 
             CollectionReference collectionReferenceUsers = fStore.collection("users");
-
 
             collectionReferenceUsers.addSnapshotListener(this, new EventListener<QuerySnapshot>() {
                 @Override
@@ -105,16 +107,20 @@ public class  ProfileActivity extends AppCompatActivity {
                     for (int i = 0; i < documents.size(); i++) {
                         String name = documents.get(i).getString("username");
 
+                        // if 'name' (username field in the database) = userName (marker title), then update UI for that users data
                         if (name.equalsIgnoreCase(userName)) {
                             userId = documents.get(i).getId();
                             updateUI();
                             break;
                         }
+
                     }
                 }
             });
 
+            //Hide edit profile button
             editProfileFields.setVisibility(View.GONE);
+
         } else {
             userId = fAuth.getCurrentUser().getUid();
 
@@ -181,7 +187,7 @@ public class  ProfileActivity extends AppCompatActivity {
             documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
                 @Override
                 public void onEvent(DocumentSnapshot documentSnapshot, FirebaseFirestoreException e) {
-                    //Title text
+
                     profileUsernameNew.setText(documentSnapshot.getString("username"));
                     username.setText(documentSnapshot.getString("username"));
                     halls.setText(documentSnapshot.getString("halls"));
@@ -189,18 +195,22 @@ public class  ProfileActivity extends AppCompatActivity {
                     degree.setText(documentSnapshot.getString("degree"));
                     mainUserMotive.setText(documentSnapshot.getString("main motive"));
                     motives.setText(documentSnapshot.getString("other motives"));
+
+                    //Profile image reference for each user registered, seperate directory
+                    //DOESN'T WANT TO BE GET CURRENT USER!!!
+                    //Image name needs to be the users username
+                   // StorageReference profileRef = storageReference.child("users/name")
+                    //StorageReference profileRef = storageReference.child("users/" + userId + "profile.jpg");
+                    StorageReference profileRef = storageReference.child("users/" + "/profile.jpg");
+                    profileRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                        @Override
+                        public void onSuccess(Uri uri) {
+                            Picasso.get().load(uri).into(profileImage);
+                        }
+                    });
                 }
             });
 
-            //Profile image reference for each user registered, seperate directory
-
-            StorageReference profileRef = storageReference.child("users/" + fAuth.getCurrentUser().getUid() + "/profile.jpg");
-            profileRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
-                @Override
-                public void onSuccess(Uri uri) {
-                    Picasso.get().load(uri).into(profileImage);
-                }
-            });
         }
 
     }

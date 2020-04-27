@@ -120,13 +120,15 @@ public class UpdateProfileActivity extends AppCompatActivity implements View.OnC
         userId = fAuth.getCurrentUser().getUid();
         storageReference = FirebaseStorage.getInstance().getReference();
 
+
+        //Getting user db fields entered from register activity
         Bundle dbfields = this.getIntent().getExtras();
         if (dbfields != null) {
             user = (HashMap<String, Object>) dbfields.getSerializable("user");
         }
 
 
-//Profile image reference for each user registered, seperate directory
+        //Profile image reference for each user registered, seperate directory
         StorageReference profileRef = storageReference.child("users/"+fAuth.getCurrentUser().getUid()+"/profile.jpg");
         profileRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
             @Override
@@ -260,6 +262,7 @@ public class UpdateProfileActivity extends AppCompatActivity implements View.OnC
 
                 Intent i = new Intent(getApplicationContext(), ProfileActivity.class);
 
+                //New bundle called extras
                 Bundle extras = new Bundle();
                 extras.putSerializable("user", user);
                 i.putExtras(extras);
@@ -298,6 +301,9 @@ public class UpdateProfileActivity extends AppCompatActivity implements View.OnC
 
     private void uploadImagetoFirebase(Uri imageUri) {
         // uplaod image to firebase storage
+        //Change image name to users username
+       // ("users/name");
+        //StorageReference profileRef = storageReference.child("users/" + userId + "profile.jpg");
         final StorageReference fileRef = storageReference.child("users/"+fAuth.getCurrentUser().getUid()+"/profile.jpg");
         fileRef.putFile(imageUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
             @Override
