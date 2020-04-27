@@ -3,6 +3,7 @@ package com.example.motive;
 import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -48,7 +49,6 @@ public class ReportActivity extends AppCompatActivity {
         submit = findViewById(R.id.submitButton);
         back = findViewById(R.id.backImg);
 
-
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
 
@@ -60,8 +60,44 @@ public class ReportActivity extends AppCompatActivity {
                final String userUsername = username.getText().toString().trim();
                final String userIssue = issue.getText().toString();
 
+               if (TextUtils.isEmpty(userUsername)) {
+                   username.setError("Username is required.");
+                   return;
+               }
+
+               if (TextUtils.isEmpty(userEmail)) {
+                   email.setError("Email is required.");
+                   return;
+               }
+
+               if (userEmail.contains("@leeds.ac.uk")) {
+                   Toast.makeText(ReportActivity.this, "Uniersity of Leeds email", Toast.LENGTH_SHORT);
+               } else {
+                   email.setError("1st Year Univerisity of Leeds Students Only");
+                   return;
+               }
+
+
+               if (userEmail.contains("20")) {
+                   Toast.makeText(ReportActivity.this, "Uniersity of Leeds email", Toast.LENGTH_SHORT);
+               }else {
+                   email.setError(" Univerisity of Leeds Email Only");
+                   return;
+               }
+
+               if (TextUtils.isEmpty(userIssue)) {
+                   issue.setError("Issue is required.");
+                   return;
+               }
+
+               if (userIssue.length() < 10) {
+                   issue.setError("Issue must be more than 10 characters long");
+                   return;
+               }
+
+
                userID = fAuth.getCurrentUser().getUid();
-               documentReference = fStore.collection("Reports").document(userID);
+               documentReference = fStore.collection("reports").document(userID);
                //user HashMap called user
                HashMap<String, Object> user = new HashMap<>();
                user.put("email", userEmail);

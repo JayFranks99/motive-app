@@ -181,7 +181,9 @@ public class  ProfileActivity extends AppCompatActivity {
 
             constraintSet.connect(R.id.aboutUser, ConstraintSet.TOP, R.id.blueBackground, ConstraintSet.BOTTOM, 5);
 
-            constraintSet.applyTo(jayLayout);*/
+            constraintSet.applyTo(jayLayout);
+
+             */
 
             DocumentReference documentReference = fStore.collection("users").document(userId);
             documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
@@ -196,12 +198,7 @@ public class  ProfileActivity extends AppCompatActivity {
                     mainUserMotive.setText(documentSnapshot.getString("main motive"));
                     motives.setText(documentSnapshot.getString("other motives"));
 
-                    //Profile image reference for each user registered, seperate directory
-                    //DOESN'T WANT TO BE GET CURRENT USER!!!
-                    //Image name needs to be the users username
-                   // StorageReference profileRef = storageReference.child("users/name")
                     StorageReference profileRef = storageReference.child("users/" + userId + "/profile.jpg");
-                    //StorageReference profileRef = storageReference.child("users/" + "/profile.jpg");
                     profileRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                         @Override
                         public void onSuccess(Uri uri) {

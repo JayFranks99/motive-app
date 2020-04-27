@@ -301,8 +301,6 @@ public class UpdateProfileActivity extends AppCompatActivity implements View.OnC
 
     private void uploadImagetoFirebase(Uri imageUri) {
         // uplaod image to firebase storage
-        //Change image name to users username
-       // ("users/name");
          final StorageReference fileRef = storageReference.child("users/" + userId + "/profile.jpg");
         //  final StorageReference fileRef = storageReference.child("users/"+fAuth.getCurrentUser().getUid()+"/profile.jpg");
         fileRef.putFile(imageUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
