@@ -174,7 +174,7 @@ public class  ProfileActivity extends AppCompatActivity {
             });
 
             //Profile image reference for each user registered, seperate directory
-            
+
             StorageReference profileRef = storageReference.child("users/" + fAuth.getCurrentUser().getUid() + "/profile.jpg");
             profileRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                 @Override
