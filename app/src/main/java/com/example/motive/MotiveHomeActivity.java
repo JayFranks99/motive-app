@@ -63,7 +63,7 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
     FirebaseFirestore fStore;
     String userID;
     ImageView home, events, mental, messages;
-    //Dialog myDialog;
+
 
     List<Fragment> FragmentList;
 
@@ -137,25 +137,6 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
     }
 
 
-   /* public void ShowPopup (View v) {
-        TextView txtclose;
-        Button  btnViewProfile;
-        myDialog.setContentView(R.layout.custompopup);
-        txtclose = (TextView) myDialog.findViewById(R.id.txtclose);
-        btnViewProfile = (Button) myDialog.findViewById(R.id.btnViewProfile);
-
-        txtclose.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                myDialog.dismiss();
-            }
-        });
-        myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        myDialog.show();
-    }
-
-    */
-
    @Override
     protected void onStart() {
         super.onStart();
@@ -223,9 +204,8 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
 
                 final String[] items = {"View Profile", "Message", "Close"};
 
-                View customAlertView = getLayoutInflater().inflate(R.layout.custompopup, null);
+                final View customAlertView = getLayoutInflater().inflate(R.layout.custompopup, null);
                 final AlertDialog.Builder customAlert = new AlertDialog.Builder(context)
-                        //.setTitle(marker.getTitle())
                         .setView(customAlertView);
 
                 TextView alertUserName = customAlertView.findViewById(R.id.alertUserName);
@@ -246,17 +226,9 @@ public class MotiveHomeActivity extends AppCompatActivity implements OnMapReadyC
                         startActivity(myIntent);
 
                     }
+
+
                 });
-
-                TextView alertCloseTextView = customAlertView.findViewById(R.id.txtclose);
-                alertCloseTextView.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        Toast.makeText(context, "Close Button Pressed", Toast.LENGTH_SHORT).show();
-
-                    }
-                });
-
 
                 customAlert.show();
 

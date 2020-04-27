@@ -1456,6 +1456,7 @@ id issueDescriptionEt
 id issueTv
 id italic
 id item_touch_helper_previous_elevation
+id jay_constraint
 id justFriends
 id labeled
 id language
@@ -1652,7 +1653,6 @@ id transition_scene_layoutid_cache
 id transition_transform
 id twoFactor
 id twoFactorImageView
-id txtclose
 id unchecked
 id uniform
 id unlabeled

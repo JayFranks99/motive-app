@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -14,6 +15,9 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.solver.widgets.ConstraintWidget;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.constraintlayout.widget.ConstraintSet;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
@@ -43,12 +47,13 @@ public class  ProfileActivity extends AppCompatActivity {
     ImageView backImageView;
     Button resendCodeButton;
     String userId, userName;
-    TextView username, halls, bio, motives, degree, mainUserMotive, profileUsernameNew;
+    TextView username, halls, bio, motives, degree, mainUserMotive, profileUsernameNew, userBio;
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
     ImageView profileImage;
     Button editProfileFields;
     StorageReference storageReference;
+    ConstraintLayout jayLayout;
 
     private static final String TAG = "ProfileActivity";
 
@@ -71,8 +76,10 @@ public class  ProfileActivity extends AppCompatActivity {
         profileImage = findViewById(R.id.displayImageView);
         editProfileFields = findViewById(R.id.editprofileButton);
         profileUsernameNew = findViewById(R.id.profileTextView);
+        userBio = findViewById(R.id.aboutUser);
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
+        jayLayout = findViewById(R.id.jay_constraint);
         storageReference = FirebaseStorage.getInstance().getReference();
 
         backImageView.setOnClickListener(new View.OnClickListener() {
@@ -82,6 +89,8 @@ public class  ProfileActivity extends AppCompatActivity {
             }
         });
 
+
+        //Getting the correct user profile and updating the UI from my profile to user profile
         Bundle userBundleData = this.getIntent().getExtras();
         if (userBundleData != null) {
             userName = userBundleData.getSerializable("userName").toString();
@@ -158,6 +167,16 @@ public class  ProfileActivity extends AppCompatActivity {
 
     public void updateUI() {
         if (userId != null) {
+            /* CODE TO CHANGE MARGIN SIZE FOR UI TO LOOK BETTER
+
+            ConstraintSet constraintSet = new ConstraintSet();
+
+            constraintSet.clone(jayLayout);
+
+            constraintSet.connect(R.id.aboutUser, ConstraintSet.TOP, R.id.blueBackground, ConstraintSet.BOTTOM, 5);
+
+            constraintSet.applyTo(jayLayout);*/
+
             DocumentReference documentReference = fStore.collection("users").document(userId);
             documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
                 @Override
@@ -183,6 +202,6 @@ public class  ProfileActivity extends AppCompatActivity {
                 }
             });
         }
-    }
 
+    }
 }
