@@ -1,5 +1,4 @@
 package com.example.motive;
-
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,12 +10,10 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Switch;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -157,8 +154,6 @@ public class SettingsActivity extends AppCompatActivity {
                         finish();
                     }
 
-
-
                 });
 
                 deleteAccountDialog.setNegativeButton("No", new DialogInterface.OnClickListener() {
@@ -190,5 +185,5 @@ public class SettingsActivity extends AppCompatActivity {
         FirebaseAuth.getInstance().signOut();
         startActivity(new Intent(getApplicationContext(),LogInActivity.class));
         finish();
-        }
+    }
 }

@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -25,7 +26,7 @@ import java.util.HashMap;
 
 import static com.example.motive.RegisterActivity.TAG1;
 
-public class ReportActivity extends AppCompatActivity {
+public class ReportActivity extends AppCompatActivity implements View.OnClickListener {
 
     EditText email, username, issue;
     Button submit;
@@ -123,6 +124,7 @@ public class ReportActivity extends AppCompatActivity {
        });
 
 
+
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -130,6 +132,15 @@ public class ReportActivity extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public void onClick(View view) {
+        if (view.getId() == R.id.registerBackground) {
+            InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
+            inputMethodManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
+        }
+    }
+
 
 
 }

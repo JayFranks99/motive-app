@@ -13,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+
         <TextView
             android:id="@+id/registerEditText"
             android:layout_width="wrap_content"
@@ -20,7 +21,6 @@
             android:layout_marginTop="32dp"
             android:text="Register"
             android:textColor="#FFFFFF"
-            android:textColorHint="#FFFFFF"
             android:textSize="36sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -32,13 +32,13 @@
             android:id="@+id/logInDetailsTextView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="24dp"
             android:layout_marginTop="32dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginEnd="24dp"
             android:text="Log in details"
             android:textAllCaps="true"
             android:textColor="#FFF"
-            android:textSize="18dp"
+            android:textSize="20dp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -48,264 +48,237 @@
             android:id="@+id/emailEditText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="16dp"
-            android:background="@android:color/white"
+            android:layout_marginEnd="24dp"
             android:ems="10"
             android:hint="Email (University of Leeds)"
             android:inputType="textEmailAddress"
-            android:padding="5dp"
-            android:textColor="#000000"
+            android:textColor="@color/white"
             android:textColorHint="#CCC9C9"
+            android:paddingLeft="50dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView10"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/logInDetailsTextView" />
+            app:layout_constraintStart_toStartOf="@+id/imageView10"
+            app:layout_constraintTop_toTopOf="@+id/imageView10" />
 
         <EditText
             android:id="@+id/passwordEditText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="16dp"
-            android:background="@android:color/white"
+            android:layout_marginEnd="24dp"
             android:ems="10"
             android:hint="Password"
             android:inputType="textPassword"
-            android:padding="5dp"
-            android:textColor="#000000"
+            android:paddingLeft="50dp"
+            android:textColor="@color/white"
             android:textColorHint="#CCC9C9"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView11"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/emailEditText" />
+            app:layout_constraintStart_toStartOf="@+id/imageView11"
+            app:layout_constraintTop_toTopOf="@+id/imageView11" />
 
         <EditText
             android:id="@+id/confirmPasswordEditText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="16dp"
-            android:background="@android:color/white"
+            android:layout_marginEnd="24dp"
             android:ems="10"
             android:hint="Confirm Password"
             android:inputType="textPassword"
-            android:padding="5dp"
-            android:textColor="#000000"
+            android:paddingLeft="50dp"
+            android:textColor="@color/white"
             android:textColorHint="#CCC9C9"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView12"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/passwordEditText" />
+            app:layout_constraintStart_toStartOf="@+id/imageView12"
+            app:layout_constraintTop_toTopOf="@+id/imageView12" />
+
 
         <TextView
             android:id="@+id/addressTextView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="24dp"
             android:layout_marginTop="24dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginEnd="24dp"
             android:text="Your Address"
             android:textAllCaps="true"
             android:textColor="#FFF"
-            android:textSize="18dp"
+            android:textSize="20dp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/confirmPasswordEditText" />
-
 
         <AutoCompleteTextView
             android:id="@+id/hallsAutoCompleteTextView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="16dp"
-            android:background="@android:color/white"
+            android:layout_marginEnd="24dp"
             android:completionThreshold="1"
             android:hint="Halls"
-            android:padding="5dp"
-            android:textColor="#000000"
+            android:paddingLeft="50dp"
+            android:textColor="@color/white"
             android:textColorHint="#CCC9C9"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView13"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/addressTextView" />
+            app:layout_constraintStart_toStartOf="@+id/imageView13"
+            app:layout_constraintTop_toTopOf="@+id/imageView13" />
 
         <EditText
             android:id="@+id/postcodeEditText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="16dp"
-            android:background="@android:color/white"
+            android:layout_marginEnd="24dp"
             android:ems="10"
             android:hint="Postcode"
             android:inputType="textPostalAddress"
-            android:padding="5dp"
-            android:textColor="#000000"
+            android:paddingLeft="50dp"
+            android:textColor="@color/white"
             android:textColorHint="#CCC9C9"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView14"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/hallsAutoCompleteTextView" />
+            app:layout_constraintStart_toStartOf="@+id/imageView14"
+            app:layout_constraintTop_toTopOf="@+id/imageView14" />
 
         <TextView
             android:id="@+id/aboutTextView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="24dp"
             android:layout_marginTop="24dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginEnd="24dp"
             android:text="About You"
             android:textAllCaps="true"
             android:textColor="#FFF"
-            android:textSize="18dp"
+            android:textSize="20dp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/postcodeEditText" />
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/displayImageView"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginEnd="16dp"
-            android:src="@drawable/profile_icon"
-            app:civ_border_color="#FFF"
-            app:civ_border_width="2dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/aboutTextView" />
+<!--        <de.hdodenhof.circleimageview.CircleImageView-->
+<!--            android:id="@+id/displayImageView"-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="150dp"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="25dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:src="@drawable/profile_icon"-->
+<!--            app:civ_border_color="#FFF"-->
+<!--            app:civ_border_width="2dp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/aboutTextView" />-->
 
-        <Button
-            android:id="@+id/cameraBtn"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:background="@drawable/my_button"
-            android:text="Take Photo"
-            android:textColor="#0095b7"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/displayImageView" />
+<!--        <Button-->
+<!--            android:id="@+id/cameraBtn"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:background="@drawable/my_button"-->
+<!--            android:text="Take Photo"-->
+<!--            android:textColor="#0095b7"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.0"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/displayImageView" />-->
 
-        <Button
-            android:id="@+id/galleryBtn"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="16dp"
-            android:background="@drawable/my_button2"
-            android:text="Choose from Gallery"
-            android:textColor="#FFF"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cameraBtn" />
+<!--        <Button-->
+<!--            android:id="@+id/galleryBtn"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:background="@drawable/my_button2"-->
+<!--            android:text="Choose from Gallery"-->
+<!--            android:textColor="#FFF"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="1.0"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/cameraBtn" />-->
 
 
         <EditText
             android:id="@+id/descriptionEditText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="16dp"
-            android:background="@android:color/white"
+            android:layout_marginEnd="24dp"
             android:ems="10"
             android:hint="User bio"
-            android:padding="5dp"
-            android:textColor="#000000"
+            android:paddingLeft="50dp"
+            android:textColor="@color/white"
             android:textColorHint="#CCC9C9"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView17"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/usernameEditText" />
+            app:layout_constraintStart_toStartOf="@+id/imageView17"
+            app:layout_constraintTop_toTopOf="@+id/imageView17" />
 
         <EditText
             android:id="@+id/usernameEditText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="16dp"
-            android:background="@android:color/white"
-            android:ems="10"
+            android:layout_marginEnd="24dp"
             android:hint="Instagram username (Messaging)"
-            android:padding="5dp"
-            android:textColor="#000000"
+            android:paddingLeft="50dp"
+            android:textColor="@color/white"
             android:textColorHint="#CCC9C9"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView16"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/galleryBtn" />
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imageView16"
+            app:layout_constraintTop_toTopOf="@+id/imageView16" />
 
         <AutoCompleteTextView
             android:id="@+id/mainMotiveAutoCompleteTextView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="16dp"
-            android:background="@android:color/white"
-            android:hint="Main motive (e.g Football)"
-            android:padding="5dp"
+            android:layout_marginEnd="24dp"
             android:completionThreshold="3"
-            android:textColor="#000000"
+            android:hint="Main motive (e.g Football)"
+            android:paddingLeft="50dp"
+            android:textColor="@color/white"
             android:textColorHint="#CCC9C9"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView18"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/descriptionEditText" />
+            app:layout_constraintStart_toStartOf="@+id/imageView18"
+            app:layout_constraintTop_toTopOf="@+id/imageView18" />
 
 
         <MultiAutoCompleteTextView
             android:id="@+id/motivesMultiAutoCompleteTextView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="16dp"
-            android:background="@android:color/white"
+            android:layout_marginEnd="24dp"
+            android:completionThreshold="3"
             android:ems="10"
             android:hint="Other motives (e.g Golf, Reading, Cocktail making)"
-            android:padding="5dp"
-            android:textColor="#000000"
+            android:paddingLeft="50dp"
+            android:textColor="@color/white"
             android:textColorHint="#CCC9C9"
-            android:completionThreshold="3"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView19"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/mainMotiveAutoCompleteTextView" />
+            app:layout_constraintStart_toStartOf="@+id/imageView19"
+            app:layout_constraintTop_toTopOf="@+id/imageView19" />
 
 
         <AutoCompleteTextView
             android:id="@+id/degreeAutoCompleteTextView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
-            android:layout_marginEnd="16dp"
-            android:background="@android:color/white"
+            android:layout_marginEnd="24dp"
+            android:completionThreshold="7"
             android:hint="Degree"
-            android:padding="5dp"
-            android:completionThreshold="3"
-            android:textColor="#000000"
+            android:paddingLeft="50dp"
+            android:textColor="@color/white"
             android:textColorHint="#CCC9C9"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/imageView20"
             app:layout_constraintTop_toBottomOf="@+id/motivesMultiAutoCompleteTextView" />
 
 
@@ -336,6 +309,105 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/registerButton2" />
 
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logInDetailsTextView"
+            app:srcCompat="@android:drawable/ic_dialog_email" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView10"
+            app:srcCompat="@android:drawable/ic_lock_idle_lock" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView11"
+            app:srcCompat="@android:drawable/ic_lock_idle_lock" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addressTextView"
+            app:srcCompat="@drawable/home_icon" />
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aboutTextView"
+            app:srcCompat="@drawable/profile_icon_button" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hallsAutoCompleteTextView"
+            app:srcCompat="@drawable/postcode_icon" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/usernameEditText"
+            app:srcCompat="@android:drawable/ic_menu_edit" />
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView17"
+            app:srcCompat="@drawable/football_profilepic" />
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView18"
+            app:srcCompat="@drawable/events_icon" />
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/motivesMultiAutoCompleteTextView"
+            app:srcCompat="@drawable/events_icon" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

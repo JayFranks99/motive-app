@@ -243,7 +243,6 @@ public class UpdateProfileActivity extends AppCompatActivity implements View.OnC
                 user.put("postcode", userPostcode);
 
 
-
                 documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
@@ -288,7 +287,7 @@ public class UpdateProfileActivity extends AppCompatActivity implements View.OnC
 
 
 
-    @Override
+ /*   @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode == 1000) {
@@ -319,7 +318,7 @@ public class UpdateProfileActivity extends AppCompatActivity implements View.OnC
                 Toast.makeText(UpdateProfileActivity.this, "Failed", Toast.LENGTH_SHORT).show();
             }
         });
-    }
+    }*/
 
     //Hide keyboard when clicking on the background view of the activity
     @Override

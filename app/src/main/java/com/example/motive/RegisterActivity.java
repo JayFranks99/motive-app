@@ -6,6 +6,7 @@ import android.content.ContentResolver;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
+import android.graphics.PorterDuff;
 import android.location.Address;
 import android.location.Geocoder;
 import android.net.Uri;
@@ -58,10 +59,10 @@ import java.util.Map;
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
 
     public static final String TAG1 = "TAG";
-    public static final String TAG2 = "TAG";
-    public static final int CAMERA_PERM_CODE = 101;
-    public static final int CAMERA_REQUEST_CODE = 102;
-    public static final int GALLERY_REQUEST_CODE = 105;
+//    public static final String TAG2 = "TAG";
+//    public static final int CAMERA_PERM_CODE = 101;
+//    public static final int CAMERA_REQUEST_CODE = 102;
+//    public static final int GALLERY_REQUEST_CODE = 105;
     EditText mUsername;
     EditText mEmail;
     EditText mPassword;
@@ -78,7 +79,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     FirebaseFirestore fStore;
     String userID;
     ImageView selectedImage;
-    Button cameraBtn, galleryBtn;
+//    Button cameraBtn, galleryBtn;
     String currentPhotoPath;
     StorageReference storageReference;
     ConstraintLayout registerBackground;
@@ -105,11 +106,11 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         progressBar = findViewById(R.id.progressBar);
         cPassword = findViewById(R.id.confirmPasswordEditText);
         selectedImage = findViewById(R.id.displayImageView);
-        cameraBtn = findViewById(R.id.cameraBtn);
-        galleryBtn = findViewById(R.id.galleryBtn);
         registerBackground = findViewById(R.id.registerBackground);
         registerBackground.setOnClickListener(this);
         mHalls = findViewById(R.id.hallsAutoCompleteTextView);
+        //        cameraBtn = findViewById(R.id.cameraBtn);
+        //        galleryBtn = findViewById(R.id.galleryBtn);
 
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
@@ -120,8 +121,22 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
             finish();
         }
 
-        //auto-complete arrays
+        //Underline colour of edit texts
+        mEmail.getBackground().mutate().setColorFilter(ContextCompat.getColor(this, R.color.white), PorterDuff.Mode.SRC_ATOP);
+        mHalls.getBackground().mutate().setColorFilter(ContextCompat.getColor(this, R.color.white), PorterDuff.Mode.SRC_ATOP);
+        mPassword.getBackground().mutate().setColorFilter(ContextCompat.getColor(this, R.color.white), PorterDuff.Mode.SRC_ATOP);
+        cPassword.getBackground().mutate().setColorFilter(ContextCompat.getColor(this, R.color.white), PorterDuff.Mode.SRC_ATOP);
+        mPostcode.getBackground().mutate().setColorFilter(ContextCompat.getColor(this, R.color.white), PorterDuff.Mode.SRC_ATOP);
+        mUserBio.getBackground().mutate().setColorFilter(ContextCompat.getColor(this, R.color.white), PorterDuff.Mode.SRC_ATOP);
+        mMainMotive.getBackground().mutate().setColorFilter(ContextCompat.getColor(this, R.color.white), PorterDuff.Mode.SRC_ATOP);
+        mOtherMotives.getBackground().mutate().setColorFilter(ContextCompat.getColor(this, R.color.white), PorterDuff.Mode.SRC_ATOP);
+        mDegree.getBackground().mutate().setColorFilter(ContextCompat.getColor(this, R.color.white), PorterDuff.Mode.SRC_ATOP);
+        mUsername.getBackground().mutate().setColorFilter(ContextCompat.getColor(this, R.color.white), PorterDuff.Mode.SRC_ATOP);
 
+
+
+
+        //auto-complete arrays
         String[] halls = getResources().getStringArray(R.array.halls);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, halls);
@@ -375,28 +390,40 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                    return null;
                }
             });
-
-
-        cameraBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                askCameraPermissions();
-            }
-        });
-
-        galleryBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent gallery = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-                startActivityForResult(gallery, GALLERY_REQUEST_CODE);
-
-            }
-        });
-
     }
 
-    private void askCameraPermissions() {
+    //Hide keyboard when clicking on the background view of the activity
+    @Override
+    public void onClick(View view) {
+        if (view.getId() == R.id.registerBackground) {
+            InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
+            inputMethodManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
+
+        }
+    }
+}
+
+
+//        cameraBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                askCameraPermissions();
+//            }
+//        });
+//
+//        galleryBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                Intent gallery = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+//                startActivityForResult(gallery, GALLERY_REQUEST_CODE);
+//
+//            }
+//        });
+
+
+
+   /* private void askCameraPermissions() {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CAMERA}, CAMERA_PERM_CODE);
         } else {
@@ -485,9 +512,9 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         //File storageDir = getExternalFilesDir(Environment.DIRECTORY_PICTURES);
         File storageDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES);
         File image = File.createTempFile(
-                imageFileName,  /* prefix */
-                ".jpg",         /* suffix */
-                storageDir      /* directory */
+                imageFileName,  *//* prefix *//*
+                ".jpg",         *//* suffix *//*
+                storageDir      *//* directory *//*
         );
 
         // Save a file: path for use with ACTION_VIEW intents
@@ -517,15 +544,6 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
             }
         }
 
-    }
+    }*/
 
-    //Hide keyboard when clicking on the background view of the activity
-    @Override
-    public void onClick(View view) {
-        if (view.getId() == R.id.registerBackground) {
-            InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
-            inputMethodManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
 
-        }
-    }
-}

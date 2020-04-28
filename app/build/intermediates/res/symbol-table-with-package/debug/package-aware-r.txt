@@ -1243,6 +1243,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable postcode_icon
 drawable preference_list_divider_material
 drawable profile_icon
 drawable profile_icon_button
@@ -1342,7 +1343,6 @@ id blueBackground
 id bottom
 id buttonPanel
 id buttonSave
-id cameraBtn
 id cancel_action
 id center
 id center_horizontal
@@ -1412,7 +1412,6 @@ id filled
 id fixed
 id forever
 id forgotPassword
-id galleryBtn
 id ghostMode
 id ghostSwitch
 id ghost_view
@@ -1442,7 +1441,17 @@ id icon_only
 id ifRoom
 id image
 id imageView
+id imageView10
+id imageView11
+id imageView12
+id imageView13
+id imageView14
+id imageView16
+id imageView17
+id imageView18
+id imageView19
 id imageView2
+id imageView20
 id imageView3
 id imageView4
 id imageView5
