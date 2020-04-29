@@ -1190,12 +1190,14 @@ drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
 drawable custom_progress_bar
+drawable degree_icon
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable email_icon
 drawable events_icon
 drawable f_icon
 drawable football_profilepic
@@ -1216,6 +1218,7 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable m_icon
+drawable mainmotive_icon
 drawable making_friends
 drawable mental_icon
 drawable messages
@@ -1243,6 +1246,8 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable other_motives
+drawable password_icon
 drawable postcode_icon
 drawable preference_list_divider_material
 drawable profile_icon
@@ -1254,6 +1259,7 @@ drawable sync
 drawable tennis_icon
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable userbio_icon
 font orbitron
 id ALT
 id CTRL
