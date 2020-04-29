@@ -55,6 +55,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -365,7 +366,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                 });
 
             }
-
+            
             private Address geoLocate() {
                    Log.d(TAG, "geoLocate:geolocating");
 

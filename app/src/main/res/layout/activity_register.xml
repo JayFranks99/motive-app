@@ -223,7 +223,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="24dp"
-            android:hint="Instagram username (Messaging)"
+            android:hint="Username (use instagram for messaging)"
             android:paddingLeft="50dp"
             android:textColor="@color/white"
             android:textColorHint="#CCC9C9"

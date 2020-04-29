@@ -20,12 +20,12 @@
         "source": "C:\\Users\\Jay\\AndroidStudioProjects\\motive\\app\\src\\main\\res\\drawable\\custom_progress_bar.xml"
     },
     {
-        "merged": "C:\\Users\\Jay\\AndroidStudioProjects\\motive\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_mtrl_chip_checked_black.xml.flat",
-        "source": "C:\\Users\\Jay\\.gradle\\caches\\transforms-2\\files-2.1\\448e1b13d0d93b9e707b7ff40e761001\\material-1.0.0\\res\\drawable\\ic_mtrl_chip_checked_black.xml"
-    },
-    {
         "merged": "C:\\Users\\Jay\\AndroidStudioProjects\\motive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
         "source": "C:\\Users\\Jay\\.gradle\\caches\\transforms-2\\files-2.1\\2e4ed34acbb880a0ef9546072100a488\\appcompat-1.1.0-alpha05\\res\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Jay\\AndroidStudioProjects\\motive\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_mtrl_chip_checked_black.xml.flat",
+        "source": "C:\\Users\\Jay\\.gradle\\caches\\transforms-2\\files-2.1\\448e1b13d0d93b9e707b7ff40e761001\\material-1.0.0\\res\\drawable\\ic_mtrl_chip_checked_black.xml"
     },
     {
         "merged": "C:\\Users\\Jay\\AndroidStudioProjects\\motive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
