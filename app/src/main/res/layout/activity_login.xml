@@ -109,7 +109,7 @@
         android:id="@+id/registerTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:text="Click here to register!"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"

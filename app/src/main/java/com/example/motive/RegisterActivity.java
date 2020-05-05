@@ -194,20 +194,20 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                     return;
                 }
 
-                if (email.contains("@leeds.ac.uk")) {
-                    Toast.makeText(RegisterActivity.this, "Uniersity of Leeds email", Toast.LENGTH_SHORT);
-                } else {
-                    mEmail.setError("1st Year Univerisity of Leeds Students Only");
-                    return;
-                }
+               // if (email.contains("@leeds.ac.uk")) {
+               //     Toast.makeText(RegisterActivity.this, "Uniersity of Leeds email", Toast.LENGTH_SHORT);
+               // } else {
+              //     mEmail.setError("1st Year Univerisity of Leeds Students Only");
+               //     return;
+               // }
 
 
-                if (email.contains("20")) {
-                    Toast.makeText(RegisterActivity.this, "Uniersity of Leeds email", Toast.LENGTH_SHORT);
-                }else {
-                    mEmail.setError(" Univerisity of Leeds Freshers Only");
-                    return;
-                }
+             //   if (email.contains("20")) {
+               //     Toast.makeText(RegisterActivity.this, "Uniersity of Leeds email", Toast.LENGTH_SHORT);
+                //}else {
+                  //  mEmail.setError(" Univerisity of Leeds Freshers Only");
+                    //return;
+                //}
 
                 if (TextUtils.isEmpty(password)) {
                     mPassword.setError("Password is required.");

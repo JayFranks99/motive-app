@@ -2,6 +2,7 @@ package com.example.motive;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Paint;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
@@ -51,6 +52,9 @@ public class LogInActivity extends AppCompatActivity implements View.OnClickList
         backgroundLayout.setOnClickListener(this);
         fAuth = FirebaseAuth.getInstance();
         progressBar = findViewById(R.id.progressBar);
+
+       forgotTextLink.setPaintFlags(forgotTextLink.getPaintFlags()| Paint.UNDERLINE_TEXT_FLAG);
+       registerLink.setPaintFlags(registerLink.getPaintFlags()|Paint.UNDERLINE_TEXT_FLAG);
 
 
         mLoginButton.setOnClickListener(new View.OnClickListener() {
