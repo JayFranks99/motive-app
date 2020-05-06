@@ -46,16 +46,36 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.motive.MotiveHomeActivity" />
-        <activity android:name="com.example.motive.LogInActivity" />
-        <activity android:name="com.example.motive.RegisterActivity" />
-        <activity android:name="com.example.motive.ProfileActivity" />
-        <activity android:name="com.example.motive.SettingsActivity" />
-        <activity android:name="com.example.motive.EventOneActivity" />
-        <activity android:name="com.example.motive.EventTwoActivity" />
-        <activity android:name="com.example.motive.EventThreeActivity" />
-        <activity android:name="com.example.motive.UpdateProfileActivity" />
-        <activity android:name="com.example.motive.ReportActivity" />
+        <activity
+            android:name="com.example.motive.MotiveHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.motive.LogInActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.motive.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.motive.ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.motive.SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.motive.EventOneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.motive.EventTwoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.motive.EventThreeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.motive.UpdateProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.motive.ReportActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.example.motive.FirstActivity"
             android:configChanges="orientation|screenSize|screenLayout|keyboardHidden" >
