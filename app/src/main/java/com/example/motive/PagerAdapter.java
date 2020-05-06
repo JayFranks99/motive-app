@@ -32,16 +32,16 @@ public class PagerAdapter extends FragmentPagerAdapter {
         switch (position)
         {
             case 0:
-                returnValue = "Home";
+              //  returnValue = "Home";
                 break;
             case 1:
-                returnValue = "Events";
+              //  returnValue = "Events";
                 break;
             case 2:
-                returnValue = "Wellbeing";
+               // returnValue = "Wellbeing";
                 break;
             case 3:
-                returnValue = "Messages";
+               // returnValue = "Messages";
                 break;
         }
 

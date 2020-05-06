@@ -1,4 +1,5 @@
 package com.example.motive;
+import android.graphics.Paint;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -7,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-
+import android.widget.TextView;
 
 
 public class MessagesFragment extends Fragment {
@@ -17,6 +18,7 @@ public class MessagesFragment extends Fragment {
     }
 
     private WebView webView;
+    private TextView messages;
 
 
     @Override
@@ -40,6 +42,10 @@ public class MessagesFragment extends Fragment {
         webView.setWebViewClient(new WebViewClient());
 
         webView.loadUrl("https://www.instagram.com/?hl=en");
+
+        messages = view.findViewById(R.id.messagesTextView);
+
+        messages.setPaintFlags(messages.getPaintFlags()| Paint.UNDERLINE_TEXT_FLAG);
     }
 }
 
