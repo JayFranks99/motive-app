@@ -80,10 +80,10 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     FirebaseFirestore fStore;
     String userID;
     ImageView selectedImage;
-//    Button cameraBtn, galleryBtn;
-    String currentPhotoPath;
     StorageReference storageReference;
     ConstraintLayout registerBackground;
+    //    String currentPhotoPath;
+    //    Button cameraBtn, galleryBtn;
 
 
     private static final String TAG = "Register Activity";
@@ -194,20 +194,20 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                     return;
                 }
 
-               // if (email.contains("@leeds.ac.uk")) {
-               //     Toast.makeText(RegisterActivity.this, "Uniersity of Leeds email", Toast.LENGTH_SHORT);
-               // } else {
-              //     mEmail.setError("1st Year Univerisity of Leeds Students Only");
-               //     return;
-               // }
+                if (email.contains("@leeds.ac.uk")) {
+                   Toast.makeText(RegisterActivity.this, "Uniersity of Leeds email", Toast.LENGTH_SHORT);
+                } else {
+                   mEmail.setError("1st Year Univerisity of Leeds Students Only");
+                    return;
+                }
 
 
-             //   if (email.contains("20")) {
-               //     Toast.makeText(RegisterActivity.this, "Uniersity of Leeds email", Toast.LENGTH_SHORT);
-                //}else {
-                  //  mEmail.setError(" Univerisity of Leeds Freshers Only");
-                    //return;
-                //}
+                if (email.contains("20")) {
+                    Toast.makeText(RegisterActivity.this, "Uniersity of Leeds email", Toast.LENGTH_SHORT);
+                }else {
+                    mEmail.setError(" Univerisity of Leeds Freshers Only");
+                    return;
+                }
 
                 if (TextUtils.isEmpty(password)) {
                     mPassword.setError("Password is required.");
@@ -404,27 +404,27 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     }
 }
 
+/*
+    cameraBtn.setOnClickListener(new View.OnClickListener() {
+                 @Override
+         public void onClick(View v) {
+                askCameraPermissions();
+            }
+        });
 
-//        cameraBtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                askCameraPermissions();
-//            }
-//        });
-//
-//        galleryBtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//                Intent gallery = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-//                startActivityForResult(gallery, GALLERY_REQUEST_CODE);
-//
-//            }
-//        });
+        galleryBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent gallery = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                startActivityForResult(gallery, GALLERY_REQUEST_CODE);
+
+            }
+        });
 
 
 
-   /* private void askCameraPermissions() {
+    private void askCameraPermissions() {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CAMERA}, CAMERA_PERM_CODE);
         } else {

@@ -39,7 +39,9 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.motive.SplashActivity" >
+        <activity
+            android:name="com.example.motive.SplashActivity"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -78,7 +80,8 @@
             android:screenOrientation="portrait" />
         <activity
             android:name="com.example.motive.FirstActivity"
-            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden" >
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait" >
         </activity>
 
         <provider
