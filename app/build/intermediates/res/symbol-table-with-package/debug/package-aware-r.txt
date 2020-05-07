@@ -1217,6 +1217,9 @@ drawable ic_launcher_foreground
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable jaytest
+drawable jaytest2
+drawable logo_final_first
 drawable m_icon
 drawable mainmotive_icon
 drawable making_friends
@@ -1225,6 +1228,7 @@ drawable messages
 drawable messages_icon
 drawable mmental_icon
 drawable mmessages_icon
+drawable motive_logo
 drawable motive_marker
 drawable motivelogo
 drawable motivelogo2
